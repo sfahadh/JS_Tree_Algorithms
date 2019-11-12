@@ -8,9 +8,6 @@ const distributeCandies = candies => {
 
 console.log(distributeCandies([1,1,2,2,3,3]))
 // Output: 3
-
-/* 
-There are three different kinds of candies (1, 2 and 3), and two candies for each kind.
+/* There are three different kinds of candies (1, 2 and 3), and two candies for each kind.
 Optimal distribution: The sister has candies [1,2,3] and the brother has candies [1,2,3], too. 
-The sister has three different kinds of candies. 
-*/
+The sister has three different kinds of candies. */
