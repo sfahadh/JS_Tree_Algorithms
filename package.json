@@ -1,0 +1,22 @@
+{
+  "name": "algorithms",
+  "version": "1.0.0",
+  "description": "algorithm problems with solutions and test cases",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sfahadh/Algorithms.git"
+  },
+  "author": "Fahad Hussain",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sfahadh/Algorithms/issues"
+  },
+  "homepage": "https://github.com/sfahadh/Algorithms#readme",
+  "devDependencies": {
+    "jest": "^24.9.0"
+  }
+}
