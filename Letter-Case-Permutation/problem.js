@@ -6,6 +6,7 @@ const letterCasePermutation = S => {
 
 };
 
+
 // Examples:
 // Input: S = "a1b2"
 // Output: ["a1b2", "a1B2", "A1b2", "A1B2"]
