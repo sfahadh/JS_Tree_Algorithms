@@ -14,3 +14,5 @@ const palindromeSet = arr => {
 
 // "1abc4de1" // single-palindrome
 // "141" is a palindrome.
+
+module.exports = palindromeSet
