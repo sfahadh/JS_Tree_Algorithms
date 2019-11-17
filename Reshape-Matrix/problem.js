@@ -34,3 +34,5 @@ const matrixReshape = (nums, r, c) => {
 //  [3,4]]
 // Explanation:
 // There is no way to reshape a 2 * 2 matrix to a 2 * 4 matrix. So output the original matrix.
+
+module.exports = matrixReshape
