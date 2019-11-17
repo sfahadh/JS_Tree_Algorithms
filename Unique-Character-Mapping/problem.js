@@ -15,3 +15,5 @@ const characterMapping = str => {
 // Notes:
 // Start your counter at 0, and increment by 1 each time you encounter a new character.
 // Identical characters should share the same number.
+
+module.exports = characterMapping
