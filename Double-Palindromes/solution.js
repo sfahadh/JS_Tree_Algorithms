@@ -44,3 +44,27 @@ const palindromeSet = arr => {
         return isPalindrome(digits) + isPalindrome(letters);
     });
 }
+
+// Solution 3
+const palindromeSet = arr => {
+    const isPalindrome = chars => {
+        if (chars.length === 0) {
+            return false;
+        }
+        return chars.join('') === chars.reverse().join('');
+    }
+
+    const countPalindromes = s => {
+        let count = 0;
+        const digits = s.match(/\d/g) || [];
+        if (isPalindrome(digits)) {
+            count++;
+        }
+        const chars = s.match(/[a-z]/g) || [];
+        if (isPalindrome(chars)) {
+            count++;
+        }
+        return count;
+    };
+    return arr.map(countPalindromes);
+}

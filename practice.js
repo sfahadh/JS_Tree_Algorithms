@@ -1,11 +1,20 @@
-const isPalindrome = str => str === str.split('').reverse().join('');
-
-const palindromeSet = arr => {
-    return arr.map(str => {
-        const digits = (str.match(/\d+/g) || []).join('') || 'no';
-        const letters = (str.match(/[a-z]+/gi) || []).join('') || 'no';
-        return isPalindrome(digits) + isPalindrome(letters);
-    });
+function palindromeSet(arr) {
+    var _ = function (a) {
+        if (a.length == 0) return 0;
+        while (a.length > 1) {
+            if (a.pop() != a.shift()) {
+                return 0;
+            }
+        }
+        return 1;
+    };
+    var r = [];
+    for (var i in arr) {
+        var a1 = arr[i].replace(/\d/g, '').split('');
+        var a2 = arr[i].replace(/[a-z]/g, '').split('');
+        console.log(a2)
+    }
+    return r;
 }
 
 console.log(palindromeSet(["cbc", "ccc888", "ccc789", "abc89"]))
