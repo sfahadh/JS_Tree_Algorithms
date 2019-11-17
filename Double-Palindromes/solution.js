@@ -1,3 +1,4 @@
+// Solution 1
 const palindromeSet = arr => {
     let numString = ''
     let letterString = ''
@@ -31,4 +32,15 @@ const palindromeSet = arr => {
     }
 
     return results
+}
+
+// Solution 2
+const isPalindrome = str => str === str.split('').reverse().join('');
+
+const palindromeSet = arr => {
+    return arr.map(str => {
+        const digits = (str.match(/\d+/g) || []).join('') || 'no';
+        const letters = (str.match(/[a-z]+/gi) || []).join('') || 'no';
+        return isPalindrome(digits) + isPalindrome(letters);
+    });
 }
