@@ -6,6 +6,7 @@ const characterMapping = str => {
 
 }
 
+
 // Examples:
 // characterMapping("abcd") ➞ [0, 1, 2, 3]
 // characterMapping("abb") ➞ [0, 1, 1]
@@ -17,3 +18,6 @@ const characterMapping = str => {
 // Identical characters should share the same number.
 
 module.exports = characterMapping
+
+// "abcd" -> [0, 1, 2, 3]
+// 
