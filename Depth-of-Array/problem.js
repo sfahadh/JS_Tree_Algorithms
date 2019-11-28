@@ -14,3 +14,5 @@ const depth = arr => {
 // depth([1, [2, [3, 4]]]) ➞ 3
 
 // depth([1, [2, [3, [4]]]]) ➞ 4
+
+module.exports = depth
