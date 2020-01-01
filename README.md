@@ -32,3 +32,6 @@ A list of Algorithm and Data Structure problems from Leetcode and Hackerrank. Ea
 ```
 Fahad Hussain
 ```
+
+#### Note
+Problems may have been updated by the contributors and so some problems in this repo may not match exactly as the problem from the site it was retrieved from. 
