@@ -26,20 +26,20 @@ A list of Algorithm and Data Structure problems from Leetcode and Hackerrank. Ea
 * Hashing
 
 ## How to get started
-- From your terminal
+- From your terminal <br/>
 *Clone this repo*
 ```
  git clone https://github.com/sfahadh/JS_Algorithms-DataStructure.git
  cd JS_Algorithms-DataStructure.git
 ```
 
-- Open this folder in a text editor
+- Open this folder in a text editor <br/>
 *Direct yourself to a folder with a list of problems and choose which problems you want to work on*
 ```
 cd LeetCode/Easy
 ```
 
-*Solve one of the problems in the problem.js file and then run the following command*
+*Solve one of the problems in the problem.js file and then run the following command* <br/>
 Example: name_of_problem/test_file
 ```
 jest Depth-of-Array/problem.test.js
