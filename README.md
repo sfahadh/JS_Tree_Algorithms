@@ -1,7 +1,7 @@
 # Algorithms
 A list of Algorithm and Data Structure problems from Leetcode and Hackerrank. Each problem includes a description of a problem, a link in which it was found, solutions to the problem, and test cases. 
 
-### Data Structure Topics	
+## Data Structure Topics	
 * Array
     - Matrix
 * Stack
@@ -13,7 +13,7 @@ A list of Algorithm and Data Structure problems from Leetcode and Hackerrank. Ea
     - Binary Search Tree (BST) 
     - Binary Tree
 
-### Algorithm Topics
+## Algorithm Topics
 * Binary Search
 * Linear Search
 * Depth First Search (DFS)
@@ -25,7 +25,27 @@ A list of Algorithm and Data Structure problems from Leetcode and Hackerrank. Ea
 * Recursion
 * Hashing
 
+## How to get started
+- From your terminal
+*Clone this repo*
+```
+ git clone https://github.com/sfahadh/JS_Algorithms-DataStructure.git
+ cd JS_Algorithms-DataStructure.git
+```
 
+- Open this folder in a text editor
+*Direct yourself to a folder with a list of problems and choose which problems you want to work on*
+```
+cd LeetCode/Easy
+```
+
+*Solve one of the problems in the problem.js file and then run the following command*
+Example: name_of_problem/test_file
+```
+jest Depth-of-Array/problem.test.js
+```
+
+If you passed all test cases, Congratulations! You can move on to the next problem set, if not try again.
 
 
 **Authors**
@@ -33,5 +53,5 @@ A list of Algorithm and Data Structure problems from Leetcode and Hackerrank. Ea
 Fahad Hussain
 ```
 
-#### Note
+### Note
 Problems may have been updated by the contributors and so some problems in this repo may not match exactly as the problem from the site it was retrieved from. 
