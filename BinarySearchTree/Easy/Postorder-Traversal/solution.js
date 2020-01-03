@@ -4,7 +4,7 @@ const postOrder = root => {
         if (root === null) return [];
         if (root.left) recurse(root.left);
         if (root.right) recurse(root.right);
-        array.push(root.data)
+        array.push(root.data);
     }
     recurse(root);
     return array;

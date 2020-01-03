@@ -3,6 +3,7 @@ Complete the following pre-order BST traversal problem below. The input is the w
 */
 
 const preOrder = root => {
+      
 }
 
 module.exports = preOrder;
