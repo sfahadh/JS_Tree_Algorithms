@@ -1,5 +1,5 @@
 # Algorithms & Data Structures
-A list of Algorithm and Data Structure problems from Leetcode and Hackerrank. Each problem includes a description of a problem, a link in which it was found, solutions to the problem, and test cases. 
+A list of Algorithm and Data Structure problems created from scratch as well as some taken from Leetcode and Hackerrank (Links are provided for coding problems taken from those sites). Each problem includes a description of a problem, a link in which it was found, solutions to the problem, and test cases. 
 
 ## Data Structure Topics	
 * Array
@@ -52,6 +52,13 @@ If you passed all test cases, Congratulations! You can move on to the next probl
 ```
 Fahad Hussain
 ```
+
+### Credits
+Resources that I've looked into and used that have helped me build this repository are:
+- The Coding Interview Bootcamp: Algorithms + Data Structure by Stephen Grinder
+- Learning Data Structures in JavaScript from Scratch by Eric Traub
+- Leetcode.com
+- Hackerrank.com
 
 ### Note
 Problems may have been updated by the contributors and so some problems in this repo may not match exactly as the problem from the site it was retrieved from. 
