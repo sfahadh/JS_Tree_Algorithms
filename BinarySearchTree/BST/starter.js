@@ -13,10 +13,8 @@ Node.prototype.insert = function(data) {
 }
 
 const node = new Node(10);
-node.insert(12);
-node.insert(8);
 node.insert(15);
-node.insert(1);
+node.insert(6);
 console.log(node)
 
 module.exports = Node;

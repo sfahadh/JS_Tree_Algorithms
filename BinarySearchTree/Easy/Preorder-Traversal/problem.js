@@ -4,11 +4,18 @@ Complete the preOrder function in your editor below, which has  parameter: a poi
 Link: https://www.hackerrank.com/challenges/tree-preorder-traversal/problem
 */
 
-const preOrder = () => {
-    console.log(this.value + " ");
-    if (root.left) preOrder(root.left);
-    if (root.right) preOrder(root.right);
+const preOrder = root => {
+    const array = [];
+    const recurse = root => {
+        array.push(root.data);
+        if (root.left) recurse(root.left);
+        if (root.right) recurse(root.right);
+    }
+    recurse(root);
+    return array;
 }
+
+module.exports = preOrder;
 
 /*
 Sample Input: 
@@ -23,5 +30,5 @@ Sample Input:
          4  
 
 Sample Output:
-1 2 5 3 4 6 
+[1, 2, 5, 3, 4, 6] 
 */
