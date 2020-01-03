@@ -4,24 +4,11 @@ Complete the preOrder function in your editor below, which has  parameter: a poi
 Link: https://www.hackerrank.com/challenges/tree-preorder-traversal/problem
 */
 
-function Node(value) {
-    this.value = value;
-    this.right = null;
-    this.left = null; 
-}
-
-function BST() {
-    this.root = null;
-}
-
-Node.prototype.preOrder = function() {
+const preOrder = () => {
     console.log(this.value + " ");
     if (root.left) preOrder(root.left);
     if (root.right) preOrder(root.right);
 }
-
-const node1 = new Node(5);
-node1.preOrder();
 
 /*
 Sample Input: 
