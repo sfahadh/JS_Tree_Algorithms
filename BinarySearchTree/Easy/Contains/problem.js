@@ -20,8 +20,8 @@ module.exports = contains;
 
 /*
 
-  		  7
-  	    /	\
+  		    7
+  	    /	  \
        5     13
      /  \   /  \
     2    6 9   15
