@@ -1,8 +1,8 @@
 /*
-Complete the following BST contains problem below. You must check if the tree contains the input node. The return value must be either true or false.
+Complete the following BST contains problem below. There are 2 inputs, the tree and the node you must find in that tree. if the node cannot be found in the tree, return false, otherwise return true.
 */
 
-const contains = node => {
+const contains = (tree, node) => {
 
 }
 
@@ -16,6 +16,6 @@ const contains = node => {
    /
   1 
 
-contains(6) -> return true  
-contains(12) -> return false
+contains(tree, 6) -> return true  
+contains(tree, 12) -> return false
 */
