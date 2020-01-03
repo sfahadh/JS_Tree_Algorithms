@@ -1,7 +1,5 @@
 /*
-Complete the preOrder function in your editor below, which has  parameter: a pointer to the root of a binary tree. It must print the values in the tree's preorder traversal as a single line of space-separated values.
-
-Link: https://www.hackerrank.com/challenges/tree-preorder-traversal/problem
+Complete the following pre-order BST traversal problem below. The input is the whole tree structure starting from the root. The returned result must be an array.
 */
 
 const preOrder = root => {
@@ -19,16 +17,14 @@ module.exports = preOrder;
 
 /*
 Sample Input: 
-     1
-      \
-       2
-        \
-         5
+     24
+    /  \
+   17  31    
+         \ 
+         34
         /  \
-       3    6
-        \
-         4  
+       32  39
 
 Sample Output:
-[1, 2, 5, 3, 4, 6] 
+[24, 17, 31, 34, 32, 39] 
 */
