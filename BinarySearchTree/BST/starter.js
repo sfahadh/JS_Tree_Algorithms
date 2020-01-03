@@ -12,9 +12,4 @@ Node.prototype.insert = function(data) {
     if (data === this.data) console.log(`Cannot insert ${data} into BST`);
 }
 
-const node = new Node(10);
-node.insert(15);
-node.insert(6);
-console.log(node)
-
 module.exports = Node;
