@@ -7,11 +7,23 @@ test("Return an array of values - [6, 10, 15]", () => {
     node.insert(15);
     expect(inOrder(node)).toEqual([6, 10, 15]);
 });
+/*
+
+     10
+    /  \
+   6   15  
+
+*/
 
 test("Return an array of value - [33]", () => {
     const node = new Node(33);
     expect(inOrder(node)).toEqual([33]);
 });
+/*
+
+    33  
+    
+*/
 
 test("Return an array of values - [17, 24, 31, 32, 34, 39]", () => {
     const node = new Node(24);
@@ -23,6 +35,17 @@ test("Return an array of values - [17, 24, 31, 32, 34, 39]", () => {
     node.insert(39);
     expect(inOrder(node)).toEqual([17, 24, 31, 32, 34, 39]);
 });
+/*
+
+     24
+    /  \
+   17  31    
+         \ 
+         34
+        /  \
+       32  39
+
+*/
 
 test("Return an empty array", () => {
     expect(inOrder(null)).toEqual([]);
@@ -40,3 +63,14 @@ test("Return an array of values - [0, 3, 5, 13, 18, 33, 65]", () => {
     node.insert(33);
     expect(inOrder(node)).toEqual([0, 3, 5, 13, 18, 33, 65]);
 });
+/*
+
+         18
+       /    \
+      5     65    
+    /  \   /   
+   3   13 33 
+  /         
+0          
+
+*/
