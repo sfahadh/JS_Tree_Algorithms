@@ -3,14 +3,7 @@ Complete the following post-order BST traversal problem below. The input is the 
 */
 
 const postOrder = root => {
-    const array = [];
-    const recurse = root => {
-        if (root.left) recurse(root.left);
-        if (root.right) recurse(root.right);
-        array.push(root.data)
-    }
-    recurse(root);
-    return array;
+
 }
 
 module.exports = postOrder;
