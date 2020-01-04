@@ -2,10 +2,10 @@ const Node = require("../../BST/starter");
 const postOrder = require("./problem");
 
 test("Return an array of values - [10, 6, 15]", () => {
-    const node = new Node(10);
-    node.insert(6);
-    node.insert(15);
-    expect(postOrder(node)).toEqual([6, 15, 10]);
+    const tree = new Node(10);
+    tree.insert(6);
+    tree.insert(15);
+    expect(postOrder(tree)).toEqual([6, 15, 10]);
 });
 /*
 
@@ -16,8 +16,8 @@ test("Return an array of values - [10, 6, 15]", () => {
 */
 
 test("Return an array of value - [33]", () => {
-    const node = new Node(33);
-    expect(postOrder(node)).toEqual([33]);
+    const tree = new Node(33);
+    expect(postOrder(tree)).toEqual([33]);
 });
 /*
 
@@ -26,14 +26,14 @@ test("Return an array of value - [33]", () => {
 */
 
 test("Return an array of values - [17, 32, 39, 34, 31, 24]", () => {
-    const node = new Node(24);
-    node.insert(24);
-    node.insert(17);
-    node.insert(31);
-    node.insert(34);
-    node.insert(32);
-    node.insert(39);
-    expect(postOrder(node)).toEqual([17, 32, 39, 34, 31, 24]);
+    const tree = new Node(24);
+    tree.insert(24);
+    tree.insert(17);
+    tree.insert(31);
+    tree.insert(34);
+    tree.insert(32);
+    tree.insert(39);
+    expect(postOrder(tree)).toEqual([17, 32, 39, 34, 31, 24]);
 });
 /*
 
@@ -52,16 +52,16 @@ test("Return an empty array", () => {
 });
 
 test("Return an array of values - [0, 3, 13, 5, 33, 65, 18]", () => {
-    const node = new Node(18);
-    node.insert(5);
-    node.insert(13);
-    node.insert(3);
-    node.insert(18);
-    node.insert(65);
-    node.insert(0);
-    node.insert(3);
-    node.insert(33);
-    expect(postOrder(node)).toEqual([0, 3, 13, 5, 33, 65, 18]);
+    const tree = new Node(18);
+    tree.insert(5);
+    tree.insert(13);
+    tree.insert(3);
+    tree.insert(18);
+    tree.insert(65);
+    tree.insert(0);
+    tree.insert(3);
+    tree.insert(33);
+    expect(postOrder(tree)).toEqual([0, 3, 13, 5, 33, 65, 18]);
 });
 /*
 
