@@ -14,8 +14,8 @@ test("The BST should return 4 as number of levels", () => {
 });
 /*
 
-  		  7
-  	    /	\
+  		    7
+  	    /  	\
        5     13
      /  \   /  \
     2    6 9   15

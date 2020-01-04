@@ -9,7 +9,7 @@ function Node(data) {
 */
 
 const levels = root => {
-
+    
 }
 
 module.exports = levels;
