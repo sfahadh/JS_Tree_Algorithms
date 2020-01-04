@@ -8,11 +8,11 @@ function Node(data) {
 }
 */
 
-const size = root => {
+const levels = root => {
 
 }
 
-module.exports = size;
+module.exports = levels;
 
 /*
 
