@@ -15,9 +15,9 @@ test("return tree without the 89 leaf node", () => {
 
 /*
 
-	    84                          84 
+	    84                        84 
 	  /	   \             	      /	  
-    66      89        =>        66
+  66      89       =>      66
 
 */
 
@@ -48,11 +48,11 @@ test("return tree without the 1 leaf node", () => {
 
 /*
 
-		7                           7
-	  /	  \             	      /	  \
-     5     13        =>         5      13
-   /  \   /  \                /   \   /   \  
-  2    6 9   15              2     6 9    15
+		    7                           7
+	    /	  \             	        /	  \
+     5     13        =>          5      13
+   /  \   /  \                 /   \   /  \  
+  2    6 9   15               2     6 9    15
  /
 1 
 
@@ -72,6 +72,7 @@ test("Return original tree", () => {
     tree.insert(39);
     expect(removeLeaf(tree, 18)).toEqual(tree);
 });
+
 /*
 
      24                   24
