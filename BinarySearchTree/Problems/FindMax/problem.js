@@ -8,7 +8,7 @@ function Node(data) {
 }
 */
 
-const findMax = () => {
+const findMax = root => {
 
 }
 
