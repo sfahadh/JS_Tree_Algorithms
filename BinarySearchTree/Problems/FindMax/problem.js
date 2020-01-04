@@ -20,7 +20,7 @@ module.exports = findMax;
 	   /  \             	   
      16    26     
     /  \     \           
-   5   21     15             
+   5   21     35             
 
-Max node = 26
+Max node = 35
 */
