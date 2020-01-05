@@ -69,7 +69,7 @@ test("The range sum value should return 5", () => {
 */
 
 test("The range sum value should return 0", () => {
-  expect(rangeSum(null)).toEqual(0);
+  expect(rangeSum(null, 15, 65)).toEqual(0);
 });
 
 test("The range sum value should return 289", () => {

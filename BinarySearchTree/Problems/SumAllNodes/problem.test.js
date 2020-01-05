@@ -38,9 +38,9 @@ test("The sum of all nodes should return 133", () => {
 
 */
 
-test("The sum of all nodes should return 0", () => {
+test("The sum of all nodes should return 17", () => {
     const tree = new Node(17);
-    expect(sum(tree)).toEqual(0);
+    expect(sum(tree)).toEqual(17);
 });
 /*
 

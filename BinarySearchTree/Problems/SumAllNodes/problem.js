@@ -9,7 +9,6 @@ function Node(data) {
 */
 
 const sum = root => {
-
 }
 
 module.exports = sum;
