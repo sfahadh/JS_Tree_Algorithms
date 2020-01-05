@@ -14,8 +14,8 @@ test("Highest node value in tree is 15", () => {
 });
 /*
 
-  		  7
-  	    /	\
+  		    7 
+  	    /	  \
        5     13
      /  \   /  \
     2    6 9   15
@@ -90,8 +90,8 @@ test("Highest node value in tree is 35", () => {
 });
 /*
 
-	    25                          
-	   /  \             	   
+	      25                          
+	     /  \             	   
      16    26     
     /  \     \           
    5   21     35             
