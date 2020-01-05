@@ -10,11 +10,11 @@ test("The range sum value should return 30", () => {
     tree.insert(9);
     tree.insert(15);
     tree.insert(1);
-    expect(rangeSum(tree, 5, 9)).toEqual(30);
+    expect(rangeSum(tree, 5, 9)).toEqual(27);
 });
 /*
 
-  		  7
+  		    7
   	    /  	\
        5     13
      /  \   /  \
