@@ -1,5 +1,5 @@
 /*
-Complete the following BST size problem below. You must find the number of levels the BST has.
+Complete the following BST level problem below. You must find the number of levels the BST has.
 
 function Node(data) {
     this.data = data;
@@ -9,7 +9,7 @@ function Node(data) {
 */
 
 const levels = root => {
-    
+
 }
 
 module.exports = levels;
@@ -22,5 +22,5 @@ module.exports = levels;
     /  \     \           
    5   21     35   -> level 3         
 
-size of BST = 3
+number of levels = 3
 */
