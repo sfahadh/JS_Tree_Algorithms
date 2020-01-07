@@ -9,6 +9,7 @@ function Node(data) {
 */
 
 const countNodes = root => {
+    
 }
 
 module.exports = countNodes;
