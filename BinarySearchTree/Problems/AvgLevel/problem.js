@@ -8,11 +8,11 @@ function Node(data) {
 }
 */
 
-const rangeSum = root => {
+const avgLevel = root => {
 
 }
 
-module.exports = rangeSum;
+module.exports = avgLevel;
 
 /*
 
