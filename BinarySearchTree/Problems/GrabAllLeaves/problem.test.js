@@ -10,7 +10,7 @@ test("Return an array of [1, 6, 9, 15] leaf nodes", () => {
     tree.insert(9);
     tree.insert(15);
     tree.insert(1);
-    expect(grabAllLeaves(tree)).toEqual([1, 6, 9, 15]);
+    expect(grabAllLeaves(tree)).toEqual([6, 9, 15, 1]);
 });
 /*
 

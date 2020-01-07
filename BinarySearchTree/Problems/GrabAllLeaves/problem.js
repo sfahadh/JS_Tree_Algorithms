@@ -8,6 +8,7 @@ function Node(data) {
 */
 
 const grabAllLeaves = root => {
+
 }
 
 module.exports = grabAllLeaves;
