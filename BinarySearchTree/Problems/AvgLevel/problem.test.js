@@ -48,15 +48,15 @@ test("The average levels of BST are [17]", () => {
 
 */
 
-test("The average levels of BST are [7, 9, 8, 1]", () => {
+test("The average levels of BST are [15, 10, 12]", () => {
     const tree = new Node(15);
     tree.insert(17);
     tree.insert(3);
-    tree.insert(19);
-    tree.insert(8);
+    tree.insert(21);
+    tree.insert(9);
     tree.insert(2);
     tree.insert(16);
-    expect(avgLevel(tree)).toEqual([15, 10, 15]);
+    expect(avgLevel(tree)).toEqual([15, 10, 12]);
 });
 /*
 
@@ -64,7 +64,7 @@ test("The average levels of BST are [7, 9, 8, 1]", () => {
   	 /	  \
     3      17
   /  \    /  \
- 2    8  16   19
+ 2    9  16   21
 
 */
 
