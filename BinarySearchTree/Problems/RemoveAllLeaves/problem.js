@@ -9,8 +9,9 @@ function Node(data) {
 */
 
 const removeAllLeaves = root => {
-   
+
 }
+
 
 module.exports = removeAllLeaves;
 
