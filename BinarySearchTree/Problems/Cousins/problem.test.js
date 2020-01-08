@@ -48,7 +48,7 @@ test("Return false because there is only 1 node", () => {
 
 */
 
-test("Return true because 8 and 21 are not cousins", () => {
+test("Return true because 8 and 21 are cousins", () => {
     const tree = new Node(15);
     tree.insert(17);
     tree.insert(3);
@@ -56,7 +56,7 @@ test("Return true because 8 and 21 are not cousins", () => {
     tree.insert(8);
     tree.insert(2);
     tree.insert(16);
-    expect(cousins(tree, 8, 21)).toEqual(7);
+    expect(cousins(tree, 8, 21)).toEqual(true);
 });
 /*
 
@@ -72,7 +72,7 @@ test("Return false because there is no tree", () => {
   expect(cousins(null)).toEqual(false);
 });
 
-test("Return true because 5 and 35 are not cousins", () => {
+test("Return true because 24 and 45 are cousins", () => {
     const tree = new Node(25);
     tree.insert(16);
     tree.insert(26);
@@ -82,7 +82,8 @@ test("Return true because 5 and 35 are not cousins", () => {
     tree.insert(45);
     tree.insert(47);
     tree.insert(69);
-    expect(cousins(tree, 5, 35)).toEqual(true);
+    tree.insert(24);
+    expect(cousins(tree, 24, 45)).toEqual(true);
 });
 /*
 
@@ -90,12 +91,12 @@ test("Return true because 5 and 35 are not cousins", () => {
 	  /  \             	   
     16    26     
    /  \     \           
-  5   21     35  
-                \
-                 45
-                   \
-                    47
-                      \
-                       69           
+  5    21    35  
+         \     \
+          24    45
+                  \
+                   47
+                     \
+                      69           
 
 */
