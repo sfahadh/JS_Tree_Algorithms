@@ -56,7 +56,7 @@ test("The minimum difference in the tree should return 1", () => {
     tree.insert(8);
     tree.insert(2);
     tree.insert(16);
-    expect(minimumDifference(tree)).toEqual(2);
+    expect(minimumDifference(tree)).toEqual(1);
 });
 /*
 
@@ -74,10 +74,10 @@ test("The minimum difference should return 0 because there's no tree", () => {
 
 test("The minimum difference in the tree should return 5", () => {
     const tree = new Node(25);
-    tree.insert(16);
+    tree.insert(15);
     tree.insert(30);
     tree.insert(5);
-    tree.insert(21);
+    tree.insert(20);
     tree.insert(35);
     tree.insert(45);
     tree.insert(50);
@@ -88,9 +88,9 @@ test("The minimum difference in the tree should return 5", () => {
 
 	   25                          
       /  \             	   
-    16    30     
+    15    30     
    /  \     \           
-  5   21     35  
+  5   20     35  
                 \
                  45
                    \

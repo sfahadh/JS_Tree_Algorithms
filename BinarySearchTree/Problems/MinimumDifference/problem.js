@@ -9,7 +9,7 @@ function Node(data) {
 */
 
 const minimumDifference = root => {
-
+    
 }
 
 module.exports = minimumDifference;
