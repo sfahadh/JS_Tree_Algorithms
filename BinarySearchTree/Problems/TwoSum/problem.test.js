@@ -69,7 +69,7 @@ test("Should return true, there are 2 nodes that adds up to the value", () => {
 */
 
 test("Should return false, there is no tree", () => {
-  expect(sum(null, 10)).toEqual(false);
+  expect(twoSum(null, 10)).toEqual(false);
 });
 
 test("Should return true, there are 2 nodes that adds up to the value", () => {
@@ -86,8 +86,8 @@ test("Should return true, there are 2 nodes that adds up to the value", () => {
 });
 /*
 
-	    25                          
-	   /  \             	   
+	   25                          
+      /  \             	   
     16    26     
    /  \     \           
   5   21     35  
