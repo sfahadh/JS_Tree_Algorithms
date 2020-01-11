@@ -9,7 +9,8 @@ function Node(data) {
 */
 
 const sumLeftLeaves = root => {
-}
+    
+};
 
 module.exports = sumLeftLeaves;
 
