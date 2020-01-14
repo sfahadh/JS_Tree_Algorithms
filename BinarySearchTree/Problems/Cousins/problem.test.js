@@ -14,7 +14,7 @@ test("Return false because 1 and 6 are not cousins", () => {
 });
 /*
 
-  		  7
+  		    7
   	    /  	\
        5     13
      /  \   /  \
@@ -87,8 +87,8 @@ test("Return true because 24 and 45 are cousins", () => {
 });
 /*
 
-	   25                          
-	  /  \             	   
+	     25                          
+	    /  \             	   
     16    26     
    /  \     \           
   5    21    35  
