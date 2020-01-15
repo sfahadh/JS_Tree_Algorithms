@@ -14,7 +14,7 @@ test("From the root of the BST to the node, the height is 2", () => {
 });
 /*
 
-  		  7
+  		    7
   	    /  	\
        5     13
      /  \   /  \
