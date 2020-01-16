@@ -8,7 +8,7 @@ function Node(data) {
 }
 */
 
-const sameParent = root => {
+const sameParent = (root, n1, n2) => {
     
 };
 
