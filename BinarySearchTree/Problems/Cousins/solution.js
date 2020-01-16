@@ -1,34 +1,20 @@
 const cousins = (root, n1, n2) => {
-    if (!root || !root.left || !root.right) return false;
-    const left = bfs(root.left);
-    const right = bfs(root.right);
-
-    for (let i = 0; i < left.length; i++) {
-        if (left[i] && right[i]) {
-            if (left[i].includes(n1) && right[i].includes(n2) || 
-                left[i].includes(n2) && right[i].includes(n1)) {
-                    return true;
-            }
-        } else {
-            return false;
-        }
-    }
-    return false;
+    if (!root || !root.left && !root.right) return false;
+    return !sameParent(root, n1, n2) && findHeight(root, n1) === findHeight(root, n2);
 }
 
-const bfs = root => {
-    const results = [[]]
-    const queue = [root, "level"];
+const findHeight = (root, node, height = 0) => {
+    if (!root) return 0
+    if (root.data === node) return height;
+    return findHeight(root.left, node, height + 1) || 
+        findHeight(root.right, node, height + 1)
+}
 
-    while (queue.length > 1) {
-        const branch = queue.shift();
-        results[results.length - 1].push(branch.data);
-        if (branch.left && branch !== "level") queue.push(branch.left);
-        if (branch.right && branch !== "level") queue.push(branch.right);
-        if (!queue.includes("level")) {
-            queue.push("level")
-            results.push([])
-        }
+const sameParent = (root, n1, n2) => {
+    if (!root) return false;
+    if (root.left && root.right) {
+        if (root.left.data === n1 && root.right.data === n2 ||
+        root.left.data === n2 && root.right.data === n1) return true;
     }
-    return results;
+    return sameParent(root.left, n1, n2) || sameParent(root.right, n1, n2);
 }
