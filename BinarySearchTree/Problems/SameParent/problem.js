@@ -9,8 +9,8 @@ function Node(data) {
 */
 
 const sameParent = (root, n1, n2) => {
-    
-};
+      
+}
 
 module.exports = sameParent;
 
