@@ -86,8 +86,8 @@ test("From the root of the BST to the node, the height is 5", () => {
 });
 /*
 
-	    25                          
-	   /  \             	   
+	      25                          
+	    /   \             	   
      16    26     
     /  \     \           
    5   21     35  
@@ -98,4 +98,21 @@ test("From the root of the BST to the node, the height is 5", () => {
                       \
                        69           
 
+*/
+
+test("From the root of the BST to the node, the height is 2", () => {
+  const tree = new Node(3);
+  tree.insert(2);
+  tree.insert(4);
+  tree.insert(1);
+  tree.insert(5);
+  expect(findHeight(tree, 1)).toEqual(2);
+});
+/*
+
+        3
+      /	  \
+     2     4
+    /       \
+   1         5
 */

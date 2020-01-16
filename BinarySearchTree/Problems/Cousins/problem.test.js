@@ -1,7 +1,7 @@
 const Node = require("../../BST/starter");
 const cousins = require("./problem");
 
-test("Return false because 1 and 6 are not cousins", () => {
+test("Return false because 5 and 13 are not cousins", () => {
     const tree = new Node(7);
     tree.insert(5);
     tree.insert(13);
@@ -10,7 +10,7 @@ test("Return false because 1 and 6 are not cousins", () => {
     tree.insert(9);
     tree.insert(15);
     tree.insert(1);
-    expect(cousins(tree, 1, 6)).toEqual(false);
+    expect(cousins(tree, 5, 13)).toEqual(false);
 });
 /*
 
