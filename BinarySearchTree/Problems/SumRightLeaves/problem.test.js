@@ -1,7 +1,7 @@
 const Node = require("../../BST/starter");
-const sumLeftLeaves = require("./problem");
+const sumRightLeaves = require("./problem");
 
-test("The sum of all left leaves should return 10", () => {
+test("The sum of all right leaves should return 21", () => {
     const tree = new Node(7);
     tree.insert(5);
     tree.insert(13);
@@ -10,11 +10,11 @@ test("The sum of all left leaves should return 10", () => {
     tree.insert(9);
     tree.insert(15);
     tree.insert(1);
-    expect(sumLeftLeaves(tree)).toEqual(10);
+    expect(sumRightLeaves(tree)).toEqual(21);
 });
 /*
 
-  		    7
+  		  7
   	    /  	\
        5     13
      /  \   /  \
@@ -24,11 +24,11 @@ test("The sum of all left leaves should return 10", () => {
 
 */
 
-test("The sum of all left leaves should return 25", () => {
+test("The sum of all right leaves should return 65", () => {
     const tree = new Node(43);
     tree.insert(25);
     tree.insert(65);
-    expect(sumLeftLeaves(tree)).toEqual(25);
+    expect(sumRightLeaves(tree)).toEqual(65);
 });
 /*
 
@@ -40,7 +40,7 @@ test("The sum of all left leaves should return 25", () => {
 
 test("There is only 1 node, should return 0", () => {
     const tree = new Node(17);
-    expect(sumLeftLeaves(tree)).toEqual(0);
+    expect(sumRightLeaves(tree)).toEqual(0);
 });
 /*
 
@@ -48,7 +48,7 @@ test("There is only 1 node, should return 0", () => {
 
 */
 
-test("The sum of all left leaves should return 18", () => {
+test("The sum of all right leaves should return 29", () => {
     const tree = new Node(15);
     tree.insert(17);
     tree.insert(3);
@@ -56,7 +56,7 @@ test("The sum of all left leaves should return 18", () => {
     tree.insert(8);
     tree.insert(2);
     tree.insert(16);
-    expect(sumLeftLeaves(tree)).toEqual(18);
+    expect(sumRightLeaves(tree)).toEqual(29);
 });
 /*
 
@@ -69,10 +69,10 @@ test("The sum of all left leaves should return 18", () => {
 */
 
 test("There is no tree, should return 0", () => {
-  expect(sumLeftLeaves(null)).toEqual(0);
+  expect(sumRightLeaves(null)).toEqual(0);
 });
 
-test("The sum of all left leaves should return 5", () => {
+test("The sum of all right leaves should return 90", () => {
     const tree = new Node(25);
     tree.insert(16);
     tree.insert(26);
@@ -82,7 +82,7 @@ test("The sum of all left leaves should return 5", () => {
     tree.insert(45);
     tree.insert(47);
     tree.insert(69);
-    expect(sumLeftLeaves(tree)).toEqual(5);
+    expect(sumRightLeaves(tree)).toEqual(90);
 });
 /*
 
