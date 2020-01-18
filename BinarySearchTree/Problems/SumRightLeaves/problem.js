@@ -9,15 +9,15 @@ function Node(data) {
 */
 
 const sumRightLeaves = root => {
-    
-};
+
+}
 
 module.exports = sumRightLeaves;
 
 /*
 
 	     25                   
-	   /    \             	   
+	   /    \           	   
      16      26      
     /  \    /  \           
    5   21  24   35      
