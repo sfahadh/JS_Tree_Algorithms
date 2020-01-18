@@ -1,5 +1,5 @@
 /*
-Complete the following BST sum left leaves problem below. There is only 1 input, which is the root of the BST and the goal is to add up all the left leaves and return the total.
+Complete the following BST sum right leaves problem below. There is only 1 input, which is the root of the BST and the goal is to add up all the right leaves and return the total.
 
 function Node(data) {
     this.data = data;
@@ -8,11 +8,11 @@ function Node(data) {
 }
 */
 
-const sumLeftLeaves = root => {
+const sumRightLeaves = root => {
     
 };
 
-module.exports = sumLeftLeaves;
+module.exports = sumRightLeaves;
 
 /*
 
@@ -22,5 +22,5 @@ module.exports = sumLeftLeaves;
     /  \    /  \           
    5   21  24   35      
 
-5 + 24 = 29
+21 + 35 = 56
 */
