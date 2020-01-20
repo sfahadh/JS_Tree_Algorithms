@@ -1,5 +1,5 @@
 /*
-Complete the following BST single parents problem below. There is only 1 input, which is the root of the BST. The goal of this problem is to return all the nodes that only has a single parent.
+Complete the following BST single parents problem below. There is only 1 input, which is the root of the BST. The goal of this problem is to return the number of nodes that only has a single parent.
 
 function Node(data) {
     this.data = data;
@@ -22,5 +22,5 @@ module.exports = singleParent;
     /  \     \           
    5   21     35             
 
-Output; [35];
+Output: 1
 */
