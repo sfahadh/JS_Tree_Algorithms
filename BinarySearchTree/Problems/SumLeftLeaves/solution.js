@@ -12,4 +12,4 @@ const sumLeftLeaves = root => {
         if (root.right) recurse(root.right);
     })(root);
     return leftLeaves.length ? leftLeaves.reduce((acc, curr) => acc + curr) : 0;
-};
+}

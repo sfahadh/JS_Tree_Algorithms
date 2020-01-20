@@ -16,8 +16,8 @@ module.exports = sameParent;
 
 /*
 
-	     25                   
-	   /    \             	   
+	       25                   
+	     /    \             	   
      16      26      
     /  \    /  \           
    5   21  24   35      
