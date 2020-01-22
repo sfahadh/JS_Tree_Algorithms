@@ -9,7 +9,7 @@ function Node(data) {
 */
 
 const dualParent = root => {
-    
+
 }
 
 module.exports = dualParent;

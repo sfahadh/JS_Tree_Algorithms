@@ -14,7 +14,7 @@ test("There are 3 parents with a left and right child", () => {
 });
 /*
 
-  		  7
+  		    7
   	    /  	\
        5     13
      /  \   /  \
