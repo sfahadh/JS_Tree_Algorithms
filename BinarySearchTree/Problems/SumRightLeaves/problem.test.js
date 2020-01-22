@@ -14,7 +14,7 @@ test("The sum of all right leaves should return 21", () => {
 });
 /*
 
-  		  7
+  		    7
   	    /  	\
        5     13
      /  \   /  \

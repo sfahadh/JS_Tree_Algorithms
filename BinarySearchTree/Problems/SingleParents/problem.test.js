@@ -14,11 +14,11 @@ test("There is only 1 node with a single parent", () => {
 });
 /*
 
-  		  7
+  		    7
   	    /  	\
        5     13
      /  \   /  \
-    2    6 9   15
+    2    6 9    15
    /
   1 
 

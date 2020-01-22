@@ -8,7 +8,7 @@ function Node(data) {
 }
 */
 
-const contains = (tree, node) => {
+const contains = (root, node) => {
 
 }
 
