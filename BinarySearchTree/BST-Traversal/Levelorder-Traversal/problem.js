@@ -1,5 +1,7 @@
+// ? In Visual Studo Code, install "Better Comments" to see colorful effects of comments
+
 /*
-Complete the following level-order BST traversal problem below. The input is the whole tree structure starting from the root. The returned result must be an array.
+TODO: Complete the following level-order BST traversal problem below. The input is the whole tree structure starting from the root. The returned result must be an array. For level-order traversal, you must grab all the nodes in order from left to right on each level of the tree.
 
 function Node(data) {
     this.data = data;
@@ -15,6 +17,7 @@ const levelOrder = root => {
 module.exports = levelOrder;
 
 /*
+! Test Case:
 Sample Input: 
      24
     /  \
@@ -24,6 +27,5 @@ Sample Input:
         /  \
        32  39
 
-Sample Output:
-[24, 17, 31, 34, 32, 39] 
+Sample Output: [24, 17, 31, 34, 32, 39] 
 */

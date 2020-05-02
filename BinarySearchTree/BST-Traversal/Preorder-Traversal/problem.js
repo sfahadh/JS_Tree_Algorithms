@@ -1,5 +1,12 @@
+// ? In Visual Studo Code, install "Better Comments" to see colorful effects of comments
+
+/* // Uncomment the imports below if you plan on using them
+ * const BST = require("../../Starter/BST");
+ * const Node = require("../../Starter/node");
+ */
+
 /*
-Complete the following pre-order BST traversal problem below. The input is the whole tree structure starting from the root. The returned result must be an array.
+TODO: Complete the following pre-order BST traversal problem below. The input is the whole tree structure starting from the root. The returned result must be an array. For pre-order traversal, you must grab the current parent's node data, then traverse towards the left subtree, and then traverse towards the right subtree from the parent while grabbing the node's data from traversing those paths.
 
 function Node(data) {
     this.data = data;
@@ -9,12 +16,13 @@ function Node(data) {
 */
 
 const preOrder = root => {
-      
+
 }
 
 module.exports = preOrder;
 
 /*
+! Test Case: 
 Sample Input: 
      24
     /  \
@@ -24,6 +32,5 @@ Sample Input:
         /  \
        32  39
 
-Sample Output:
-[24, 17, 31, 34, 32, 39] 
+Sample Output: [24, 17, 31, 34, 32, 39] 
 */
