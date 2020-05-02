@@ -8,6 +8,10 @@
 /*
 TODO: Complete the following pre-order BST traversal problem below. The input is the whole tree structure starting from the root. The returned result must be an array. For pre-order traversal, you must grab the current parent's node data, then traverse towards the left subtree, and then traverse towards the right subtree from the parent while grabbing the node's data from traversing those paths.
 
+function BST() {
+    this.root = null;
+}
+
 function Node(data) {
     this.data = data;
     this.left = null; 

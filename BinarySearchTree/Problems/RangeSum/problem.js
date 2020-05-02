@@ -1,6 +1,10 @@
 /*
 Complete the following BST range sum problem below. There are 3 inputs, the tree, the lower range value, and the higher range value. You must find the values of the tree nodes that are in between the lower range and higher range and return the sum of those values. 
 
+function BST() {
+    this.root = null;
+}
+
 function Node(data) {
     this.data = data;
     this.left = null; 

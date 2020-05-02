@@ -1,6 +1,10 @@
 /*
 Complete the following BST minimum difference problem below. There is only one input, which is the root of the BST. The goal is to find the lowest output from subtracting 2 nodes.  
 
+function BST() {
+    this.root = null;
+}
+
 function Node(data) {
     this.data = data;
     this.left = null; 
@@ -9,7 +13,7 @@ function Node(data) {
 */
 
 const minimumDifference = root => {
-    
+
 }
 
 module.exports = minimumDifference;

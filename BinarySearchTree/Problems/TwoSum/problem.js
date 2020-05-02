@@ -1,6 +1,10 @@
 /*
 Complete the following BST two sum problem below. There are 2 inputs, the root of the BST, and the value in which 2 nodes should add up to. If the two nodes in the BST adds up to the input value, then return true, otherwise return false.
 
+function BST() {
+    this.root = null;
+}
+
 function Node(data) {
     this.data = data;
     this.left = null; 

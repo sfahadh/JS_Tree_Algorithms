@@ -1,6 +1,10 @@
 /*
 Complete the following BST find min node problem below. You must traverse down the tree and find the node with the lowest value.
 
+function BST() {
+    this.root = null;
+}
+
 function Node(data) {
     this.data = data;
     this.left = null; 

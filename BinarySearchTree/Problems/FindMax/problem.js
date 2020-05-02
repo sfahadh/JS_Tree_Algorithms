@@ -1,6 +1,10 @@
 /*
 Complete the following BST find max node problem below. You must traverse down the tree and find the node with the highest value.
 
+function BST() {
+    this.root = null;
+}
+
 function Node(data) {
     this.data = data;
     this.left = null; 

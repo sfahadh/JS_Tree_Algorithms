@@ -1,6 +1,10 @@
 /*
 Complete the following BST dual parents problem below. There is only 1 input, which is the root of the BST. The goal of this problem is to return the number of parents that have both a left and right child node.
 
+function BST() {
+    this.root = null;
+}
+
 function Node(data) {
     this.data = data;
     this.left = null; 

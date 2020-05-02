@@ -1,6 +1,10 @@
 /*
 Complete the following BST find height problem below. There are 2 inputs, the root of the BST and the node. You must return the height of the node from the root of the BST.
 
+function BST() {
+    this.root = null;
+}
+
 function Node(data) {
     this.data = data;
     this.left = null; 

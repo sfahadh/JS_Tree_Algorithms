@@ -1,5 +1,10 @@
 /*
 Complete the following BST grab all leaves problem below. There is only 1 input and the goal is to return all the leaf nodes from the BST.
+
+function BST() {
+    this.root = null;
+}
+
 function Node(data) {
     this.data = data;
     this.left = null; 

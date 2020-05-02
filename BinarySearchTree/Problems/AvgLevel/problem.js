@@ -1,6 +1,10 @@
 /*
 Complete the following BST average level problem below. There is only one input, the BST. The goal is to return an array of the average of each levels of the BST. 
 
+function BST() {
+    this.root = null;
+}
+
 function Node(data) {
     this.data = data;
     this.left = null; 

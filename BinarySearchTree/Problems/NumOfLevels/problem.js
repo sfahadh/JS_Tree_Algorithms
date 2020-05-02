@@ -1,6 +1,10 @@
 /*
 Complete the following BST level problem below. You must find the number of levels the BST has.
 
+function BST() {
+    this.root = null;
+}
+
 function Node(data) {
     this.data = data;
     this.left = null; 

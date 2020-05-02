@@ -3,6 +3,10 @@
 /*
 TODO: Complete the following level-order BST traversal problem below. The input is the whole tree structure starting from the root. The returned result must be an array. For level-order traversal, you must grab all the nodes in order from left to right on each level of the tree.
 
+function BST() {
+    this.root = null;
+}
+
 function Node(data) {
     this.data = data;
     this.left = null; 
