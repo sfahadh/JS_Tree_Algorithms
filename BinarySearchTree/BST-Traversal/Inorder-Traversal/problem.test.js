@@ -1,8 +1,10 @@
-const Node = require("../../BST/starter");
+const BST = require("../../Starter/BST")
+const Node = require("../../Starter/node");
 const inOrder = require("./problem");
 
 test("Return an array of values - [6, 10, 15]", () => {
-    const tree = new Node(10);
+    const tree = new BST();
+    tree.insert(10);
     tree.insert(6);
     tree.insert(15);
     expect(inOrder(tree)).toEqual([6, 10, 15]);

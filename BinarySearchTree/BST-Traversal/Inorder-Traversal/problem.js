@@ -20,7 +20,8 @@ function Node(data) {
 */
 
 const inOrder = root => {
-
+    console.log(root);
+    return root;
 }
 
 module.exports = inOrder;
