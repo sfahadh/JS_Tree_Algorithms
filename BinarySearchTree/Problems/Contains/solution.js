@@ -1,7 +1,7 @@
 const contains = (tree, node) => {
-    if (!tree) return false;
-    if (node === tree.data) return true;
-    if (node < tree.data) return contains(tree.left, node);
-    if (node > tree.data) return contains(tree.right, node);
+    if (!root) return false;
+    if (node === root.data) return true;
+    if (node < root.data) return contains(root.left, node);
+    if (node > root.data) return contains(root.right, node);
     return false;
 }
