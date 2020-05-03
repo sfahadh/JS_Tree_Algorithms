@@ -2,7 +2,7 @@
 
 /* // Uncomment the imports below if you plan on using them
  * const BST = require("../../Starter/BST");
- * const Node = require("../../Starter/node");
+ * const Node = require("../../Starter/Node");
  */
 
 /*
@@ -20,8 +20,7 @@ function Node(data) {
 */
 
 const inOrder = root => {
-    console.log(root);
-    return root;
+
 }
 
 module.exports = inOrder;
