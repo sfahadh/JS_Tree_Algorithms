@@ -26,7 +26,8 @@ const avgLevel = root => {
 module.exports = avgLevel;
 
 /*
-
+! Test Case:
+Sample Input:
 	    25                   
 	   /  \             	   
      16    26      
