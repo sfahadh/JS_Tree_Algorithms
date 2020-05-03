@@ -1,6 +1,7 @@
 const BST = require("../../Starter/BST");
 const levelOrder = require("./problem");
 
+// Test Case 1:
 test("Return an array of values - [10, 6, 15]", () => {
     const tree = new BST();
     tree.insert(10);
@@ -16,6 +17,7 @@ test("Return an array of values - [10, 6, 15]", () => {
 
 */
 
+// Test Case 2:
 test("Return an array of value - [33]", () => {
     const tree = new BST();
     tree.insert(33);
@@ -27,6 +29,7 @@ test("Return an array of value - [33]", () => {
     
 */
 
+// Test Case 3:
 test("Return an array of values - [24, 17, 31, 34, 32, 39]", () => {
     const tree = new BST();
     tree.insert(24);
@@ -49,10 +52,12 @@ test("Return an array of values - [24, 17, 31, 34, 32, 39]", () => {
 
 */
 
+// Test Case 4:
 test("Return an empty array", () => {
     expect(levelOrder(null)).toEqual([]);
 });
 
+// Test Case 5:
 test("Return an array of values - [18, 5, 65, 3, 13, 33, 0]", () => {
     const tree = new BST();
     tree.insert(18);

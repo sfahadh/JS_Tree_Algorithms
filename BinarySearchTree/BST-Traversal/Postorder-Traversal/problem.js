@@ -2,7 +2,7 @@
 
 /* // Uncomment the imports below if you plan on using them
  * const BST = require("../../Starter/BST");
- * const Node = require("../../Starter/node");
+ * const Node = require("../../Starter/Node");
  */
 
 /*
