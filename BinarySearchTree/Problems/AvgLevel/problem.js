@@ -1,5 +1,12 @@
+// ? In Visual Studo Code, install "Better Comments" to see colorful effects of comments
+
+/* // Uncomment the imports below if you plan on using them
+ * const BST = require("../../Starter/BST");
+ * const Node = require("../../Starter/Node");
+ */
+
 /*
-Complete the following BST average level problem below. There is only one input, the BST. The goal is to return an array of the average of each levels of the BST. 
+TODO: Complete the following BST average level problem below. There is only one input, the BST. The goal of this problem is to add up the nodes on each level of the BST, starting with the first level and find the average of those node datas. Traverse to all other levels of the BST, adding up the nodes and calculating the averages for each. Capture the average of each levels into an array and return it.
 
 function BST() {
     this.root = null;
@@ -24,10 +31,11 @@ module.exports = avgLevel;
 	   /  \             	   
      16    26      
     /  \     \           
-   5   21     34         
+   5   27     34         
 
-Output: [25, 21, 20]
-25
-(26 + 16) / 2 = 21
-(5 + 26 + 34) / 3 = 21
+Output: [25, 26, 22]
+
+Level 1: 25
+Level 2: (26 + 16) / 2 = 26
+Level 3: (5 + 27 + 34) / 3 = 22
 */
