@@ -1,4 +1,4 @@
-const Node = require("../Starter/node");
+const Node = require("./Node");
 
 function BST() {
     this.root = null;
@@ -7,14 +7,25 @@ function BST() {
 BST.prototype.insert = function (data) {
     if (!this.root) return this.root = new Node(data);
 
-    if (data < this.root.data) {
-        if (this.root.left) return this.root.left.insert(data);
-        else return this.root.left = new Node(data);
-    }
+    let curr = this.root;
+    while (curr) {
+        if (curr.data === data) return;
 
-    if (data > this.root.data) {
-        if (this.root.right) return this.root.right.insert(data);
-        else return this.root.right = new Node(data);
+        if (data < curr.data) {
+            if (curr.left) curr = curr.left;
+            else {
+                curr.left = new Node(data);
+                break;
+            }
+        }
+
+        if (data > curr.data) {
+            if (curr.right) curr = curr.right;
+            else {
+                curr.right = new Node(data);
+                break;
+            }
+        }
     }
 }
 

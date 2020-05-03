@@ -18,7 +18,7 @@ test("Return an array of values - [6, 10, 15]", () => {
 */
 
 test("Return an array of value - [33]", () => {
-    const tree = new Node(33);
+    const tree = new BST(33);
     expect(inOrder(tree)).toEqual([33]);
 });
 /*
@@ -28,13 +28,13 @@ test("Return an array of value - [33]", () => {
 */
 
 test("Return an array of values - [17, 24, 31, 32, 34, 39]", () => {
-    const tree = new Node(24);
+    const tree = new BST();
     tree.insert(24);
     tree.insert(17);
     tree.insert(31);
     tree.insert(34);
-    tree.insert(32);
-    tree.insert(39);
+    // tree.insert(32);
+    // tree.insert(39);
     expect(inOrder(tree)).toEqual([17, 24, 31, 32, 34, 39]);
 });
 /*
@@ -54,7 +54,7 @@ test("Return an empty array", () => {
 });
 
 test("Return an array of values - [0, 3, 5, 13, 18, 33, 65]", () => {
-    const tree = new Node(18);
+    const tree = new BST(18);
     tree.insert(5);
     tree.insert(13);
     tree.insert(3);
