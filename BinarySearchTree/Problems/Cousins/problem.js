@@ -6,7 +6,7 @@
  */
 
 /*
-TODO: Complete the following BST cousins problem below. There are 3 inputs, the root, and the 2 nodes that may or many not be located in the BST. If however, the 2 nodes are located within the BST, then the goal is to check whether the 2 nodes are cousins or not. If the 2 nodes are cousins, return true, otherwise return false. Cousins are identified as having the same grandparents but different parents.
+TODO: Complete the following BST cousins problem below. There are 3 inputs, the root, and the 2 nodes that may or many not be located in the BST. If however, the 2 nodes are located within the BST, then the goal is to check whether the 2 nodes are cousins or not. If the 2 nodes are cousins, return true, otherwise return false. Cousins are identified as having the same grandparents but different parents. For this problem, second cousins (same great grandparents but different grandparents) or even greater distant cousins will count.
 
 function BST() {
     this.root = null;
@@ -19,7 +19,24 @@ function Node(data) {
 }
 */
 const cousins = (root, n1, n2) => {
+    if (!root || !root.left && !root.right) return false;
+    return !sameParent(root, n1, n2) && findHeight(root, n1) === findHeight(root, n2);
+}
 
+const findHeight = (root, node, height = 0) => {
+    if (!root) return 0
+    if (root.data === node) return height;
+    return findHeight(root.left, node, height + 1) ||
+        findHeight(root.right, node, height + 1)
+}
+
+const sameParent = (root, n1, n2) => {
+    if (!root) return false;
+    if (root.left && root.right) {
+        if (root.left.data === n1 && root.right.data === n2 ||
+            root.left.data === n2 && root.right.data === n1) return true;
+    }
+    return sameParent(root.left, n1, n2) || sameParent(root.right, n1, n2);
 }
 
 module.exports = cousins;
