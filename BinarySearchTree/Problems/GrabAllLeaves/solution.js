@@ -10,5 +10,5 @@ const grabAllLeaves = root => {
         if (branch.right) queue.push(branch.right);
     }
 
-    return results;
+    return results.sort((a, b) => a - b);
 }

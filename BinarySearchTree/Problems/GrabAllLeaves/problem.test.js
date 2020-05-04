@@ -119,13 +119,13 @@ test("Return an array of [1, 4, 10, 12, 18, 21] leaf nodes", () => {
 	tree.insert(7);
 	tree.insert(21);
 	tree.insert(2);
-	tree.insert(16);
+	tree.insert(17);
 	tree.insert(1);
 	tree.insert(4);
-	tree.insert(12);
+	tree.insert(16);
 	tree.insert(18);
 	tree.insert(10);
-	expect(grabAllLeaves(tree.root)).toEqual([1, 4, 10, 12, 18, 21]);
+	expect(grabAllLeaves(tree.root)).toEqual([1, 4, 10, 16, 18, 21]);
 });
 /*
 
@@ -133,9 +133,9 @@ test("Return an array of [1, 4, 10, 12, 18, 21] leaf nodes", () => {
 		/	   \
 	   7        20
 	 /  \      /  \
-    2    10  16   21
+    2    10  17    21
    / \      /  \
-  1   4    12   18
+  1   4    16   18
 
 */
 
