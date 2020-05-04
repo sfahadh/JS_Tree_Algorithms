@@ -6,7 +6,7 @@
  */
 
 /*
-TODO: Complete the following BST count all nodes problem below. There is only 1 input and the goal is to traverse through the tree and count the number of nodes the tree contains, then return that number.
+TODO: Complete the following BST count all nodes problem below. There is only 1 input, which is the root of the BST and the goal is to traverse through the tree and count the number of nodes the tree contains, then return that number.
 
 function BST() {
     this.root = null;
