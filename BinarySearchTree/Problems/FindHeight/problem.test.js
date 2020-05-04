@@ -2,7 +2,7 @@ const BST = require("../../Starter/BST");
 const findHeight = require("./problem");
 
 // Test Case 1:
-test("From the root of the BST to the node, the height is 3", () => {
+test("From the root of the BST to the node, the height is 3 - Part I", () => {
   const tree = new BST();
   tree.insert(7);
   tree.insert(5);
@@ -55,7 +55,7 @@ test("From the root of the BST to the node, the height is 1", () => {
 */
 
 // Test Case 4:
-test("Node not found in BST, should return 1", () => {
+test("Node not found in BST, should return 0", () => {
   const tree = new BST();
   tree.insert(15);
   tree.insert(17);
@@ -64,7 +64,7 @@ test("Node not found in BST, should return 1", () => {
   tree.insert(8);
   tree.insert(2);
   tree.insert(16);
-  expect(findHeight(tree.root, 24)).toEqual(1);
+  expect(findHeight(tree.root, 24)).toEqual(0);
 });
 /*
 
@@ -112,7 +112,7 @@ test("From the root of the BST to the node, the height is 6", () => {
 */
 
 // Test Case 7:
-test("From the root of the BST to the node, the height is 3", () => {
+test("From the root of the BST to the node, the height is 3 - Part II", () => {
   const tree = new BST();
   tree.insert(3);
   tree.insert(2);

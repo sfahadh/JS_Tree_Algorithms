@@ -4,7 +4,7 @@ const findHeight = (root, node) => {
         return sum;
     } else {
         let foundNode = false;
-        const recurse = (root) => {
+        const recurse = root => {
             if (!root) return 0;
             if (node < root.data) sum += recurse(root.left) + 1;
             if (node > root.data) sum += recurse(root.right) + 1;
@@ -12,6 +12,6 @@ const findHeight = (root, node) => {
             return sum;
         }
         const total = recurse(root);
-        return foundNode ? total : 0;
+        return foundNode ? total + 1 : 0;
     }
 }
