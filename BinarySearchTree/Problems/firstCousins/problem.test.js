@@ -159,7 +159,7 @@ test("Return true even if 2 and 89 are distant cousins", () => {
   tree.insert(2);
   tree.insert(89);
   tree.insert(123);
-  expect(firstCousins(tree.root, 2, 89)).toEqual(true);
+  expect(firstCousins(tree.root, 2, 89)).toEqual(false);
 });
 /*
 
@@ -262,7 +262,7 @@ test("Return false because 12 and 79 are not cousins", () => {
 */
 
 // Test Case 14:
-test("Return true even if 121 and 125 are very distant cousins", () => {
+test("Return false because nodes 121 and 125 are brothers/sisters", () => {
   const tree = new BST();
   tree.insert(52);
   tree.insert(147);
@@ -279,6 +279,156 @@ test("Return true even if 121 and 125 are very distant cousins", () => {
   tree.insert(1);
   tree.insert(4);
   expect(firstCousins(tree.root, 121, 125)).toEqual(false);
+});
+/*
+
+            52
+          /	  \
+        25     147
+       /  \   /   \
+      6   34 99   167
+     /      /  \
+    2      89  123  
+   / \        /   \
+  1   4      121  125
+
+*/
+
+// Test Case 15:
+test("Return false even if 6 and 89 are not cousins", () => {
+  const tree = new BST();
+  tree.insert(52);
+  tree.insert(147);
+  tree.insert(25);
+  tree.insert(99);
+  tree.insert(167);
+  tree.insert(6);
+  tree.insert(34);
+  tree.insert(2);
+  tree.insert(89);
+  tree.insert(123);
+  expect(firstCousins(tree.root, 6, 89)).toEqual(false);
+});
+/*
+
+  	        52
+  	     /	    \
+       25       147
+      /  \     /   \
+     6   34   99   167
+    /        /  \
+   2        89  123  
+
+*/
+
+// Test Case 16:
+test("Return false because nodes 435 and 3435 are not located anywhere in the tree", () => {
+  const tree = new BST();
+  tree.insert(25);
+  tree.insert(16);
+  tree.insert(26);
+  tree.insert(5);
+  tree.insert(21);
+  tree.insert(35);
+  expect(firstCousins(tree.root, 435, 3435)).toEqual(false);
+});
+/*
+
+	     25                          
+	    /  \             	   
+    16    26     
+   /  \     \           
+  5    21    35     
+
+*/
+
+// Test Case 17:
+test("Return false because nodes 7354 and 21345 are not located anywhere in the tree", () => {
+  const tree = new BST();
+  tree.insert(43);
+  tree.insert(25);
+  tree.insert(65);
+  expect(firstCousins(tree.root, 7354, 21345)).toEqual(false);
+});
+/*
+
+  	   43
+  	 /	  \
+   25      65
+
+*/
+
+// Test Case 18:
+test("Return false because only node 12 is located in the tree and not 23", () => {
+  const tree = new BST();
+  tree.insert(43);
+  tree.insert(25);
+  tree.insert(65);
+  tree.insert(12);
+  tree.insert(79);
+  expect(firstCousins(tree.root, 12, 23)).toEqual(false);
+});
+/*
+
+        43
+      /	   \
+    25      65
+   /          \
+ 12            79
+
+*/
+
+// Test Case 19:
+test("Return true because nodes 6 and 167 are cousins", () => {
+  const tree = new BST();
+  tree.insert(52);
+  tree.insert(147);
+  tree.insert(25);
+  tree.insert(99);
+  tree.insert(167);
+  tree.insert(6);
+  tree.insert(34);
+  tree.insert(2);
+  tree.insert(89);
+  tree.insert(123);
+  tree.insert(121);
+  tree.insert(125);
+  tree.insert(1);
+  tree.insert(4);
+  expect(firstCousins(tree.root, 6, 167)).toEqual(true);
+});
+/*
+
+            52
+          /	  \
+        25     147
+       /  \   /   \
+      6   34 99   167
+     /      /  \
+    2      89  123  
+   / \        /   \
+  1   4      121  125
+
+*/
+
+// Test Case 20:
+test("Return false because nodes 1 and 121 are very distant cousins", () => {
+  const tree = new BST();
+  tree.insert(52);
+  tree.insert(147);
+  tree.insert(25);
+  tree.insert(99);
+  tree.insert(167);
+  tree.insert(6);
+  tree.insert(34);
+  tree.insert(2);
+  tree.insert(89);
+  tree.insert(123);
+  tree.insert(121);
+  tree.insert(125);
+  tree.insert(1);
+  tree.insert(4);
+  expect(firstCousins(tree.root, 1, 121)).toEqual(false);
 });
 /*
 
