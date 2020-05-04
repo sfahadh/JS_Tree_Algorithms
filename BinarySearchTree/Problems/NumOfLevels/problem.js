@@ -1,5 +1,12 @@
+// ? In Visual Studo Code, install "Better Comments" to see colorful effects of comments
+
+/* // Uncomment the imports below if you plan on using them
+ * const BST = require("../../Starter/BST");
+ * const Node = require("../../Starter/Node");
+ */
+
 /*
-Complete the following BST level problem below. You must find the number of levels the BST has.
+TODO: Complete the following BST level problem below. There is only one input, which is the root of the BST and the goal is to find the height of the BST or the number of levels it has. 
 
 function BST() {
     this.root = null;
@@ -19,6 +26,7 @@ const levels = root => {
 module.exports = levels;
 
 /*
+! Test Case:
 
 	    25         -> level 1            
 	   /  \             	   
