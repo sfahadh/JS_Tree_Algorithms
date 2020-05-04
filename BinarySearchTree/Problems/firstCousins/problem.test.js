@@ -1,5 +1,5 @@
 const BST = require("../../Starter/BST");
-const cousins = require("./problem");
+const firstCousins = require("./problem");
 
 // Test Case 1:
 test("Return false because 5 and 13 are not cousins", () => {
@@ -12,7 +12,7 @@ test("Return false because 5 and 13 are not cousins", () => {
   tree.insert(9);
   tree.insert(15);
   tree.insert(1);
-  expect(cousins(tree.root, 5, 13)).toEqual(false);
+  expect(firstCousins(tree.root, 5, 13)).toEqual(false);
 });
 /*
 
@@ -32,7 +32,7 @@ test("Return false because 25 and 43 are not cousins", () => {
   tree.insert(43);
   tree.insert(25);
   tree.insert(65);
-  expect(cousins(tree.root, 25, 43)).toEqual(false);
+  expect(firstCousins(tree.root, 25, 43)).toEqual(false);
 });
 /*
 
@@ -46,7 +46,7 @@ test("Return false because 25 and 43 are not cousins", () => {
 test("Return false because there is only 1 node - Part I", () => {
   const tree = new BST();
   tree.insert(17);
-  expect(cousins(tree.root, 14, 32)).toEqual(false);
+  expect(firstCousins(tree.root, 14, 32)).toEqual(false);
 });
 /*
 
@@ -64,7 +64,7 @@ test("Return true because 8 and 21 are cousins", () => {
   tree.insert(8);
   tree.insert(2);
   tree.insert(16);
-  expect(cousins(tree.root, 8, 21)).toEqual(true);
+  expect(firstCousins(tree.root, 8, 21)).toEqual(true);
 });
 /*
 
@@ -78,7 +78,7 @@ test("Return true because 8 and 21 are cousins", () => {
 
 // Test Case 5:
 test("Return false because there is no tree", () => {
-  expect(cousins(null)).toEqual(false);
+  expect(firstCousins(null)).toEqual(false);
 });
 
 // Test Case 6:
@@ -94,7 +94,7 @@ test("Return true because 24 and 45 are cousins", () => {
   tree.insert(47);
   tree.insert(69);
   tree.insert(24);
-  expect(cousins(tree.root, 24, 45)).toEqual(true);
+  expect(firstCousins(tree.root, 24, 45)).toEqual(false);
 });
 /*
 
@@ -116,7 +116,7 @@ test("Return true because 24 and 45 are cousins", () => {
 test("Return false because there is only 1 node - Part II", () => {
   const tree = new BST();
   tree.insert(17);
-  expect(cousins(tree.root, 17, 234)).toEqual(false);
+  expect(firstCousins(tree.root, 17, 234)).toEqual(false);
 });
 /*
 
@@ -134,7 +134,7 @@ test("Return true because 8 and 16 are cousins", () => {
   tree.insert(8);
   tree.insert(2);
   tree.insert(16);
-  expect(cousins(tree.root, 8, 16)).toEqual(true);
+  expect(firstCousins(tree.root, 8, 16)).toEqual(true);
 });
 /*
 
@@ -159,12 +159,12 @@ test("Return true even if 2 and 89 are distant cousins", () => {
   tree.insert(2);
   tree.insert(89);
   tree.insert(123);
-  expect(cousins(tree.root, 2, 89)).toEqual(true);
+  expect(firstCousins(tree.root, 2, 89)).toEqual(true);
 });
 /*
 
-  	       52
-  	     /	  \
+  	        52
+  	     /	    \
        25       147
       /  \     /   \
      6   34   99   167
@@ -184,7 +184,7 @@ test("Return true because 5 and 35 are cousins", () => {
   tree.insert(35);
   tree.insert(45);
   tree.insert(24);
-  expect(cousins(tree.root, 5, 35)).toEqual(true);
+  expect(firstCousins(tree.root, 5, 35)).toEqual(true);
 });
 /*
 
@@ -208,7 +208,7 @@ test("Return false because 2 and 13 are not cousins", () => {
   tree.insert(6);
   tree.insert(9);
   tree.insert(15);
-  expect(cousins(tree.root, 2, 13)).toEqual(false);
+  expect(firstCousins(tree.root, 2, 13)).toEqual(false);
 });
 /*
 
@@ -229,7 +229,7 @@ test("Return false because 15 and 7 are not cousins", () => {
   tree.insert(6);
   tree.insert(9);
   tree.insert(15);
-  expect(cousins(tree.root, 15, 7)).toEqual(false);
+  expect(firstCousins(tree.root, 15, 7)).toEqual(false);
 });
 /*
 
@@ -249,7 +249,7 @@ test("Return false because 12 and 79 are not cousins", () => {
   tree.insert(65);
   tree.insert(12);
   tree.insert(79);
-  expect(cousins(tree.root, 12, 79)).toEqual(true);
+  expect(firstCousins(tree.root, 12, 79)).toEqual(true);
 });
 /*
 
@@ -278,7 +278,7 @@ test("Return true even if 121 and 125 are very distant cousins", () => {
   tree.insert(125);
   tree.insert(1);
   tree.insert(4);
-  expect(cousins(tree.root, 121, 125)).toEqual(true);
+  expect(firstCousins(tree.root, 121, 125)).toEqual(false);
 });
 /*
 

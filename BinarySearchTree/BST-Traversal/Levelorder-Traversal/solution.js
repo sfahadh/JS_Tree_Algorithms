@@ -3,10 +3,12 @@ const levelOrder = root => {
     const array = [];
     const queue = [root];
     while (queue.length) {
-          const branch = queue.shift();
-          array.push(branch.data);
-          if (branch.left) queue.push(branch.left);
-          if (branch.right) queue.push(branch.right);
+        const branch = queue.shift();
+        array.push(branch.data);
+        if (branch.left) queue.push(branch.left);
+        if (branch.right) queue.push(branch.right);
     }
     return array;
 }
+
+module.exports = levelOrder;
