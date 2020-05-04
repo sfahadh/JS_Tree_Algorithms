@@ -9,6 +9,6 @@ const grabAllLeaves = root => {
         if (branch.left) queue.push(branch.left);
         if (branch.right) queue.push(branch.right);
     }
-    console.log(results)
+
     return results;
 }
