@@ -19,7 +19,7 @@ function Node(data) {
 }
 */
 
-const removeLeaf = (tree, leaf) => {
+const removeLeaf = (root, leaf) => {
 
 }
 
