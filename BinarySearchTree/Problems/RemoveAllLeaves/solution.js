@@ -1,5 +1,6 @@
 const removeAllLeaves = root => {
     if (!root) return null;
+    if (root && !root.left && !root.right) return null;
     if (root.left) {
         if (!root.left.left && !root.left.right) root.left = null;
     }
@@ -8,6 +9,6 @@ const removeAllLeaves = root => {
     }
     if (root.left) removeAllLeaves(root.left);
     if (root.right) removeAllLeaves(root.right);
+
     return root;
 }
-
