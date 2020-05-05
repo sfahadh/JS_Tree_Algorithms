@@ -1,5 +1,12 @@
+// ? In Visual Studo Code, install "Better Comments" to see colorful effects of comments
+
+/* // Uncomment the imports below if you plan on using them
+ * const BST = require("../../Starter/BST");
+ * const Node = require("../../Starter/Node");
+ */
+
 /*
-Complete the following BST single parents problem below. There is only 1 input, which is the root of the BST. The goal of this problem is to return the number of nodes that only has a single parent.
+TODO: Complete the following BST single parents problem below. There is only 1 input, which is the root of the BST. The goal of this problem is to return the number of nodes that are a single parent.
 
 function BST() {
     this.root = null;
@@ -19,6 +26,7 @@ const singleParent = root => {
 module.exports = singleParent;
 
 /*
+! Test Case:
 
 	    25                          
 	   /  \             	   
@@ -26,5 +34,5 @@ module.exports = singleParent;
     /  \     \           
    5   21     35             
 
-Output: 1
+Output: 1 (26 is the only single parent node)
 */
