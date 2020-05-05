@@ -1,20 +1,14 @@
-const Node = require("../../BST/starter");
+const constructTree = require("../../Starter/ConstructTree");
 const singleParent = require("./problem");
 
-test("There is only 1 node with a single parent", () => {
-    const tree = new Node(7);
-    tree.insert(5);
-    tree.insert(13);
-    tree.insert(2);
-    tree.insert(6);
-    tree.insert(9);
-    tree.insert(15);
-    tree.insert(1);
-    expect(singleParent(tree)).toEqual(1);
+// Test Case 1:
+test("There are 1 nodes that are single parents", () => {
+	const tree = constructTree([7, 5, 13, 2, 6, 9, 15, 1]);
+	expect(singleParent(tree.root)).toEqual(1);
 });
 /*
 
-  		    7
+  		  7
   	    /  	\
        5     13
      /  \   /  \
@@ -24,11 +18,10 @@ test("There is only 1 node with a single parent", () => {
 
 */
 
-test("There are no nodes with a single parent", () => {
-    const tree = new Node(43);
-    tree.insert(25);
-    tree.insert(65);
-    expect(singleParent(tree)).toEqual(0);
+// Test Case 2:
+test("There are 0 nodes that are single parents", () => {
+	const tree = constructTree([43, 25, 64]);
+	expect(singleParent(tree.root)).toEqual(0);
 });
 /*
 
@@ -38,9 +31,10 @@ test("There are no nodes with a single parent", () => {
 
 */
 
-test("There are no nodes with a single parent", () => {
-    const tree = new Node(17);
-    expect(singleParent(tree)).toEqual(0);
+// Test Case 3:
+test("There is only 1 node in the tree, return 0", () => {
+	const tree = constructTree([17]);
+	expect(singleParent(tree.root)).toEqual(0);
 });
 /*
 
@@ -48,13 +42,10 @@ test("There are no nodes with a single parent", () => {
 
 */
 
-test("There are 2 nodes with a single parent", () => {
-    const tree = new Node(15);
-    tree.insert(19);
-    tree.insert(12);
-    tree.insert(21);
-    tree.insert(2);
-    expect(singleParent(tree)).toEqual(2);
+// Test Case 4:
+test("There are 2 nodes that are single parents", () => {
+	const tree = constructTree([15, 12, 19, 2, 21]);
+	expect(singleParent(tree.root)).toEqual(2);
 });
 /*
 
@@ -66,21 +57,15 @@ test("There are 2 nodes with a single parent", () => {
 
 */
 
+// Test Case 5:
 test("Should return 0 because there is no tree", () => {
-    expect(singleParent(null)).toEqual(0);
+	expect(singleParent(null)).toEqual(0);
 });
 
-test("There 4 nodes with a single parent", () => {
-    const tree = new Node(25);
-    tree.insert(15);
-    tree.insert(30);
-    tree.insert(5);
-    tree.insert(20);
-    tree.insert(35);
-    tree.insert(45);
-    tree.insert(50);
-    tree.insert(69);
-    expect(singleParent(tree)).toEqual(4);
+// Test Case 6:
+test("There are 4 nodes that are single parents", () => {
+	const tree = constructTree([25, 15, 30, 5, 20, 35, 45, 50, 69]);
+	expect(singleParent(tree.root)).toEqual(4);
 });
 /*
 
@@ -95,5 +80,41 @@ test("There 4 nodes with a single parent", () => {
                     50
                       \
                        69           
+
+*/
+
+// Test Case 7:
+test("There are 0 nodes that are single parents", () => {
+	const tree = constructTree([7, 5, 13, 2, 6, 9, 15]);
+	expect(singleParent(tree.root)).toEqual(0);
+});
+/*
+
+  		  7
+  	    /  	\
+       5     13
+     /  \   /  \
+    2    6 9    15
+
+*/
+
+// Test Case 8:
+test("There are 8 nodes that are single parents", () => {
+	const tree = constructTree([25, 15, 30, 5, 35, 4, 45, 3, 50, 2, 69]);
+	expect(singleParent(tree.root)).toEqual(8);
+});
+/*
+
+				25                          
+			  /    \             	   
+			15      30     
+		   /          \           
+		  5            35  
+		 /				 \
+		4				  45
+	   /					\
+	  3						 50
+	 /						   \
+	2							69           
 
 */
