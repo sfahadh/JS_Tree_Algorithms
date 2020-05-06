@@ -1,17 +1,9 @@
-const BST = require("../../Starter/BST");
+const constructTree = require("../../Starter/ConstructTree");
 const dualParent = require("./problem");
 
 // Test Case 1:
 test("There are 3 parents with a left and right child", () => {
-	const tree = new BST();
-	tree.insert(7);
-	tree.insert(5);
-	tree.insert(13);
-	tree.insert(2);
-	tree.insert(6);
-	tree.insert(9);
-	tree.insert(15);
-	tree.insert(1);
+	const tree = constructTree([7, 5, 13, 2, 6, 9, 15, 1]);
 	expect(dualParent(tree.root)).toEqual(3);
 });
 /*
@@ -28,10 +20,7 @@ test("There are 3 parents with a left and right child", () => {
 
 // Test Case 2:
 test("There is 1 parent with a left and right child", () => {
-	const tree = new BST();
-	tree.insert(43);
-	tree.insert(25);
-	tree.insert(65);
+	const tree = constructTree([43, 25, 65]);
 	expect(dualParent(tree.root)).toEqual(1);
 });
 /*
@@ -44,8 +33,7 @@ test("There is 1 parent with a left and right child", () => {
 
 // Test Case 3:
 test("There are no parents with a left and right child", () => {
-	const tree = new BST();
-	tree.insert(17)
+	const tree = constructTree([17]);
 	expect(dualParent(tree.root)).toEqual(0);
 });
 /*
@@ -56,12 +44,7 @@ test("There are no parents with a left and right child", () => {
 
 // Test Case 4:
 test("There is 1 parent with a left and right child", () => {
-	const tree = new BST();
-	tree.insert(15);
-	tree.insert(19);
-	tree.insert(12);
-	tree.insert(21);
-	tree.insert(2);
+	const tree = constructTree([15, 12, 19, 2, 21]);
 	expect(dualParent(tree.root)).toEqual(1);
 });
 /*
@@ -81,17 +64,7 @@ test("Should return 0 because there is no tree", () => {
 
 // Test Case 6:
 test("There are 3 parents with a left and right child", () => {
-	const tree = new BST();
-	tree.insert(25);
-	tree.insert(15);
-	tree.insert(30);
-	tree.insert(5);
-	tree.insert(20);
-	tree.insert(35);
-	tree.insert(45);
-	tree.insert(50);
-	tree.insert(69);
-	tree.insert(42);
+	const tree = constructTree([25, 16, 30, 5, 20, 35, 45, 42, 50, 69]);
 	expect(dualParent(tree.root)).toEqual(3);
 });
 /*
@@ -112,12 +85,7 @@ test("There are 3 parents with a left and right child", () => {
 
 // Test Case 7:
 test("There are 1 parents with a left and right child", () => {
-	const tree = new BST();
-	tree.insert(7);
-	tree.insert(5);
-	tree.insert(13);
-	tree.insert(2);
-	tree.insert(15);
+	const tree = constructTree([7, 5, 13, 2, 15]);
 	expect(dualParent(tree.root)).toEqual(1);
 });
 /*
@@ -132,12 +100,7 @@ test("There are 1 parents with a left and right child", () => {
 
 // Test Case 8:
 test("There are 0 parents with a left and right child", () => {
-	const tree = new BST();
-	tree.insert(7);
-	tree.insert(345);
-	tree.insert(6523);
-	tree.insert(7542);
-	tree.insert(63242);
+	const tree = constructTree([7, 345, 6523, 7542, 63242]);
 	expect(dualParent(tree.root)).toEqual(0);
 });
 /*
