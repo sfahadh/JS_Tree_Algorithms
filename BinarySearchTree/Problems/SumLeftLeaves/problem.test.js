@@ -44,7 +44,7 @@ test("There is only 1 node, should return 0", () => {
 
 // Test Case 4:
 test("The sum of all left leaves should return 18", () => {
-	const tree = constructTree([15, 3, 17, 2, 8, 16, 21])
+	const tree = constructTree([15, 3, 17, 2, 8, 16, 21]);
 	expect(sumLeftLeaves(tree.root)).toEqual(18);
 });
 /*
@@ -84,7 +84,7 @@ test("The sum of all left leaves should return 5", () => {
 */
 
 // Test Case 7:
-test("The sum of all nodes should return 0", () => {
+test("The sum of all left leaves should return 0", () => {
 	const tree = constructTree([1, 0]);
 	expect(sumLeftLeaves(tree.root)).toEqual(0);
 });
@@ -93,5 +93,18 @@ test("The sum of all nodes should return 0", () => {
 		1
 	  /	 
 	0      
+  
+*/
+
+// Test Case 8:
+test("The sum of all left leaves should return 0", () => {
+	const tree = constructTree([0, 1]);
+	expect(sumLeftLeaves(tree.root)).toEqual(0);
+});
+/*
+  
+	0
+	 \ 
+	  1     
   
 */
