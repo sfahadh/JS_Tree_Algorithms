@@ -21,9 +21,6 @@ test("The sum of all nodes should return 58", () => {
 // Test Case 2:
 test("The sum of all nodes should return 133", () => {
   const tree = constructTree([43, 25, 65]);
-  tree.insert(43);
-  tree.insert(25);
-  tree.insert(65);
   expect(sum(tree.root)).toEqual(133);
 });
 /*
