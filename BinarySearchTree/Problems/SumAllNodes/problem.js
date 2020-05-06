@@ -1,5 +1,12 @@
+// ? In Visual Studo Code, install "Better Comments" to see colorful effects of comments
+
+/* // Uncomment the imports below if you plan on using them
+ * const BST = require("../../Starter/BST");
+ * const Node = require("../../Starter/Node");
+ */
+
 /*
-Complete the following BST sum all nodes problem below. There is only 1 input and the goal is to add up the values of all nodes and return the total.
+TODO: Complete the following BST sum all nodes problem below. There is only 1 input, which is the root of the BST and the goal is to traverse down the tree to add up the values of all nodes and return the total.
 
 function BST() {
     this.root = null;
@@ -12,11 +19,14 @@ function Node(data) {
 }
 */
 
-const sum = root => {}
+const sum = root => {
+
+}
 
 module.exports = sum;
 
 /*
+! Test Case:
 
 	    25                   
 	   /  \             	   
@@ -24,5 +34,5 @@ module.exports = sum;
     /  \     \           
    5   21     35         
 
-16 + 21 + 25 + 26 + 5 + 35 = 128
+25 + 16 + 26 + 5 + 21 + 35 = 128
 */
