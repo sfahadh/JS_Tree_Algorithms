@@ -1,5 +1,12 @@
+// ? In Visual Studo Code, install "Better Comments" to see colorful effects of comments
+
+/* // Uncomment the imports below if you plan on using them
+ * const BST = require("../../Starter/BST");
+ * const Node = require("../../Starter/Node");
+ */
+
 /*
-Complete the following BST two sum problem below. There are 2 inputs, the root of the BST, and the value in which 2 nodes should add up to. If the two nodes in the BST adds up to the input value, then return true, otherwise return false.
+TODO: Complete the following BST two sum problem below. There are 2 inputs, the root of the BST, and the sum in which 2 nodes somewhere within the tree should add up to. Traverse down the tree and find any two nodes that can be added to equal to the input sum. If that can be done, return true, otherwise return false.
 
 function BST() {
     this.root = null;
@@ -19,6 +26,7 @@ const twoSum = (root, sum) => {
 module.exports = twoSum;
 
 /*
+Sample Tree Root:
 
 	    25                   
 	   /  \             	   
@@ -26,9 +34,11 @@ module.exports = twoSum;
     /  \     \           
    5   21     35         
 
+! Test Case 1:
 Input: (root, 37)
 Output: true
 
+! Test Case 2:
 Input: (root, 38)
 Output: false
 */
