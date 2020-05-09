@@ -1,5 +1,3 @@
-const Node = require("./Node");
-
 function NaryTree() {
     this.root = null;
 }
