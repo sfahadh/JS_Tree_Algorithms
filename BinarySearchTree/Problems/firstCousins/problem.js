@@ -25,7 +25,7 @@ const firstCousins = (root, n1, n2) => {
 module.exports = firstCousins;
 
 /*
-Sample Tree Input:
+* Sample Tree Root:
 	    25                   
 	   /  \             	   
      16    26      
@@ -33,12 +33,10 @@ Sample Tree Input:
    5   21     35         
 
 ! Test Case 1:
-Example 1:
-    Input: (root, 21, 35)
-    Output: true
+Input: (root, 21, 35)
+Output: true
 
 ! Test Case 2:
-Example 2: 
-    Input: (root, 5, 21)
-    Output: false
+Input: (root, 5, 21)
+Output: false
 */

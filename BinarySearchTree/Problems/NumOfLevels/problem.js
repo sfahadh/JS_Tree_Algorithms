@@ -27,12 +27,11 @@ module.exports = levels;
 
 /*
 ! Test Case:
-
+* Sample Input:
 	    25         -> level 1            
 	   /  \             	   
      16    26      -> level 2 
     /  \     \           
    5   21     35   -> level 3         
-
-number of levels = 3
+* Sample Output: 3
 */

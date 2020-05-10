@@ -27,11 +27,11 @@ module.exports = sumRightLeaves;
 
 /*
 ! Test Case: 
+* Sample Input:
 	     25                   
 	   /    \           	   
      16      26      
     /  \    /  \           
    5   21  24   35      
-
-21 + 35 = 56
+* Sample Output: (21 + 35) = 56
 */

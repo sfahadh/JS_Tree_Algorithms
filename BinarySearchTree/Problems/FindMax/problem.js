@@ -27,12 +27,11 @@ module.exports = findMax;
 
 /*
 ! Test Case:
-
+* Sample Input:
 	    25                          
 	   /  \             	   
      16    26     
     /  \     \           
    5   21     35             
-
-Max node = 35
+* Sample Output: 35
 */

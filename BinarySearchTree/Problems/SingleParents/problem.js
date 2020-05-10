@@ -27,12 +27,12 @@ module.exports = singleParent;
 
 /*
 ! Test Case:
-
+* Sample Input:
 	    25                          
 	   /  \             	   
      16    26     
     /  \     \           
    5   21     35             
-
-Output: 1 (26 is the only single parent node)
+* Samplmpe Output: 1 
+? 26 is the only single parent node
 */

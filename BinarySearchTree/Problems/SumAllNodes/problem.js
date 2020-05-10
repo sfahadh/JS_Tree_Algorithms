@@ -27,12 +27,11 @@ module.exports = sum;
 
 /*
 ! Test Case:
-
+* Sample Input:
 	    25                   
 	   /  \             	   
      16    26      
     /  \     \           
    5   21     35         
-
-25 + 16 + 26 + 5 + 21 + 35 = 128
+* Sample Output: (25 + 16 + 26 + 5 + 21 + 35) = 128
 */

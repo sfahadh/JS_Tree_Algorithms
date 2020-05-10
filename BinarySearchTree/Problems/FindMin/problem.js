@@ -27,12 +27,11 @@ module.exports = findMin;
 
 /*
 ! Test Case:
-
+* Sample Input:
 	    25                          
 	   /  \             	   
      16    26     
     /  \     \           
    5   21     35             
-
-Min node = 5
+* Sample Output: 5
 */

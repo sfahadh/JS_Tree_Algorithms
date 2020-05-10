@@ -27,13 +27,11 @@ module.exports = removeLeaf;
 
 /*
 ! Test Case:
-
+* Sample Input: (root, 1):    Sample Output:
 Sample Tree Roots:
-
-Input: (root, 1):            Output:
-		7                           7
-	  /	  \             	     /	   \
-     5     13        =>         5      13
+		    7                           7
+	    /	  \             	       /	   \
+     5     13         =>        5      13
    /  \   /  \                /   \   /   \  
   2    6 9   15              2     6 9    15
  /

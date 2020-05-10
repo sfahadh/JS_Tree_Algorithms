@@ -26,8 +26,7 @@ const contains = (root, node) => {
 module.exports = contains;
 
 /*
-! Test Case:
-Sample Input: 
+* Sample Tree Root: 
   		    7
   	    /	  \
        5     13
@@ -35,7 +34,9 @@ Sample Input:
     2    6 9   15
    /
   1 
+! Test Case 1:
+contains(root, 6) --> return true 
 
-contains(tree, 6) -> return true  
-contains(tree, 12) -> return false
+! Test Case 2:
+contains(root, 12) --> return false
 */

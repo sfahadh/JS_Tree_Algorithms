@@ -28,10 +28,10 @@ module.exports = removeAllLeaves;
 
 /*
 ! Test Case:
-
-	    25                   25        
-	   /  \             	/  \      
-     16    26      =>     16    26    
-    /  \     \           
+* Sample Input:       Sample Output:
+	    25                      
+	   /  \             	 25   
+     16    26      =>    	/  \   
+    /  \     \            16    26
    5   21     35         
 */

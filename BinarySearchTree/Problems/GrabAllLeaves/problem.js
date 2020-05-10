@@ -27,12 +27,11 @@ module.exports = grabAllLeaves;
 
 /*
 ! Test Case:
-
+* Sample Input:
 	    25                   
 	   /  \             	   
      16    26      
     /  \     \           
    5   21     35         
-
-Output: [5, 21, 35]
+* Sample Output: [5, 21, 35]
 */

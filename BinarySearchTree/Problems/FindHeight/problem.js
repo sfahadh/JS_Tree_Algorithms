@@ -26,8 +26,7 @@ const findHeight = (root, node) => {
 module.exports = findHeight;
 
 /*
-Sample Tree Root:
-
+* Sample Tree Root:
 	    25         -> Height 1            
 	   /  \             	   
      16    26      -> Height 2 

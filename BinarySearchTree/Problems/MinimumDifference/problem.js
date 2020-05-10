@@ -27,14 +27,13 @@ module.exports = minimumDifference;
 
 /*
 ! Test Case:
-
-	    25                   
-	   /  \             	   
-     16    26             
-
+* Sample Input:
+	 25                   
+    /  \             	   
+  16    26             
+* Sample Output: 1  
 26 - 25 = 1
 25 - 16 = 9
-26 - 16 = 10
-
-Output: 1   
+26 - 16 = 10 
+? 1 is the smallest difference between 1, 9, and 10
 */

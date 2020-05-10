@@ -26,8 +26,7 @@ const twoSum = (root, sum) => {
 module.exports = twoSum;
 
 /*
-Sample Tree Root:
-
+* Sample Tree Root:
 	    25                   
 	   /  \             	   
      16    26      

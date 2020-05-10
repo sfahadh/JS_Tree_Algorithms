@@ -27,12 +27,11 @@ module.exports = sumLeftLeaves;
 
 /*
 ! Test Case: 
-
+* Sample Input:
 	     25                   
 	   /    \             	   
      16      26      
     /  \    /  \           
    5   21  24   35      
-
-5 + 24 = 29
+* Sample Output: (5 + 24) = 29
 */

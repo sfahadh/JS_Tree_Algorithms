@@ -27,12 +27,11 @@ module.exports = countNodes;
 
 /*
 ! Test Case:
-Sample Input:
+* Sample Input:
 	    25                   
 	   /  \             	   
      16    26      
     /  \     \           
    5   21     35         
-
-Output: 6
+* Sample Output: 6
 */

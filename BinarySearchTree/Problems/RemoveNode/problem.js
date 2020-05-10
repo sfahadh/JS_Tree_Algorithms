@@ -27,15 +27,13 @@ module.exports = removeNode;
 
 /*
 ! Test Case:
-
 Sample Tree Roots:
-
-Input: (root, 5):        Output:
-		7                    7
-	  /	  \             	   \
-     5     13        =>         13
-   /  \   /  \                 /   \  
-  2    6 9   15               9    15
+* Sample Input: (root, 5):      Sample Output:
+		    7                          7
+	    /	  \             	           \
+     5     13           =>            13
+   /  \   /  \                       /   \  
+  2    6 9   15                     9    15
  /
 1 
 */

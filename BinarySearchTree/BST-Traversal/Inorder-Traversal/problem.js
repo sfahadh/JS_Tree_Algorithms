@@ -27,8 +27,7 @@ module.exports = inOrder;
 
 /*
 ! Test Case:
-
-Sample Input: 
+* Sample Input: 
      24
     /  \
    17  31    
@@ -36,6 +35,5 @@ Sample Input:
          34
         /  \
        32  39
-
-Sample Output: [17, 24, 31, 34, 32, 39] 
+* Sample Output: [17, 24, 31, 34, 32, 39] 
 */

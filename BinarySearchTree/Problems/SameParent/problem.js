@@ -26,7 +26,7 @@ const sameParent = (root, n1, n2) => {
 module.exports = sameParent;
 
 /*
-Sample Tree Root:
+* Sample Tree Root:
 	     25                   
 	   /    \             	   
      16      26      

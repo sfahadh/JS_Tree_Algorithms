@@ -20,32 +20,25 @@ function Node(data) {
 */
 
 const rangeSum = (root, low, high) => {
-    if (!root) return 0;
 
-    let sum = 0;
-    if (low <= root.data) sum += root.data + rangeSum(root.left, low, high);
-    if (high >= root.data) sum += root.data + rangeSum(root.right, low, high);
-    return sum - root.data;
 }
 
 module.exports = rangeSum;
 
 /*
 ! Test Case: 
-
 Sample Tree Root:
-
 	    25                   
 	   /  \             	   
      16    26      
     /  \     \           
    5   21     35    
    
-Input: (root, 14, 26)
+* Sample Input: (root, 14, 26)
+* Sample Output: (16 + 21 + 25 + 26) = 88
 Greater than 14 & Less than 26:
     { data: 16, left: 5, right, 21 }
     { data: 21, left: null, right, null }
     { data: 25, left: 16, right, 26 }
     { data: 26, left: null, right, 35 }
-Output: (16 + 21 + 25 + 26) = 88
 */

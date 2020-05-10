@@ -27,13 +27,11 @@ module.exports = insertNode;
 
 /*
 ! Test Case:
-
-Sample Tree Root:         Output:
+Sample Tree Root:      Sample Output:
 	    25                  	25                     
 	   /  \                    /  \            	   
      16    26       =>       16    26 
        \     \              /  \     \   
        21     35           5    21    35    
-
-Input: (root, { data: 5, left: null, right: null })
+* Sample Input: (root, Node: { data: 5, left: null, right: null })
 */
