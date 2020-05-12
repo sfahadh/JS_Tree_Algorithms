@@ -27,9 +27,9 @@ module.exports = inOrder;
 /*
 ! Test Case 1: 
 * Sample Input: 
-            5
-        /   |   \
-      13    3    23
+        5
+    /   |   \
+   13   3    23
 * Sample Output: [13, 3, 5, 23] 
 
 ! Test Case 2:
