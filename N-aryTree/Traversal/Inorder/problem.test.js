@@ -5,9 +5,9 @@ const inOrder = require("./problem");
 
 // Test Case 1:
 test("Return an array of values - [13, 3, 5, 23]", () => {
+    const tree = ConstructRootNode(5);
     const nodes = [13, 3, 23];
-    let tree = ConstructRootNode(5);
-    tree = InsertToNode(tree, nodes);
+    InsertToNode(tree, nodes);
     expect(inOrder(tree)).toEqual([13, 3, 5, 23]);
 });
 /*
@@ -21,8 +21,8 @@ test("Return an array of values - [13, 3, 5, 23]", () => {
 // Test Case 2:
 test("Return an array of values - [13, 5, 23]", () => {
     const tree = ConstructRootNode(5);
-    tree.insert(13);
-    tree.insert(23);
+    const nodes = [13, 23];
+    InsertToNode(tree, nodes);
     expect(inOrder(tree)).toEqual([13, 5, 23]);
 });
 /*
@@ -36,7 +36,8 @@ test("Return an array of values - [13, 5, 23]", () => {
 // Test Case 3:
 test("Return an array of values - [5, 23]", () => {
     const tree = ConstructRootNode(5);
-    tree.insert(23);
+    const nodes = [23];
+    InsertToNode(tree, nodes);
     expect(inOrder(tree)).toEqual([5, 23]);
 });
 /*
@@ -50,7 +51,8 @@ test("Return an array of values - [5, 23]", () => {
 // Test Case 4:
 test("Return an array of values - [5, 23]", () => {
     const tree = ConstructRootNode(5);
-    tree.insert(13);
+    const nodes = [13];
+    InsertToNode(tree, nodes);
     expect(inOrder(tree)).toEqual([5, 23]);
 });
 /*
@@ -64,9 +66,8 @@ test("Return an array of values - [5, 23]", () => {
 // Test Case 5:
 test("Return an array of values - [7, 13, 24, 3, 5, 23, 63]", () => {
     const tree = ConstructRootNode(5);
-    tree.insert(13);
-    tree.insert(3);
-    tree.insert(23);
+    const nodes = [13, 3, 23];
+    InsertToNode(tree, nodes);
     tree.children[0].insert(7);
     tree.children[0].insert(24);
     tree.children[2].insert(63);
