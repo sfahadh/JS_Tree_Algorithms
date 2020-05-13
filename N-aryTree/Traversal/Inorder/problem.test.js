@@ -98,7 +98,7 @@ test("Return an array of values - [5]", () => {
     expect(inOrder(tree.root)).toEqual([5]);
 });
 /*
-            5
+    5
 
 */
 
