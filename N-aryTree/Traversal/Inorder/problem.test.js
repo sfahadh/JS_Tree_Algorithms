@@ -1,14 +1,13 @@
 const NaryTree = require("../../Starter/N-aryTree");
-const Node = require("../../Starter/Node");
 const ConstructRootNode = require("../../Starter/constructRootNode");
+const InsertToNode = require("../../Starter/insertToNode");
 const inOrder = require("./problem");
 
 // Test Case 1:
 test("Return an array of values - [13, 3, 5, 23]", () => {
-    const tree = ConstructRootNode(5);
-    tree.insert(13);
-    tree.insert(3);
-    tree.insert(23);
+    const nodes = [13, 3, 23];
+    let tree = ConstructRootNode(5);
+    tree = InsertToNode(tree, nodes);
     expect(inOrder(tree)).toEqual([13, 3, 5, 23]);
 });
 /*
