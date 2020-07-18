@@ -9,15 +9,17 @@ MaxBinaryHeap.prototype.insert = function (data) {
 
 MaxBinaryHeap.prototype.bubbleUp = function () {
     let index = this.values.length - 1;
+    const element = this.values[index];
     let parentIndex;
-    let temp;
+    let parent;
 
     while (index > 0) {
         parentIndex = Math.floor((index - 1) / 2);
-        temp = this.values[parentIndex];
+        parent = this.values[parentIndex];
+        if (element <= parent) break;
 
-        this.values[parentIndex] = this.values[index];
-        this.values[index] = temp;
+        this.values[parentIndex] = element;
+        this.values[index] = parent;
         index = parentIndex;
     }
 }
