@@ -27,13 +27,6 @@ module.exports = inOrder;
 
 /*
 ! Test Case:
-* Sample Input: 
-     24
-    /  \
-   17  31    
-         \ 
-         34
-        /  \
-       32  39
-* Sample Output: [17, 24, 31, 34, 32, 39] 
+* Sample Input: refer to Images -> BST-structure-1.png
+* Sample Output: [17, 24, 31, 34, 32, 39]
 */
