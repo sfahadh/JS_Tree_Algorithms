@@ -13,20 +13,11 @@ test("Node is in the root of tree - Part I", () => {
 	expect(contains(tree.root, 15)).toEqual(true);
 });
 
-// Test Case 3:
+// Test Case 3: //* Sample Image: refer to Images -> BST-structure-9.png
 test("Node is in the root of tree - Part II", () => {
 	const tree = constructTree([15, 3, 16, 21]);
 	expect(contains(tree.root, 15)).toEqual(true);
 });
-/*
-
-  	   15
-  	 /	  \
-    3      16
-             \
-              21
-
-*/
 
 // Test Case 4: //* Sample Image: refer to Images -> BST-structure-6.png
 test("Node was not found in tree", () => {
