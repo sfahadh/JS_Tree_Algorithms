@@ -36,21 +36,6 @@ test("The average levels of BST are [25, 21, 20, 45, 47, 69]", () => {
 	const tree = constructTree([25, 16, 26, 4, 21, 35, 45, 47, 69]);
 	expect(avgLevel(tree.root)).toEqual([25, 21, 20, 45, 47, 69]);
 });
-/*
-
-	    25                          
-	   /  \             	   
-     16    26     
-    /  \     \           
-   4   21     35  
-                \
-                 45
-                   \
-                    47
-                      \
-                       69           
-
-*/
 
 // Test Case 7: //* Sample Image: refer to Images -> BST-structure-3.png
 test("The average levels of BST are [62, 123]", () => {
