@@ -1,46 +1,23 @@
 const constructTree = require("../../Starter/ConstructTree");
 const dualParent = require("./problem");
 
-// Test Case 1:
+// Test Case 1: //* Sample Input: refer to Images -> BST-structure-7.png
 test("There are 3 parents with a left and right child", () => {
 	const tree = constructTree([7, 5, 13, 2, 6, 9, 15, 1]);
 	expect(dualParent(tree.root)).toEqual(3);
 });
-/*
 
-  		  7
-  	    /  	\
-       5     13
-     /  \   /  \
-    2    6 9    15
-   /
-  1 
-
-*/
-
-// Test Case 2:
+// Test Case 2:  //* Sample Input: refer to Images -> BST-structure-2.png
 test("There is 1 parent with a left and right child", () => {
-	const tree = constructTree([43, 25, 65]);
+	const tree = constructTree([10, 6, 15]);
 	expect(dualParent(tree.root)).toEqual(1);
 });
-/*
-
-  	   43
-  	 /	  \
-   25      65
-
-*/
 
 // Test Case 3:
 test("There are no parents with a left and right child", () => {
 	const tree = constructTree([17]);
 	expect(dualParent(tree.root)).toEqual(0);
 });
-/*
-
-  	17
-
-*/
 
 // Test Case 4:
 test("There is 1 parent with a left and right child", () => {
@@ -83,36 +60,14 @@ test("There are 3 parents with a left and right child", () => {
 
 */
 
-// Test Case 7:
-test("There are 1 parents with a left and right child", () => {
-	const tree = constructTree([7, 5, 13, 2, 15]);
-	expect(dualParent(tree.root)).toEqual(1);
-});
-/*
-
-  		  7
-  	    /  	\
-       5     13
-     /         \
-    2    	    15
-
-*/
-
-// Test Case 8:
+// Test Case 7: //* Sample Input: refer to Images -> BST-structure-4.png
 test("There are 0 parents with a left and right child", () => {
-	const tree = constructTree([7, 345, 6523, 7542, 63242]);
-	expect(dualParent(tree.root)).toEqual(0);
+	const tree = constructTree([62, 13]);
+	expect(dualParent(tree.root)).toEqual(9);
 });
-/*
 
- 7
-  \
-   345
-	 \
-	   6523
-		  \
-		  7542
-			 \
-			 63242		
-
-*/
+// Test Case 8: //* Sample Input: refer to Images -> BST-structure-5.png
+test("There are 0 parents with a left and right child", () => {
+	const tree = constructTree([18, 5, 65, 3, 13, 33, 0]);
+	expect(dualParent(tree.root)).toEqual(2);
+});
