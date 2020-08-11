@@ -27,13 +27,6 @@ module.exports = postOrder;
 
 /*
 ! Test Case:
-* Sample Input: 
-     24
-    /  \
-   17  31    
-         \ 
-         34
-        /  \
-       32  39
-* Sample Output: [17, 32, 39, 34, 31, 24] 
+* Sample Image: refer to Images -> BST-structure-1.png
+* Sample Output: [17, 32, 39, 34, 31, 24]
 */
