@@ -28,10 +28,12 @@ module.exports = avgLevel;
 /*
 ! Test Case:
 * Sample Input:
-	    25           Level 1: 25      
-	   /  \             	   
+	    25           Level 1: 25
+	   /  \
      16    26        Level 2: (26 + 16) / 2 = 26
-    /  \     \           
-   5   27     34     Level 3: (5 + 27 + 34) / 3 = 22    
+    /  \     \
+   5   27     34     Level 3: (5 + 27 + 34) / 3 = 22
 * Sample Output: [25, 26, 22]
 */
+
+// ? If the average ends up being a decimal, floor the value;
