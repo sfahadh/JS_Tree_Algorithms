@@ -1,35 +1,17 @@
 const constructTree = require("../../Starter/ConstructTree");
 const contains = require("./problem");
 
-// Test Case 1:
+// Test Case 1: //* Sample Image: refer to Images -> BST-structure-1.png
 test("Node is deep in the tree", () => {
-	const tree = constructTree([7, 5, 13, 2, 6, 9, 15, 1]);
-	expect(contains(tree.root, 9)).toEqual(true);
+	const tree = constructTree([24, 17, 31, 34, 32, 39]);
+	expect(contains(tree.root, 24)).toEqual(true);
 });
-/*
 
-  		  7
-  	    /	\
-       5     13
-     /  \   /  \
-    2    6 9   15
-   /
-  1 
-
-*/
-
-// Test Case 2:
+// Test Case 2: //* Sample Image: refer to Images -> BST-structure-2.png
 test("Node is in the root of tree - Part I", () => {
-	const tree = constructTree([43, 25, 65]);
-	expect(contains(tree.root, 43)).toEqual(true);
+	const tree = constructTree([10, 6, 15]);
+	expect(contains(tree.root, 15)).toEqual(true);
 });
-/*
-
-  	   43
-  	 /	  \
-   25      65
-
-*/
 
 // Test Case 3:
 test("Node is in the root of tree - Part II", () => {
@@ -46,65 +28,31 @@ test("Node is in the root of tree - Part II", () => {
 
 */
 
-// Test Case 4:
+// Test Case 4: //* Sample Image: refer to Images -> BST-structure-6.png
 test("Node was not found in tree", () => {
-	const tree = constructTree([15, 3, 17, 2, 8, 16, 21]);
-	expect(contains(tree.root, 12)).toEqual(false);
+	const tree = constructTree([6, 4, 8, 3, 5, 7, 9]);
+	expect(contains(tree.root, 2)).toEqual(false);
 });
-/*
-
-  	   15
-  	 /	  \
-    3      17
-  /  \    /  \
- 2    8  16   21
-
-*/
 
 // Test Case 5:
 test("No nodes in empty tree", () => {
 	expect(contains(null, 10)).toEqual(false);
 });
 
-// Test Case 6:
+// Test Case 6: //* Sample Image: refer to Images -> BST-structure-3.png
 test("Node is found in the proximal right subtree from root", () => {
-	const tree = constructTree([122, 652]);
-	expect(contains(tree.root, 652)).toEqual(true);
+	const tree = constructTree([62, 123]);
+	expect(contains(tree.root, 123)).toEqual(true);
 });
-/*
-
-  	122
-  	 	\
-          652
-
-*/
 
 // Test Case 7:
 test("Node is found in the proximal left subtree from root", () => {
-	const tree = constructTree([652, 122]);
-	expect(contains(tree.root, 122)).toEqual(true);
+	const tree = constructTree([62, 13]);
+	expect(contains(tree.root, 13)).toEqual(true);
 });
-/*
 
-  	   652
-  	  /
-   122
-
-*/
-
-// Test Case 8:
+// Test Case 8: //* Sample Image: refer to Images -> BST-structure-7.png
 test("Node is in the deepest part of the tree", () => {
 	const tree = constructTree([7, 5, 13, 2, 6, 9, 15, 1]);
 	expect(contains(tree.root, 1)).toEqual(true);
 });
-/*
-
-  		  7
-  	    /	\
-       5     13
-     /  \   /  \
-    2    6 9   15
-   /
-  1 
-
-*/

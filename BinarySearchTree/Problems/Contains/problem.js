@@ -26,16 +26,10 @@ const contains = (root, node) => {
 module.exports = contains;
 
 /*
-* Sample Tree Root: 
-  		    7
-  	    /	  \
-       5     13
-     /  \   /  \
-    2    6 9   15
-   /
-  1 
+* Sample Input: refer to Images -> BST-structure-7.png
+
 ! Test Case 1:
-contains(root, 6) --> return true 
+contains(root, 6) --> return true
 
 ! Test Case 2:
 contains(root, 12) --> return false

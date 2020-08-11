@@ -13,7 +13,6 @@ test("The average levels of BST are [10, 10]", () => {
 	expect(avgLevel(tree.root)).toEqual([10, 10]);
 });
 
-
 // Test Case 3:
 test("The average levels of BST are [17]", () => {
 	const tree = constructTree([17]);
