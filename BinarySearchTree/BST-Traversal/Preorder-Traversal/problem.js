@@ -26,14 +26,7 @@ const preOrder = root => {
 module.exports = preOrder;
 
 /*
-! Test Case: 
-* Sample Input: 
-     24
-    /  \
-   17  31    
-         \ 
-         34
-        /  \
-       32  39
-* Sample Output: [24, 17, 31, 34, 32, 39] 
+! Test Case:
+* Sample Input: * Sample Image: refer to Images -> BST-structure-1.png
+* Sample Output: [24, 17, 31, 34, 32, 39]
 */
