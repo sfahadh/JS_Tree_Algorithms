@@ -27,11 +27,6 @@ module.exports = countNodes;
 
 /*
 ! Test Case:
-* Sample Input:
-	    25                   
-	   /  \             	   
-     16    26      
-    /  \     \           
-   5   21     35         
-* Sample Output: 6
+* Sample Input: refer to Images -> BST-structure-7.png
+* Sample Output: 7
 */
