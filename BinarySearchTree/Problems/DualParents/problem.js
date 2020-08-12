@@ -27,12 +27,6 @@ module.exports = dualParent;
 
 /*
 ! Test Case:
-* Sample Input:
-	    25                          
-	   /  \             	   
-     16    26     
-    /  \     \           
-   5   21     35             
+* Sample Input: Sample Input: refer to Images -> BST-structure-12.png
 * Sample Output: 2
-? Both 25 and 16 have 2 child nodes
 */
