@@ -26,22 +26,22 @@ const findHeight = (root, node) => {
 module.exports = findHeight;
 
 /*
-* Sample Tree Root:
-	    25         -> Height 1            
-	   /  \             	   
-     16    26      -> Height 2 
-    /  \     \           
-   5   21     35   -> Height 3  
+* Sample Tree Root: refer to Images -> BST-structure-12.png
+	    777         -> Height 1
+	   /   \
+     555   888      -> Height 2
+    /  \     \
+  444  666   999    -> Height 3
 
 ! Test Case 1:
-Input: (root, 25)
+Input: (root, 777)
 Output: 1
 
 ! Test Case 2:
-Input: (root, 16)
+Input: (root, 888)
 Output: 2
 
 ! Test Case 3:
-Input: (root, 5)
+Input: (root, 444)
 Output: 3
 */
