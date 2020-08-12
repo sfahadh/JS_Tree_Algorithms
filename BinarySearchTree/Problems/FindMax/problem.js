@@ -27,11 +27,6 @@ module.exports = findMax;
 
 /*
 ! Test Case:
-* Sample Input:
-	    25                          
-	   /  \             	   
-     16    26     
-    /  \     \           
-   5   21     35             
-* Sample Output: 35
+* Sample Input: refer to Images -> BST-structure-12.png
+* Sample Output: 999
 */
