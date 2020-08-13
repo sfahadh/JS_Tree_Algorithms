@@ -26,22 +26,17 @@ const sameParent = (root, n1, n2) => {
 module.exports = sameParent;
 
 /*
-* Sample Tree Root:
-	     25                   
-	   /    \             	   
-     16      26      
-    /  \    /  \           
-   5   21  24   35      
+* Sample Tree Root: refer to Images -> BST-structure-6.png
 
 ! Test Case 1:
-Input: (root, 16, 26)
+Input: (root, 4, 8)
 Output: true
 
 ! Test Case 2:
-Input: (root, 16, 24)
+Input: (root, 5, 7)
 Output: false
 
 ! Test Case 3:
-Input: (root, 5, 24)
+Input: (root, 3, 8)
 Output: false
 */
