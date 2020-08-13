@@ -26,12 +26,7 @@ const sumLeftLeaves = root => {
 module.exports = sumLeftLeaves;
 
 /*
-! Test Case: 
-* Sample Input:
-	     25                   
-	   /    \             	   
-     16      26      
-    /  \    /  \           
-   5   21  24   35      
-* Sample Output: (5 + 24) = 29
+! Test Case:
+* Sample Input: refer to Images -> BST-structure-6.png
+* Sample Output: (3 + 7) = 10
 */
