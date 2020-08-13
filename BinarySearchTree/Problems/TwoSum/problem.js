@@ -26,15 +26,10 @@ const twoSum = (root, sum) => {
 module.exports = twoSum;
 
 /*
-* Sample Tree Root:
-	    25                   
-	   /  \             	   
-     16    26      
-    /  \     \           
-   5   21     35         
+* Sample Tree Root: refer to Images -> BST-structure-6.png
 
 ! Test Case 1:
-Input: (root, 37)
+Input: (root, 10)
 Output: true
 
 ! Test Case 2:
