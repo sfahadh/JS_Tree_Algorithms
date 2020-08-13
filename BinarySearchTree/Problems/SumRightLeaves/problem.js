@@ -26,12 +26,7 @@ const sumRightLeaves = root => {
 module.exports = sumRightLeaves;
 
 /*
-! Test Case: 
-* Sample Input:
-	     25                   
-	   /    \           	   
-     16      26      
-    /  \    /  \           
-   5   21  24   35      
-* Sample Output: (21 + 35) = 56
+! Test Case:
+* Sample Input: refer to Images -> BST-structure-6.png
+* Sample Output: (5 + 9) = 14
 */
