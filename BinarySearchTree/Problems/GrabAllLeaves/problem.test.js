@@ -36,22 +36,11 @@ test("Return an array of [4, 21, 69] leaf nodes", () => {
 	expect(grabAllLeaves(tree.root)).toEqual([4, 21, 69]);
 });
 
-// Test Case 7:
+// Test Case 7: //* Sample Input: refer to Images -> BST-structure-13.png
 test("Return an array of [1, 4, 10, 12, 18, 21] leaf nodes", () => {
 	const tree = constructTree([15, 7, 20, 2, 10, 17, 21, 1, 4, 16, 18]);
 	expect(grabAllLeaves(tree.root)).toEqual([1, 4, 10, 16, 18, 21]);
 });
-/*
-
-  		   15
-		/	   \
-	   7        20
-	 /  \      /  \
-    2    10  17    21
-   / \      /  \
-  1   4    16   18
-
-*/
 
 // Test Case 8:
 test("Return an array of [1, 4, 34, 89, 121, 125, 167] leaf nodes", () => {
