@@ -26,19 +26,13 @@ const rangeSum = (root, low, high) => {
 module.exports = rangeSum;
 
 /*
-! Test Case: 
-Sample Tree Root:
-	    25                   
-	   /  \             	   
-     16    26      
-    /  \     \           
-   5   21     35    
-   
-* Sample Input: (root, 14, 26)
-* Sample Output: (16 + 21 + 25 + 26) = 88
-Greater than 14 & Less than 26:
-    { data: 16, left: 5, right, 21 }
-    { data: 21, left: null, right, null }
-    { data: 25, left: 16, right, 26 }
-    { data: 26, left: null, right, 35 }
+! Test Case:
+* Sample Tree Root: refer to Images -> BST-structure-6.png
+* Sample Input: (root, 3, 6)
+* Sample Output: (3 + 4 + 5 + 6) = 18
+Greater than 3 & Less than 6:
+    { data: 3, left: null, right, null }
+    { data: 4, left: 3, right, 5 }
+    { data: 5, left: null, right, null }
+    { data: 6, left: 4, right, 8 }
 */
