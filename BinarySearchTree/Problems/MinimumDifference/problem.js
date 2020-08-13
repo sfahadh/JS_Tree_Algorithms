@@ -27,13 +27,10 @@ module.exports = minimumDifference;
 
 /*
 ! Test Case:
-* Sample Input:
-	 25                   
-    /  \             	   
-  16    26             
-* Sample Output: 1  
-26 - 25 = 1
-25 - 16 = 9
-26 - 16 = 10 
-? 1 is the smallest difference between 1, 9, and 10
+* Sample Input: refer to Images -> BST-structure-2.png
+
+* Sample Output: 4
+10 - 6 = 4
+15 - 10 = 5
+15 - 6 = 9
 */
