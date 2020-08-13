@@ -27,11 +27,6 @@ module.exports = sum;
 
 /*
 ! Test Case:
-* Sample Input:
-	    25                   
-	   /  \             	   
-     16    26      
-    /  \     \           
-   5   21     35         
-* Sample Output: (25 + 16 + 26 + 5 + 21 + 35) = 128
+* Sample Input: refer to Images -> BST-structure-7.png
+* Sample Output: (6 + 4 + 8 + 3 + 5 + 7 + 9) = 42
 */
