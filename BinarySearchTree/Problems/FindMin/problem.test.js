@@ -1,9 +1,10 @@
 const constructTree = require("../../Starter/ConstructTree");
 const findMin = require("./problem");
+const structures = require("../../Starter/Structures");
 
 // Test Case 1: //* Sample Input: refer to Images -> BST-structure-7.png
 test("Lowest node value in tree is 1", () => {
-	const tree = constructTree([7, 5, 13, 2, 6, 9, 15, 1]);
+	const tree = constructTree(structures["7"]);
 	expect(findMin(tree.root)).toEqual(1);
 });
 
