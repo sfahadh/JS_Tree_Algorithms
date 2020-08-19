@@ -32,7 +32,6 @@ test("Return an array of values - [18, 35, 16, 0]", () => {
 	expect(avgLevel(tree.root)).toEqual([18, 35, 16, 0]);
 });
 
-
 // Test Case 6: //* Sample Image: refer to Images -> BST-structure-6.png
 test("The average levels of BST are [6, 6, 6]", () => {
 	const tree = constructTree(Structures["6"]);
