@@ -2,6 +2,12 @@ const constructTree = require("../../Starter/ConstructTree");
 const avgLevel = require("./problem");
 const Structures = require("../../Starter/Structures");
 
+// Test Case 1: //* Sample Image: refer to Images -> BST-structure-1.png
+test("Return an array of values - [24, 24, 34, 35]", () => {
+	const tree = constructTree(Structures["1"]);
+	expect(avgLevel(tree.root)).toEqual([24, 24, 34, 35]);
+});
+
 // Test Case 2: //* Sample Image: refer to Images -> BST-structure-2.png
 test("The average levels of BST are [10, 10]", () => {
 	const tree = constructTree(Structures["2"]);
@@ -20,6 +26,13 @@ test("The average levels of BST are [62, 13]", () => {
 	expect(avgLevel(tree.root)).toEqual([62, 13]);
 });
 
+// Test Case 5: //* Sample Image: refer to Images -> BST-structure-5.png
+test("Return an array of values - [18, 35, 16, 0]", () => {
+	const tree = constructTree(Structures["5"]);
+	expect(avgLevel(tree.root)).toEqual([18, 35, 16, 0]);
+});
+
+
 // Test Case 6: //* Sample Image: refer to Images -> BST-structure-6.png
 test("The average levels of BST are [6, 6, 6]", () => {
 	const tree = constructTree(Structures["6"]);
@@ -36,6 +49,18 @@ test("The average levels of BST are [7, 9, 8, 1]", () => {
 test("The average levels of BST are [25, 21, 20, 45, 47, 69]", () => {
 	const tree = constructTree(Structures["8"]);
 	expect(avgLevel(tree.root)).toEqual([25, 21, 20, 45, 47, 69]);
+});
+
+// Test Case 9: //* Sample Image: refer to Images -> BST-structure-9.png
+test("Return an array of values - [15, 9, 21]", () => {
+	const tree = constructTree(Structures["9"]);
+	expect(avgLevel(tree.root)).toEqual([15, 9, 21]);
+});
+
+// Test Case 10: //* Sample Image: refer to Images -> BST-structure-10.png
+test("Return an array of values - [15, 15, 11]", () => {
+	const tree = constructTree(Structures["10"]);
+	expect(avgLevel(tree.root)).toEqual([15, 15, 11]);
 });
 
 // Test Case 3:
