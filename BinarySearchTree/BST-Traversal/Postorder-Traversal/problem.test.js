@@ -62,6 +62,24 @@ test("Return an array of values - [2, 12, 21, 19, 15]", () => {
     expect(postOrder(tree.root)).toEqual([2, 12, 21, 19, 15]);
 });
 
+// Test Case 11: //* Sample Image: refer to Images -> BST-structure-11.png
+test("Return an array of values - [5, 20, 15, 42, 69, 50, 47, 45, 35, 30, 25]", () => {
+    const tree = constructTree(Structures["11"]);
+    expect(postOrder(tree.root)).toEqual([5, 20, 15, 42, 69, 50, 47, 45, 35, 30, 25]);
+});
+
+// Test Case 12: //* Sample Image: refer to Images -> BST-structure-12.png
+test("Return an array of values - [444, 666, 555, 999, 888, 777]", () => {
+    const tree = constructTree(Structures["12"]);
+    expect(postOrder(tree.root)).toEqual([444, 666, 555, 999, 888, 777]);
+});
+
+// Test Case 13: //* Sample Image: refer to Images -> BST-structure-13.png
+test("Return an array of values - [1, 4, 2, 34, 6, 89, 121, 123, 99, 167, 147, 125, 52]", () => {
+    const tree = constructTree(Structures["13"]);
+    expect(postOrder(tree.root)).toEqual([1, 4, 2, 34, 6, 89, 121, 123, 99, 167, 147, 125, 52]);
+});
+
 // Test Case 14:
 test("Return an array of value - [33]", () => {
     const tree = constructTree([33]);
