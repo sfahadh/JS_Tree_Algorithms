@@ -62,13 +62,31 @@ test("Return an array of values - [15, 12, 2, 19, 21]", () => {
     expect(preOrder(tree.root)).toEqual([15, 12, 2, 19, 21]);
 });
 
-// Test Case 2:
+// Test Case 11: //* Sample Image: refer to Images -> BST-structure-11.png
+test("Return an array of values - [25, 15, 5, 20, 30, 35, 45, 42, 47, 50, 69]", () => {
+    const tree = constructTree(Structures["11"]);
+    expect(preOrder(tree.root)).toEqual([25, 15, 5, 20, 30, 35, 45, 42, 47, 50, 69]);
+});
+
+// Test Case 12: //* Sample Image: refer to Images -> BST-structure-12.png
+test("Return an array of values - [777, 555, 444, 666, 888, 999]", () => {
+    const tree = constructTree(Structures["12"]);
+    expect(preOrder(tree.root)).toEqual([777, 555, 444, 666, 888, 999]);
+});
+
+// Test Case 13: //* Sample Image: refer to Images -> BST-structure-13.png
+test("Return an array of values - [52, 6, 2, 1, 4, 34, 125, 99, 89, 123, 121, 147, 167]", () => {
+    const tree = constructTree(Structures["13"]);
+    expect(preOrder(tree.root)).toEqual([52, 6, 2, 1, 4, 34, 125, 99, 89, 123, 121, 147, 167]);
+});
+
+// Test Case 14:
 test("Return an array of value - [33]", () => {
     const tree = constructTree([33]);
     expect(preOrder(tree.root)).toEqual([33]);
 });
 
-// Test Case 4:
+// Test Case 15:
 test("Return an empty array", () => {
     expect(preOrder(null)).toEqual([]);
 });
