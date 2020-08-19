@@ -1,4 +1,4 @@
-const structures = {
+const Structures = {
     1: [24, 17, 31, 34, 32, 39],
     2: [10, 6, 15],
     3: [62, 123],
@@ -14,4 +14,4 @@ const structures = {
     13: [52, 125, 147, 6, 34, 99, 167, 2, 89, 123, 1, 4, 121, 125]
 }
 
-module.exports = structures;
+module.exports = Structures;
