@@ -56,13 +56,37 @@ test("Return 4 for number of nodes in BST", () => {
 	expect(countNodes(tree.root)).toEqual(4);
 });
 
-// Test Case 3:
+// Test Case 10: //* Sample Input: refer to Images -> BST-structure-10.png
+test("Return 5 for number of nodes in BST", () => {
+	const tree = constructTree(Structures["10"]);
+	expect(countNodes(tree.root)).toEqual(5);
+});
+
+// Test Case 11: //* Sample Input: refer to Images -> BST-structure-11.png
+test("Return 10 for number of nodes in BST", () => {
+	const tree = constructTree(Structures["11"]);
+	expect(countNodes(tree.root)).toEqual(10);
+});
+
+// Test Case 12: //* Sample Input: refer to Images -> BST-structure-12.png
+test("Return 6 for number of nodes in BST", () => {
+	const tree = constructTree(Structures["12"]);
+	expect(countNodes(tree.root)).toEqual(6);
+});
+
+// Test Case 13: //* Sample Input: refer to Images -> BST-structure-13.png
+test("Return 14 for number of nodes in BST", () => {
+	const tree = constructTree(Structures["13"]);
+	expect(countNodes(tree.root)).toEqual(14);
+});
+
+// Test Case 14:
 test("Return 1 for number of nodes in BST", () => {
 	const tree = constructTree([17]);
 	expect(countNodes(tree.root)).toEqual(1);
 });
 
-// Test Case 5:
+// Test Case 15:
 test("Return 0 because there is no tree", () => {
 	expect(countNodes(null)).toEqual(0);
 });
