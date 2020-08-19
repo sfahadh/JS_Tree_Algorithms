@@ -68,6 +68,18 @@ test("Node was found in the right side of the root tree under the left subtree",
 	expect(contains(tree.root, 42)).toEqual(true);
 });
 
+// Test Case 12: //* Sample Image: refer to Images -> BST-structure-12.png
+test("Node was found in the root of the tree", () => {
+	const tree = constructTree(Structures["12"]);
+	expect(contains(tree.root, 777)).toEqual(true);
+});
+
+// Test Case 13: //* Sample Image: refer to Images -> BST-structure-13.png
+test("Node was found in the left side of the root tree under the right subtree", () => {
+	const tree = constructTree(Structures["13"]);
+	expect(contains(tree.root, 4)).toEqual(true);
+});
+
 // Test Case 14:
 test("No nodes in empty tree", () => {
 	expect(contains(null, 10)).toEqual(false);
