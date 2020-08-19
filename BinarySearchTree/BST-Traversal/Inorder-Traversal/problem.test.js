@@ -38,6 +38,30 @@ test("Return an array of values - [3, 4, 5, 6, 7, 8, 9]", () => {
     expect(inOrder(tree.root)).toEqual([3, 4, 5, 6, 7, 8, 9]);
 });
 
+// Test Case 7: //* Sample Image: refer to Images -> BST-structure-7.png
+test("Return an array of values - [1, 2, 5, 6, 7, 9, 13, 15]", () => {
+    const tree = constructTree(Structures["7"]);
+    expect(inOrder(tree.root)).toEqual([1, 2, 5, 6, 7, 9, 13, 15]);
+});
+
+// Test Case 8: //* Sample Image: refer to Images -> BST-structure-8.png
+test("Return an array of values - [4, 16, 21, 25, 26, 35, 45, 47, 69]", () => {
+    const tree = constructTree(Structures["8"]);
+    expect(inOrder(tree.root)).toEqual([4, 16, 21, 25, 26, 35, 45, 47, 69]);
+});
+
+// Test Case 9: //* Sample Image: refer to Images -> BST-structure-9.png
+test("Return an array of values - [3, 15, 16, 21]", () => {
+    const tree = constructTree(Structures["9"]);
+    expect(inOrder(tree.root)).toEqual([3, 15, 16, 21]);
+});
+
+// Test Case 10: //* Sample Image: refer to Images -> BST-structure-10.png
+test("Return an array of values - [2, 12, 15, 19, 21]", () => {
+    const tree = constructTree(Structures["10"]);
+    expect(inOrder(tree.root)).toEqual([2, 12, 15, 19, 21]);
+});
+
 // Test Case 14:
 test("Return an array of value - [33]", () => {
     const tree = constructTree([33]);

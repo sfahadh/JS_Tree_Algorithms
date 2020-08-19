@@ -28,6 +28,7 @@ const inOrder = root => {
         if (root.right) recurse(root.right);
     }
     recurse(root);
+    console.log(array);
     return array;
 }
 
