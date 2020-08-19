@@ -65,7 +65,7 @@ test("Return 5 for number of nodes in BST", () => {
 // Test Case 11: //* Sample Input: refer to Images -> BST-structure-11.png
 test("Return 10 for number of nodes in BST", () => {
 	const tree = constructTree(Structures["11"]);
-	expect(countNodes(tree.root)).toEqual(10);
+	expect(countNodes(tree.root)).toEqual(11);
 });
 
 // Test Case 12: //* Sample Input: refer to Images -> BST-structure-12.png
