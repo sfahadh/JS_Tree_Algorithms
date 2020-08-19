@@ -2,16 +2,34 @@ const constructTree = require("../../Starter/ConstructTree");
 const countNodes = require("./problem");
 const Structures = require("../../Starter/Structures");
 
+// Test Case 1: //* Sample Input: refer to Images -> BST-structure-1.png
+test("Return 6 for number of nodes in BST", () => {
+	const tree = constructTree(Structures["1"]);
+	expect(countNodes(tree.root)).toEqual(6);
+});
+
 // Test Case 2: //* Sample Input: refer to Images -> BST-structure-2.png
 test("Return 3 for number of nodes in BST", () => {
 	const tree = constructTree(Structures["2"]);
 	expect(countNodes(tree.root)).toEqual(3);
 });
 
+// Test Case 3: //* Sample Input: refer to Images -> BST-structure-3.png
+test("Return 2 for number of nodes in BST", () => {
+	const tree = constructTree(Structures["3"]);
+	expect(countNodes(tree.root)).toEqual(2);
+});
+
 // Test Case 4: //* Sample Input: refer to Images -> BST-structure-4.png
 test("Return 2 for number of nodes in BST", () => {
 	const tree = constructTree(Structures["4"]);
 	expect(countNodes(tree.root)).toEqual(2);
+});
+
+// Test Case 5: //* Sample Input: refer to Images -> BST-structure-5.png
+test("Return 7 for number of nodes in BST", () => {
+	const tree = constructTree(Structures["5"]);
+	expect(countNodes(tree.root)).toEqual(7);
 });
 
 // Test Case 6: //* Sample Input: refer to Images -> BST-structure-6.png
@@ -30,6 +48,12 @@ test("Return 8 for number of nodes in BST", () => {
 test("Return 9 for number of nodes in BST", () => {
 	const tree = constructTree(Structures["8"]);
 	expect(countNodes(tree.root)).toEqual(9);
+});
+
+// Test Case 9: //* Sample Input: refer to Images -> BST-structure-9.png
+test("Return 4 for number of nodes in BST", () => {
+	const tree = constructTree(Structures["9"]);
+	expect(countNodes(tree.root)).toEqual(4);
 });
 
 // Test Case 3:
