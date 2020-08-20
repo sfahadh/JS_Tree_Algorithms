@@ -39,21 +39,21 @@ test("Return an array of values - [6, 4, 3, 5, 8, 7, 9]", () => {
 });
 
 // Test Case 7: //* Sample Image: refer to Images -> BST-structure-7.png
-test("Return an array of values - [7, 5, 2, 1, 6, 13, 9, 15]", () => {
+test("Return an array of values - [33, 21, 17, 13, 12, 15, 23, 40, 36, 43, 51, 49, 55]", () => {
     const tree = constructTree(Structures["7"]);
-    expect(preOrder(tree.root)).toEqual([7, 5, 2, 1, 6, 13, 9, 15]);
+    expect(preOrder(tree.root)).toEqual([33, 21, 17, 13, 12, 15, 23, 40, 36, 43, 51, 49, 55]);
 });
 
 // Test Case 8: //* Sample Image: refer to Images -> BST-structure-8.png
-test("Return an array of values - [25, 16, 4, 21, 26, 35, 45, 47, 69]", () => {
+test("Return an array of values - [69, 36, 62, 51, 59, 53, 139, 77, 92, 83, 85]", () => {
     const tree = constructTree(Structures["8"]);
-    expect(preOrder(tree.root)).toEqual([25, 16, 4, 21, 26, 35, 45, 47, 69]);
+    expect(preOrder(tree.root)).toEqual([69, 36, 62, 51, 59, 53, 139, 77, 92, 83, 85]);
 });
 
 // Test Case 9: //* Sample Image: refer to Images -> BST-structure-9.png
-test("Return an array of values - [15, 3, 16, 21]", () => {
+test("Return an array of values - [55, 44, 33, 22, 11]", () => {
     const tree = constructTree(Structures["9"]);
-    expect(preOrder(tree.root)).toEqual([15, 3, 16, 21]);
+    expect(preOrder(tree.root)).toEqual([55, 44, 33, 22, 11]);
 });
 
 // Test Case 10: //* Sample Image: refer to Images -> BST-structure-10.png
@@ -75,9 +75,9 @@ test("Return an array of values - [777, 555, 444, 666, 888, 999]", () => {
 });
 
 // Test Case 13: //* Sample Image: refer to Images -> BST-structure-13.png
-test("Return an array of values - [52, 6, 2, 1, 4, 34, 125, 99, 89, 123, 121, 147, 167]", () => {
+test("Return an array of values - [52, 25, 6, 2, 1, 4, 34, 147, 99, 89, 123, 121, 125, 167]", () => {
     const tree = constructTree(Structures["13"]);
-    expect(preOrder(tree.root)).toEqual([52, 6, 2, 1, 4, 34, 125, 99, 89, 123, 121, 147, 167]);
+    expect(preOrder(tree.root)).toEqual([52, 25, 6, 2, 1, 4, 34, 147, 99, 89, 123, 121, 125, 167]);
 });
 
 // Test Case 14:
