@@ -17,7 +17,7 @@ const avgLevel = root => {
 
     const avg = [];
     for (let index of nodeVals) {
-        avg.push(Math.floor(index.reduce((acc, curr) => acc + curr) / index.length)));
+        avg.push(Math.floor(index.reduce((acc, curr) => acc + curr) / index.length));
     }
 
     return avg;

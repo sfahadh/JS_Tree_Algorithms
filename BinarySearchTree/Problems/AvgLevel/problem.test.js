@@ -39,21 +39,21 @@ test("The average levels of BST are [6, 6, 6]", () => {
 });
 
 // Test Case 7: //* Sample Image: refer to Images -> BST-structure-7.png
-test("The average levels of BST are [7, 9, 8, 1]", () => {
+test("The average levels of BST are [33, 30, 29, 32, 32]", () => {
 	const tree = constructTree(Structures["7"]);
-	expect(avgLevel(tree.root)).toEqual([7, 9, 8, 1]);
+	expect(avgLevel(tree.root)).toEqual([33, 30, 29, 32, 32]);
 });
 
 // Test Case 8: //* Sample Image: refer to Images -> BST-structure-8.png
-test("The average levels of BST are [25, 21, 20, 45, 47, 69]", () => {
+test("The average levels of BST are [69, 87, 69, 71, 71, 69]", () => {
 	const tree = constructTree(Structures["8"]);
-	expect(avgLevel(tree.root)).toEqual([25, 21, 20, 45, 47, 69]);
+	expect(avgLevel(tree.root)).toEqual([69, 87, 69, 71, 71, 69]);
 });
 
 // Test Case 9: //* Sample Image: refer to Images -> BST-structure-9.png
-test("Return an array of values - [15, 9, 21]", () => {
+test("Return an array of values - [55, 44, 33, 22, 11]", () => {
 	const tree = constructTree(Structures["9"]);
-	expect(avgLevel(tree.root)).toEqual([15, 9, 21]);
+	expect(avgLevel(tree.root)).toEqual([55, 44, 33, 22, 11]);
 });
 
 // Test Case 10: //* Sample Image: refer to Images -> BST-structure-10.png
@@ -75,9 +75,9 @@ test("Return an array of values - [777, 721, 703]", () => {
 });
 
 // Test Case 13: //* Sample Image: refer to Images -> BST-structure-13.png
-test("Return an array of values - [52, 65, 70, 76, 121]", () => {
+test("Return an array of values - [ 52, 86, 76, 71, 62 ]", () => {
 	const tree = constructTree(Structures["13"]);
-	expect(avgLevel(tree.root)).toEqual([52, 65, 70, 76, 121]);
+	expect(avgLevel(tree.root)).toEqual([52, 86, 76, 71, 62]);
 });
 
 // Test Case 14:
