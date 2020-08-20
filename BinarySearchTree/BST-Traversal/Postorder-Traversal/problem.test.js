@@ -39,21 +39,21 @@ test("Return an array of values - [3, 5, 4, 7, 9, 8, 6]", () => {
 });
 
 // Test Case 7: //* Sample Image: refer to Images -> BST-structure-7.png
-test("Return an array of values - [1, 2, 6, 5, 9, 15, 13, 7]", () => {
+test("Return an array of values - [12, 15, 13, 17, 23, 21, 36, 49, 55, 51, 43, 40, 33]", () => {
     const tree = constructTree(Structures["7"]);
-    expect(postOrder(tree.root)).toEqual([1, 2, 6, 5, 9, 15, 13, 7]);
+    expect(postOrder(tree.root)).toEqual([12, 15, 13, 17, 23, 21, 36, 49, 55, 51, 43, 40, 33]);
 });
 
 // Test Case 8: //* Sample Image: refer to Images -> BST-structure-8.png
-test("Return an array of values - [4, 21, 16, 69, 47, 45, 35, 26, 25]", () => {
+test("Return an array of values - [53, 59, 51, 62, 36, 85, 83, 92, 77, 139, 69]", () => {
     const tree = constructTree(Structures["8"]);
-    expect(postOrder(tree.root)).toEqual([4, 21, 16, 69, 47, 45, 35, 26, 25]);
+    expect(postOrder(tree.root)).toEqual([53, 59, 51, 62, 36, 85, 83, 92, 77, 139, 69]);
 });
 
 // Test Case 9: //* Sample Image: refer to Images -> BST-structure-9.png
-test("Return an array of values - [3, 21, 16, 15]", () => {
+test("Return an array of values - [11, 22, 33, 44, 55]", () => {
     const tree = constructTree(Structures["9"]);
-    expect(postOrder(tree.root)).toEqual([3, 21, 16, 15]);
+    expect(postOrder(tree.root)).toEqual([11, 22, 33, 44, 55]);
 });
 
 // Test Case 10: //* Sample Image: refer to Images -> BST-structure-10.png
@@ -75,9 +75,9 @@ test("Return an array of values - [444, 666, 555, 999, 888, 777]", () => {
 });
 
 // Test Case 13: //* Sample Image: refer to Images -> BST-structure-13.png
-test("Return an array of values - [1, 4, 2, 34, 6, 89, 121, 123, 99, 167, 147, 125, 52]", () => {
+test("Return an array of values - [1, 4, 2, 6, 34, 25, 89, 121, 125, 123, 99, 167, 147, 52]", () => {
     const tree = constructTree(Structures["13"]);
-    expect(postOrder(tree.root)).toEqual([1, 4, 2, 34, 6, 89, 121, 123, 99, 167, 147, 125, 52]);
+    expect(postOrder(tree.root)).toEqual([1, 4, 2, 6, 34, 25, 89, 121, 125, 123, 99, 167, 147, 52]);
 });
 
 // Test Case 14:
