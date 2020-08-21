@@ -56,26 +56,37 @@ test("Return an array of [11] leaf nodes", () => {
 	expect(grabAllLeaves(tree.root)).toEqual([11]);
 });
 
+// Test Case 10: //* Sample Input: refer to Images -> BST-structure-10.png
+test("Return an array of [2, 21] leaf nodes", () => {
+	const tree = constructTree(Structures["10"]);
+	expect(grabAllLeaves(tree.root)).toEqual([2, 21]);
+});
+
+// Test Case 11: //* Sample Input: refer to Images -> BST-structure-11.png
+test("Return an array of [5, 20, 42, 69] leaf nodes", () => {
+	const tree = constructTree(Structures["11"]);
+	expect(grabAllLeaves(tree.root)).toEqual([5, 20, 42, 69]);
+});
+
+// Test Case 12: //* Sample Input: refer to Images -> BST-structure-12.png
+test("Return an array of [444, 666, 999] leaf nodes", () => {
+	const tree = constructTree(Structures["12"]);
+	expect(grabAllLeaves(tree.root)).toEqual([444, 666, 999]);
+});
+
 // Test Case 13: //* Sample Input: refer to Images -> BST-structure-13.png
 test("Return an array of [1, 4, 34, 89, 121, 125, 167] leaf nodes", () => {
 	const tree = constructTree(Structures["13"]);
 	expect(grabAllLeaves(tree.root)).toEqual([1, 4, 34, 89, 121, 125, 167]);
 });
 
-// Test Case 3:
+// Test Case 14:
 test("Return an array of [17] leaf nodes", () => {
 	const tree = constructTree([17]);
 	expect(grabAllLeaves(tree.root)).toEqual([17]);
 });
 
-// Test Case 5:
+// Test Case 15:
 test("Return an empty array", () => {
 	expect(grabAllLeaves(null)).toEqual([]);
-});
-
-
-// Test Case 8: //* Sample Input: refer to Images -> BST-structure-14.png
-test("Return an array of [1, 4, 34, 89, 121, 125, 167] leaf nodes", () => {
-	const tree = constructTree([52, 25, 147, 6, 34, 99, 167, 2, 89, 123, 1, 4, 121, 125]);
-	expect(grabAllLeaves(tree.root)).toEqual([1, 4, 34, 89, 121, 125, 167]);
 });
