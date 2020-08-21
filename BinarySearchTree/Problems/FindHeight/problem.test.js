@@ -39,27 +39,45 @@ test("Node not found in BST, should return 0 - Part II", () => {
 });
 
 // Test Case 7: //* Sample Input: refer to Images -> BST-structure-7.png
-test("From the root of the BST to the node, the height is 3 - Part I", () => {
+test("From the root of the BST to the node 51, the height is 4", () => {
   const tree = constructTree(Structures["7"]);
-  expect(findHeight(tree.root, 2)).toEqual(3);
+  expect(findHeight(tree.root, 51)).toEqual(4);
+});
+
+// Test Case 8: //* Sample Input: refer to Images -> BST-structure-8.png
+test("From the root of the BST to the node 85, the height is 6", () => {
+  const tree = constructTree(Structures["8"]);
+  expect(findHeight(tree.root, 85)).toEqual(6);
+});
+
+// Test Case 9: //* Sample Input: refer to Images -> BST-structure-9.png
+test("From the root of the BST to the node 11, the height is 5", () => {
+  const tree = constructTree(Structures["9"]);
+  expect(findHeight(tree.root, 11)).toEqual(5);
 });
 
 // Test Case 10: //* Sample Input: refer to Images -> BST-structure-10.png
-test("From the root of the BST to the node, the height is 3 - Part II", () => {
+test("From the root of the BST to the node 15, the height is 1", () => {
   const tree = constructTree(Structures["10"]);
-  expect(findHeight(tree.root, 21)).toEqual(3);
+  expect(findHeight(tree.root, 15)).toEqual(1);
 });
 
 // Test Case 11: //* Sample Input: refer to Images -> BST-structure-11.png
-test("From the root of the BST to the node, the height is 6", () => {
+test("From the root of the BST to the node 69, the height is 7", () => {
   const tree = constructTree(Structures["11"]);
-  expect(findHeight(tree.root, 69)).toEqual(6);
+  expect(findHeight(tree.root, 69)).toEqual(7);
 });
 
 // Test Case 12: //* Sample Input: refer to Images -> BST-structure-12.png
-test("Node is not located anywhere in the BST", () => {
+test("Node not found in BST, should return 0 - Part III", () => {
   const tree = constructTree(Structures["12"]);
-  expect(findHeight(tree.root, 555)).toEqual(3);
+  expect(findHeight(tree.root, 111)).toEqual(0);
+});
+
+// Test Case 13: //* Sample Input: refer to Images -> BST-structure-13.png
+test("From the root of the BST to the node 1, the height is 5", () => {
+  const tree = constructTree(Structures["13"]);
+  expect(findHeight(tree.root, 1)).toEqual(5);
 });
 
 // Test Case 14:
