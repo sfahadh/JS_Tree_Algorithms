@@ -56,10 +56,28 @@ test("The BST structure 9 should return 5 as number of levels", () => {
   expect(levels(tree.root)).toEqual(5);
 });
 
-// Test Case 10: //* Sample Input: refer to Images -> BST-structure-9.png
+// Test Case 10: //* Sample Input: refer to Images -> BST-structure-10.png
 test("The BST structure 10 should return 3 as number of levels", () => {
   const tree = constructTree(Structures["10"]);
   expect(levels(tree.root)).toEqual(3);
+});
+
+// Test Case 11: //* Sample Input: refer to Images -> BST-structure-11.png
+test("The BST structure 11 should return 7 as number of levels", () => {
+  const tree = constructTree(Structures["11"]);
+  expect(levels(tree.root)).toEqual(7);
+});
+
+// Test Case 12: //* Sample Input: refer to Images -> BST-structure-12.png
+test("The BST structure 12 should return 3 as number of levels", () => {
+  const tree = constructTree(Structures["12"]);
+  expect(levels(tree.root)).toEqual(3);
+});
+
+// Test Case 13: //* Sample Input: refer to Images -> BST-structure-13.png
+test("The BST structure 13 should return 5 as number of levels", () => {
+  const tree = constructTree(Structures["13"]);
+  expect(levels(tree.root)).toEqual(5);
 });
 
 // Test Case 14:
