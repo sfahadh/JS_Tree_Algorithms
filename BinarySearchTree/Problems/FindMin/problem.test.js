@@ -45,16 +45,40 @@ test("Lowest node value in tree is 12", () => {
 	expect(findMin(tree.root)).toEqual(12);
 });
 
+// Test Case 8: //* Sample Input: refer to Images -> BST-structure-8.png
+test("Lowest node value in tree is 36", () => {
+	const tree = constructTree(structures["8"]);
+	expect(findMin(tree.root)).toEqual(36);
+});
+
 // Test Case 9: //* Sample Input: refer to Images -> BST-structure-9.png
 test("Lowest node value in tree is 11", () => {
 	const tree = constructTree(Structures["9"]);
 	expect(findMin(tree.root)).toEqual(11);
 });
 
+// Test Case 10: //* Sample Input: refer to Images -> BST-structure-10.png
+test("Lowest node value in tree is 2", () => {
+	const tree = constructTree(Structures["10"]);
+	expect(findMin(tree.root)).toEqual(2);
+});
+
+// Test Case 11: //* Sample Input: refer to Images -> BST-structure-11.png
+test("Lowest node value in tree is 5", () => {
+	const tree = constructTree(Structures["11"]);
+	expect(findMin(tree.root)).toEqual(5);
+});
+
 // Test Case 12: //* Sample Input: refer to Images -> BST-structure-12.png
 test("Lowest node value in tree is 444", () => {
 	const tree = constructTree(Structures["12"]);
 	expect(findMin(tree.root)).toEqual(444);
+});
+
+// Test Case 13: //* Sample Input: refer to Images -> BST-structure-13.png
+test("Lowest node value in tree is 1", () => {
+	const tree = constructTree(Structures["13"]);
+	expect(findMin(tree.root)).toEqual(1);
 });
 
 // Test Case 14:
