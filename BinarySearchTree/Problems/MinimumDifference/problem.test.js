@@ -2,34 +2,58 @@ const constructTree = require("../../Starter/ConstructTree");
 const minimumDifference = require("./problem");
 const Structures = require("../../Starter/Structures");
 
+// Test Case 1: //* Sample Input: refer to Images -> BST-structure-1png
+test("The minimum difference in the BST structure 1 should return 1", () => {
+	const tree = constructTree(Structures["1"]);
+	expect(minimumDifference(tree.root)).toEqual(1);
+});
+
 // Test Case 2: //* Sample Input: refer to Images -> BST-structure-2.png
-test("The minimum difference in the tree should return 4", () => {
+test("The minimum difference in the BST structure 2 should return 4", () => {
 	const tree = constructTree(Structures["2"]);
 	expect(minimumDifference(tree.root)).toEqual(4);
 });
 
 // Test Case 3: //* Sample Input: refer to Images -> BST-structure-3.png
-test("The minimum difference in the tree should return 61", () => {
+test("The minimum difference in the BST structure 3 should return 61", () => {
 	const tree = constructTree(Structures["3"]);
 	expect(minimumDifference(tree.root)).toEqual(61);
 });
 
+// Test Case 4: //* Sample Input: refer to Images -> BST-structure-4.png
+test("The minimum difference in the BST structure 4 should return 49", () => {
+	const tree = constructTree(Structures["4"]);
+	expect(minimumDifference(tree.root)).toEqual(49);
+});
+
+// Test Case 5: //* Sample Input: refer to Images -> BST-structure-4.png
+test("The minimum difference in the BST structure 5 should return 2", () => {
+	const tree = constructTree(Structures["5"]);
+	expect(minimumDifference(tree.root)).toEqual(2);
+});
+
 // Test Case 6: //* Sample Input: refer to Images -> BST-structure-6.png
-test("The minimum difference in the tree should return 1", () => {
+test("The minimum difference in the BST structure 6 should return 1", () => {
 	const tree = constructTree(Structures["6"]);
 	expect(minimumDifference(tree.root)).toEqual(1);
 });
 
 // Test Case 7: //* Sample Input: refer to Images -> BST-structure-7.png
-test("The minimum difference in the tree should return 1", () => {
+test("The minimum difference in the BST structure 7 should return 1", () => {
 	const tree = constructTree(Structures["7"]);
 	expect(minimumDifference(tree.root)).toEqual(1);
 });
 
 // Test Case 8: //* Sample Input: refer to Images -> BST-structure-8.png
-test("The minimum difference in the tree should return 5", () => {
+test("The minimum difference in the BST structure 8 should return 2", () => {
 	const tree = constructTree(Structures["8"]);
-	expect(minimumDifference(tree.root)).toEqual(5);
+	expect(minimumDifference(tree.root)).toEqual(2);
+});
+
+// Test Case 9: //* Sample Input: refer to Images -> BST-structure-8.png
+test("The minimum difference in the BST structure 9 should return 11", () => {
+	const tree = constructTree(Structures["9"]);
+	expect(minimumDifference(tree.root)).toEqual(11);
 });
 
 // Test Case 14:
