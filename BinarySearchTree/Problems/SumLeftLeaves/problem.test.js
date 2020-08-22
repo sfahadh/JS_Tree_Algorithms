@@ -56,6 +56,30 @@ test("The sum of all left leaves should return 11", () => {
 	expect(sumLeftLeaves(tree.root)).toEqual(11);
 });
 
+// Test Case 10: //* Sample Input: refer to Images -> BST-structure-10.png
+test("The sum of all left leaves should return 2", () => {
+	const tree = constructTree(Structure["10"]);
+	expect(sumLeftLeaves(tree.root)).toEqual(2);
+});
+
+// Test Case 11: //* Sample Input: refer to Images -> BST-structure-11.png
+test("The sum of all left leaves should return 47", () => {
+	const tree = constructTree(Structure["11"]);
+	expect(sumLeftLeaves(tree.root)).toEqual(47);
+});
+
+// Test Case 12: //* Sample Input: refer to Images -> BST-structure-12.png
+test("The sum of all left leaves should return 444", () => {
+	const tree = constructTree(Structure["12"]);
+	expect(sumLeftLeaves(tree.root)).toEqual(444);
+});
+
+// Test Case 13: //* Sample Input: refer to Images -> BST-structure-13.png
+test("The sum of all left leaves should return 211", () => {
+	const tree = constructTree(Structure["13"]);
+	expect(sumLeftLeaves(tree.root)).toEqual(211);
+});
+
 // Test Case 14:
 test("There is only 1 node, should return 0", () => {
 	const tree = constructTree([17]);
