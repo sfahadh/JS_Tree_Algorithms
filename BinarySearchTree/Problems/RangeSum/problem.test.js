@@ -2,10 +2,34 @@ const constructTree = require("../../Starter/ConstructTree");
 const rangeSum = require("./problem");
 const Structures = require("../../Starter/Structures");
 
+// Test Case 1: //* Sample Input: refer to Images -> BST-structure-1.png
+test("The range sum value should return 87", () => {
+	const tree = constructTree(Structures["1"]);
+	expect(rangeSum(tree.root, 24, 32)).toEqual(87);
+});
+
 // Test Case 2: //* Sample Input: refer to Images -> BST-structure-2.png
 test("The range sum value should return 16", () => {
 	const tree = constructTree(Structures["2"]);
 	expect(rangeSum(tree.root, 1, 12)).toEqual(16);
+});
+
+// Test Case 3: //* Sample Input: refer to Images -> BST-structure-3.png
+test("The range sum value should return 185", () => {
+	const tree = constructTree(Structures["3"]);
+	expect(rangeSum(tree.root, 62, 123)).toEqual(185);
+});
+
+// Test Case 4: //* Sample Input: refer to Images -> BST-structure-4.png
+test("The range sum value should return 13", () => {
+	const tree = constructTree(Structures["4"]);
+	expect(rangeSum(tree.root, 13, 13)).toEqual(13);
+});
+
+// Test Case 5: //* Sample Input: refer to Images -> BST-structure-5.png
+test("The range sum value should return 0", () => {
+	const tree = constructTree(Structures["5"]);
+	expect(rangeSum(tree.root, -1000, 2)).toEqual(0);
 });
 
 // Test Case 6: //* Sample Input: refer to Images -> BST-structure-6.png
