@@ -7,7 +7,6 @@ test("return tree without node 89", () => {
   const outputTree = constructTree([84, 66]);
   expect(removeNode(inputTree.root, 89)).toEqual(outputTree.root);
 });
-
 /*
 
 	     84                        84 
@@ -17,19 +16,18 @@ test("return tree without node 89", () => {
 */
 
 // Test Case 2:
-test("return tree without node 5", () => {
+test("return tree without node 1", () => {
   const inputTree = constructTree([7, 5, 13, 2, 6, 9, 15, 1]);
-  const outputTree = constructTree([7, 13, 9, 15]);
+  const outputTree = constructTree([7, 5, 13, 2, 6, 9, 15]);
   expect(removeNode(inputTree.root, 1)).toEqual(outputTree.root);
 });
-
 /*
 
-	        7                    7
-	     /	 \             	      \
-     5     13        =>         13
-   /  \   /  \                 /  \  
-  2    6 9   15               9    15
+	        7                       7
+	     /	 \             	     /   \
+     5     13        =>      5     13
+   /  \   /  \             /  \   /  \  
+  2    6 9   15           2   6  9   15
  /
 1 
 
@@ -45,7 +43,6 @@ test("remove the root node leaving an empty tree", () => {
   const tree = constructTree([24, 17, 31, 34, 32, 39]);
   expect(removeNode(tree.root, 24)).toEqual(null);
 });
-
 /*
 
      24            
@@ -59,19 +56,18 @@ test("remove the root node leaving an empty tree", () => {
 */
 
 // Test Case 5:
-test("Return the tree without node 31", () => {
+test("Return the tree without node 34", () => {
   const inputTree = constructTree([24, 17, 31, 34, 32, 39]);
-  const outputTree = constructTree([24, 17]);
-  expect(removeNode(inputTree.root, 31)).toEqual(outputTree.root);
+  const outputTree = constructTree([24, 17, 31]);
+  expect(removeNode(inputTree.root, 34)).toEqual(outputTree.root);
 });
-
 /*
 
      24                   
     /  \                    
    17  31                   24   
-         \       =>        /
-         34              17    
+         \       =>        /  \
+         34              17   31
         /  \                  
        32  39                
 
@@ -82,7 +78,6 @@ test("return tree without node 1234", () => {
   const inputTree = constructTree([1234]);
   expect(removeNode(inputTree.root, 1234)).toEqual(null);
 });
-
 /*
 
 	1234    =>        
@@ -94,7 +89,6 @@ test("Node not found in BST, return original tree - Part I", () => {
   const tree = constructTree([54]);
   expect(removeNode(tree.root, 4123413)).toEqual(tree.root);
 });
-
 /*
 
 	54    =>    54       
@@ -106,7 +100,6 @@ test("Node not found in BST, return original tree - Part II", () => {
   const tree = constructTree([7, 5, 13, 2, 6, 9, 15]);
   expect(removeNode(tree.root, 8)).toEqual(tree.root);
 });
-
 /*
 
 	       7                           7
@@ -123,7 +116,6 @@ test("Return the tree without node 77", () => {
   const outputTree = constructTree([84, 89, 99]);
   expect(removeNode(inputTree.root, 66)).toEqual(outputTree.root);
 });
-
 /*
 
 	     84                    84
