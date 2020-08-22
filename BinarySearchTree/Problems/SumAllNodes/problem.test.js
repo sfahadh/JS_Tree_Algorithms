@@ -2,16 +2,34 @@ const constructTree = require("../../Starter/ConstructTree");
 const sum = require("./problem");
 const Structures = require("../../Starter/Structures");
 
+// Test Case 1: //* Sample Input: refer to Images -> BST-structure-1.png
+test("The sum of all nodes should return 177", () => {
+  const tree = constructTree(Structures["1"]);
+  expect(sum(tree.root)).toEqual(177);
+});
+
 // Test Case 2: //* Sample Input: refer to Images -> BST-structure-2.png
 test("The sum of all nodes should return 31", () => {
   const tree = constructTree(Structures["2"]);
   expect(sum(tree.root)).toEqual(31);
 });
 
+// Test Case 3: //* Sample Input: refer to Images -> BST-structure-3.png
+test("The sum of all nodes should return 185", () => {
+  const tree = constructTree(Structures["3"]);
+  expect(sum(tree.root)).toEqual(185);
+});
+
 // Test Case 4: //* Sample Input: refer to Images -> BST-structure-4.png
 test("The sum of all nodes should return 75", () => {
   const tree = constructTree(Structures["4"]);
   expect(sum(tree.root)).toEqual(75);
+});
+
+// Test Case 5: //* Sample Input: refer to Images -> BST-structure-5.png
+test("The sum of all nodes should return 137", () => {
+  const tree = constructTree(Structures["5"]);
+  expect(sum(tree.root)).toEqual(137);
 });
 
 // Test Case 6: //* Sample Input: refer to Images -> BST-structure-6.png
@@ -21,15 +39,21 @@ test("The sum of all nodes should return 42", () => {
 });
 
 // Test Case 7: //* Sample Input: refer to Images -> BST-structure-7.png
-test("The sum of all nodes should return 58", () => {
+test("The sum of all nodes should return 408", () => {
   const tree = constructTree(Structures["7"]);
-  expect(sum(tree.root)).toEqual(58);
+  expect(sum(tree.root)).toEqual(408);
 });
 
 // Test Case 8: //* Sample Input: refer to Images -> BST-structure-8.png
-test("The sum of all nodes should return 290", () => {
+test("The sum of all nodes should return 806", () => {
   const tree = constructTree(Structures["8"]);
-  expect(sum(tree.root)).toEqual(290);
+  expect(sum(tree.root)).toEqual(806);
+});
+
+// Test Case 9: //* Sample Input: refer to Images -> BST-structure-9.png
+test("The sum of all nodes should return 165", () => {
+  const tree = constructTree(Structures["9"]);
+  expect(sum(tree.root)).toEqual(165);
 });
 
 // Test Case 14:
