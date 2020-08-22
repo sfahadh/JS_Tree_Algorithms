@@ -39,9 +39,21 @@ test("The range sum value should return 18", () => {
 });
 
 // Test Case 7: //* Sample Input: refer to Images -> BST-structure-7.png
-test("The range sum value should return 30", () => {
+test("Return 0, there are no nodes between the range sum", () => {
 	const tree = constructTree(Structures["7"]);
-	expect(rangeSum(tree.root, 5, 9)).toEqual(27);
+	expect(rangeSum(tree.root, 5, 9)).toEqual(0);
+});
+
+// Test Case 8: //* Sample Input: refer to Images -> BST-structure-8.png
+test("The range sum value should return 488", () => {
+	const tree = constructTree(Structures["8"]);
+	expect(rangeSum(tree.root, 53, 85)).toEqual(488);
+});
+
+// Test Case 9: //* Sample Input: refer to Images -> BST-structure-9.png
+test("The range sum value should return 3", () => {
+	const tree = constructTree(Structures["9"]);
+	expect(rangeSum(tree.root, 11, 32)).toEqual(33);
 });
 
 // Test Case 10: //* Sample Input: refer to Images -> BST-structure-10.png
@@ -51,9 +63,9 @@ test("The range sum value should return 15", () => {
 });
 
 // Test Case 11: //* Sample Input: refer to Images -> BST-structure-11.png
-test("The range sum value should return 36", () => {
+test("The range sum value should return 383", () => {
 	const tree = constructTree(Structures["11"]);
-	expect(rangeSum(tree.root, 0, 100)).toEqual(336);
+	expect(rangeSum(tree.root, 0, 100)).toEqual(383);
 });
 
 // Test Case 12: //* Sample Input: refer to Images -> BST-structure-12.png
@@ -62,13 +74,19 @@ test("The range sum value should return 0 because there are no node values in ra
 	expect(rangeSum(tree.root, 22, 45)).toEqual(0);
 });
 
+// Test Case 13: //* Sample Input: refer to Images -> BST-structure-13.png
+test("Return 0, the high is greater than the low", () => {
+	const tree = constructTree(Structures["13"]);
+	expect(rangeSum(tree.root, 4, 1)).toEqual(0);
+});
+
 // Test Case 14:
-test("The range sum value should return 0", () => {
+test("The range sum value should return 17", () => {
 	const tree = constructTree([17]);
-	expect(rangeSum(tree.root, 8, 12)).toEqual(0);
+	expect(rangeSum(tree.root, 8, 17)).toEqual(17);
 });
 
 // Test Case 15:
-test("The range sum value should return 0", () => {
+test("There is no tree, return 0", () => {
 	expect(rangeSum(null, 15, 65)).toEqual(0);
 });
