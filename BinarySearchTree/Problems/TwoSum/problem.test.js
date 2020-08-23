@@ -9,7 +9,7 @@ test("Return true because nodes 24 & 32 adds up to 56", () => {
 });
 
 // Test Case 2: //* Sample Input: refer to Images -> BST-structure-2.png
-test("Return false because there are no nodes that adds up to 12", () => {
+test("Return false because there are no 2 nodes that adds up to 12", () => {
   const tree = constructTree(Strucutres["2"]);
   expect(twoSum(tree.root, 12)).toEqual(false);
 });
@@ -50,16 +50,34 @@ test("Return true because nodes 53 & 139 adds up to 192", () => {
   expect(twoSum(tree.root, 192)).toEqual(true);
 });
 
+// Test Case 9: //* Sample Input: refer to Images -> BST-structure-9.png
+test("Return true because nodes 11 & 44 adds up to 55", () => {
+  const tree = constructTree(Strucutres["9"]);
+  expect(twoSum(tree.root, 55)).toEqual(true);
+});
+
 // Test Case 10: //* Sample Input: refer to Images -> BST-structure-10.png
-test("Return false because there are no nodes that adds up to 11", () => {
+test("Return false because there are no 2 nodes that adds up to 11", () => {
   const tree = constructTree(Strucutres["10"]);
   expect(twoSum(tree.root, 11)).toEqual(false);
 });
 
+// Test Case 11: //* Sample Input: refer to Images -> BST-structure-11.png
+test("Return true because nodes 25 & 30 || 50 & 5 || 35 & 20 adds up to 55", () => {
+  const tree = constructTree(Strucutres["11"]);
+  expect(twoSum(tree.root, 55)).toEqual(true);
+});
+
 // Test Case 12: //* Sample Input: refer to Images -> BST-structure-12.png
-test("Return false because there are no nodes that adds up to 125312341234", () => {
+test("Return false because there are no 2 nodes that adds up to 125312341234", () => {
   const tree = constructTree(Strucutres["12"]);
   expect(twoSum(tree.root, 125312341234)).toEqual(false);
+});
+
+// Test Case 13: //* Sample Input: refer to Images -> BST-structure-13.png
+test("Return false because there are no 2 nodes that adds up to 13", () => {
+  const tree = constructTree(Strucutres["13"]);
+  expect(twoSum(tree.root, 13)).toEqual(false);
 });
 
 // Test Case 14:
