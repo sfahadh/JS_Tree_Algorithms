@@ -24,11 +24,11 @@ test("Return an array of values - [1, 2, 3, 0]", () => {
 });
 
 // Test Case 4: //* Sample Image: refer to Images -> Nary-structure-4.png
-test("Return an array of values - [4, 3, 2, 1]", () => {
+test("Return an array of values - [4, 3, 2, 1, 0]", () => {
     const tree = NaryTree(0);
     InsertToNode(tree, [1]);
     InsertToNode(tree.children[0], [2]);
     InsertToNode(tree.children[0].children[0], [3]);
     InsertToNode(tree.children[0].children[0].children[0], [4]);
-    expect(postOrder(tree)).toEqual([4, 3, 2, 1]);
+    expect(postOrder(tree)).toEqual([4, 3, 2, 1, 0]);
 });
