@@ -19,7 +19,7 @@ function Node(data) {
 */
 
 const postOrder = root => {
-
+	return root;
 }
 
 module.exports = postOrder;

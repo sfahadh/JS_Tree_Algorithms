@@ -1,7 +1,8 @@
 const Node = require("./Node");
 
-function NaryTree(data) {
-    this.root = !data ? null : new Node(data);
+function NaryTree(data = null) {
+    this.root = data === null ? null : new Node(data);
+    return this.root;
 }
 
 module.exports = NaryTree;
