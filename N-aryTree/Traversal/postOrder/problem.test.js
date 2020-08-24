@@ -1,12 +1,11 @@
 const NaryTree = require("../../Starter/N-aryTree");
 const InsertToNode = require("../../Starter/insertToNode");
 const postOrder = require("./problem");
+const NaryTree1 = require("../../Starter/Structures/N-aryTree1");
 
 // Test Case 1: //* Sample Image: refer to Images -> Nary-structure-1.png
 test("Return an array of values - [51, 14]", () => {
-    const tree = NaryTree(14);
-    InsertToNode(tree, [51]);
-    expect(postOrder(tree)).toEqual([51, 14]);
+    expect(postOrder(NaryTree1())).toEqual([51, 14]);
 });
 
 // Test Case 2: //* Sample Image: refer to Images -> Nary-structure-2.png
