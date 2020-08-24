@@ -7,6 +7,7 @@ const NaryTree5 = require("../../Starter/Structures/N-aryTree5");
 const NaryTree6 = require("../../Starter/Structures/N-aryTree6");
 const NaryTree7 = require("../../Starter/Structures/N-aryTree7");
 const NaryTree8 = require("../../Starter/Structures/N-aryTree8");
+const NaryTree9 = require("../../Starter/Structures/N-aryTree9");
 
 // Test Case 1: //* Sample Image: refer to Images -> Nary-structure-1.png
 test("Return an array of values - [51, 14]", () => {
@@ -50,4 +51,10 @@ test("Return an array of values - [3, 12, -9, 3, 5, 1, -5, -1, 2, 8, 10, 0]", ()
 test("Return an array of values - [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]", () => {
     const results = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
     expect(postOrder(NaryTree8())).toEqual(results);
+});
+
+// Test Case 9: //* Sample Image: refer to Images -> Nary-structure-9.png
+test("Return an array of values - [14, 19, 29, 6, 1, 24, 31, 98, 8, 43, 62, 34, 21, 33, 73, 66, 54, 67, 41, 22, 5, 17, 76, 87, 101]", () => {
+    const results = [14, 19, 29, 6, 1, 24, 31, 98, 8, 43, 62, 34, 21, 33, 73, 66, 54, 67, 41, 22, 5, 17, 76, 87, 101];
+    expect(postOrder(NaryTree9())).toEqual(results);
 });
