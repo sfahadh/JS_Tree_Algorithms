@@ -25,19 +25,19 @@ const postOrder = root => {
 module.exports = postOrder;
 
 /*
-! Test Case 1: 
-* Sample Input: 
+! Test Case 1:
+* Sample Input:
         5
     /   |   \
   13    3    23
-* Sample Output: [13, 3, 23, 5] 
+* Sample Output: [13, 3, 23, 5]
 
 ! Test Case 2:
-* Sample Input: 
+* Sample Input:
             5
         /   |   \
       13    3    23
-    /  |           \  
-   7   24           63 
-* Sample Output: [7, 24, 13, 3, 63, 23, 5] 
+    /  |           \
+   7   24           63
+* Sample Output: [7, 24, 13, 3, 63, 23, 5]
 */
