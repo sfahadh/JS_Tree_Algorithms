@@ -1,4 +1,5 @@
 const postOrder = root => {
+    if (!root) return [];
     const results = [];
     const visited = {};
     const arr = [root];

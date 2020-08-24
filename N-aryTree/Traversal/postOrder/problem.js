@@ -20,6 +20,7 @@ function Node(data) {
 */
 
 const postOrder = root => {
+	if (!root) return [];
 	const results = [];
 	const visited = {};
 	const arr = [root];
@@ -36,6 +37,7 @@ const postOrder = root => {
 		}
 	}
 
+	console.log(results);
 	return results;
 }
 
@@ -46,6 +48,7 @@ module.exports = postOrder;
 * Sample Input: //* Sample Image: refer to Images -> Nary-structure-3.png
 * Sample Output: [1, 2, 3, 0]
 //* Sample Image: refer to Images -> Nary-structure-3.png
+
 ! Test Case 2:
 * Sample Input: //* Sample Image: refer to Images -> Nary-structure-6.png
 * Sample Output: [31, 53, 7, 12, 13, 6, 22, 2, 71, 7, 21]

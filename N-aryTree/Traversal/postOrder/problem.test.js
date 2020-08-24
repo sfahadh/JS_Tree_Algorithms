@@ -32,3 +32,36 @@ test("Return an array of values - [4, 3, 2, 1, 0]", () => {
     InsertToNode(tree.children[0].children[0].children[0], [4]);
     expect(postOrder(tree)).toEqual([4, 3, 2, 1, 0]);
 });
+
+// Test Case 5: //* Sample Image: refer to Images -> Nary-structure-5.png
+test("Return an array of values - [43, 23, 3, 44, 24, 4, 45, 25, 5, 42]", () => {
+    const tree = NaryTree(42);
+    InsertToNode(tree, [3, 4, 5]);
+
+    InsertToNode(tree.children[0], [23]);
+    InsertToNode(tree.children[0].children[0], [43]);
+
+    InsertToNode(tree.children[1], [24]);
+    InsertToNode(tree.children[1].children[0], [44]);
+
+    InsertToNode(tree.children[2], [25]);
+    InsertToNode(tree.children[2].children[0], [45]);
+
+    const results = [43, 23, 3, 44, 24, 4, 45, 25, 5, 42];
+    expect(postOrder(tree)).toEqual(results);
+});
+
+// Test Case 6: //* Sample Image: refer to Images -> Nary-structure-6.png
+test("Return an array of values - [31, 53, 7, 12, 13, 6, 22, 2, 71, 7, 21]", () => {
+    const tree = NaryTree(21);
+    InsertToNode(tree, [13, 7]);
+
+    InsertToNode(tree.children[0], [7, 12]);
+    InsertToNode(tree.children[0].children[0], [31, 53]);
+
+    InsertToNode(tree.children[1], [2, 71]);
+    InsertToNode(tree.children[1].children[1], [6, 22]);
+
+    const results = [31, 53, 7, 12, 13, 6, 22, 2, 71, 7, 21];
+    expect(postOrder(tree)).toEqual(results);
+});
