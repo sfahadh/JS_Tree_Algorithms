@@ -13,7 +13,6 @@ function NaryTree(data = null) {
     return this.root;
 }
 
-
 function Node(data) {
     this.data = data;
     this.children = [];

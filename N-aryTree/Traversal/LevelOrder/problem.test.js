@@ -37,8 +37,8 @@ test("Return an array of values - [42, 3, 4, 5, 23, 24, 25, 43, 44, 45]", () => 
 });
 
 // Test Case 6: //* Sample Image: refer to Images -> Nary-structure-6.png
-test("Return an array of values - [21, 13, 7, 12, 2, 71, 31, 53, 6, 22]", () => {
-    const results = [21, 13, 7, 12, 2, 71, 31, 53, 6, 22];
+test("Return an array of values - [21, 13, 7, 7, 12, 2, 71, 31, 53, 6, 22]", () => {
+    const results = [21, 13, 7, 7, 12, 2, 71, 31, 53, 6, 22];
     expect(levelOrder(NaryTree6())).toEqual(results);
 });
 
