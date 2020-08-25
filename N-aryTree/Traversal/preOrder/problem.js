@@ -8,8 +8,9 @@
 /*
 TODO: Complete the following pre-order N-ary Tree traversal problem below. There is only 1 input, which is the root of the tree. The pre-order traversal for N-ary trees is defined as traversing down the tree, visiting the parent node first and then the children starting from the left going towards the right. If a child in the left has children of its own, visit its children before move on towards the right. All nodes visited should be pushed into an array and then returned as a result.
 
-function NaryTree() {
-    this.root = null;
+function NaryTree(data = null) {
+    this.root = data === null ? null : new Node(data);
+    return this.root;
 }
 
 function Node(data) {
@@ -26,18 +27,10 @@ module.exports = preOrder;
 
 /*
 ! Test Case 1:
-* Sample Input:
-        5
-    /   |   \
-   13   3    23
-* Sample Output: [5, 13, 3, 23]
+* Sample Input: //* Sample Image: refer to Images -> Nary-structure-3.png
+* Sample Output: [0, 1, 2, 3]
 
 ! Test Case 2:
-* Sample Input:
-            5
-        /   |   \
-      13    3    23
-    /  |           \
-   7   24           63
-* Sample Output: [5, 13, 7, 24, 3, 23, 63]
+* Sample Input: //* Sample Image: refer to Images -> Nary-structure-6.png
+* Sample Output: [21, 13, 7, 31, 53, 12, 7, 2, 71, 6, 22]
 */
