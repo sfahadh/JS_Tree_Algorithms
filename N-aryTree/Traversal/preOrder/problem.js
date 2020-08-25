@@ -25,19 +25,19 @@ const preOrder = root => {
 module.exports = preOrder;
 
 /*
-! Test Case 1: 
-* Sample Input: 
+! Test Case 1:
+* Sample Input:
         5
     /   |   \
    13   3    23
-* Sample Output: [5, 13, 3, 23] 
+* Sample Output: [5, 13, 3, 23]
 
 ! Test Case 2:
-* Sample Input: 
+* Sample Input:
             5
         /   |   \
       13    3    23
-    /  |           \  
-   7   24           63 
-* Sample Output: [5, 13, 17, 24, 3, 23, 63] 
+    /  |           \
+   7   24           63
+* Sample Output: [5, 13, 7, 24, 3, 23, 63]
 */
