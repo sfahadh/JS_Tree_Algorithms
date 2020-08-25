@@ -11,7 +11,7 @@ const constructTree = () => {
 
     InsertToNode(tree.children[1].children[1], [20]);
     InsertToNode(tree.children[2].children[0], [35]);
-    InsertToNode(tree.children[3].children[0], [3]);
+    InsertToNode(tree.children[3].children[0], [33]);
 
     InsertToNode(tree.children[1].children[1].children[0], [10]);
 
