@@ -11,8 +11,6 @@ const NaryTree9 = require("../../Starter/Structures/N-aryTree9");
 
 // Test Case 1: //* Sample Image: refer to Images -> Nary-structure-1.png
 test("Return an array of values - [51, 14]", () => {
-    const tree = NaryTree1();
-    console.log(tree);
     expect(postOrder(NaryTree1())).toEqual([51, 14]);
 });
 
