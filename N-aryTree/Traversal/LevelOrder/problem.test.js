@@ -47,3 +47,21 @@ test("Return an array of values - [0, 3, 10, 5, 1, 8, 12, -9, 3, -5, -1, 2]", ()
     const results = [0, 3, 10, 5, 1, 8, 12, -9, 3, -5, -1, 2];
     expect(levelOrder(NaryTree7())).toEqual(results);
 });
+
+// Test Case 8: //* Sample Image: refer to Images -> Nary-structure-8.png
+test("Return an array of values - [13, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]", () => {
+    const results = [13, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+    expect(levelOrder(NaryTree8())).toEqual(results);
+});
+
+// Test Case 9: //* Sample Image: refer to Images -> Nary-structure-9.png
+test("Return an array of values - [101, 43, 62, 21, 33, 87, 6, 1, 8, 34, 67, 41, 76, 14, 19, 29, 24, 31, 98, 73, 66, 54, 22, 5, 17]", () => {
+    const results = [101, 43, 62, 21, 33, 87, 6, 1, 8, 34, 67, 41, 76, 14, 19, 29, 24, 31, 98, 73, 66, 54, 22, 5, 17];
+    expect(levelOrder(NaryTree9())).toEqual(results);
+});
+
+// Test Case 10: //* Sample Image: refer to Images -> Nary-structure-10.png
+test("Return an array of values - [51, 25, 50, 75, 100, 40, 30, 55, 99, 66, 20, 35, 33, 10]", () => {
+    const results = [51, 25, 50, 75, 100, 40, 30, 55, 99, 66, 20, 35, 33, 10];
+    expect(levelOrder(NaryTree10())).toEqual(results);
+});
