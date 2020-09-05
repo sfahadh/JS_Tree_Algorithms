@@ -6,7 +6,9 @@
  */
 
 /*
-TODO: Complete the following BST contains problem below. There are 2 inputs, the tree and the node that may or may not be located within the tree. Traverse down the tree and check if the node can be found within the tree, if it can, return true, otherwise return false.
+TODO: Complete the following BST contains problem below. There are 2 inputs, the tree and the node that may 
+TODO: or may not be located within the tree. Traverse down the tree and check if the node can be found 
+TODO: within the tree, if it can, return true, otherwise return false.
 
 function BST() {
     this.root = null;
@@ -21,7 +23,7 @@ function Node(data) {
 
 const contains = (root, node) => {
 
-}
+};
 
 module.exports = contains;
 

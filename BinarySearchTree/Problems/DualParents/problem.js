@@ -6,7 +6,9 @@
  */
 
 /*
-TODO: Complete the following BST dual parents problem below. There is only 1 input, which is the root of the BST and the goal is to find the number of parents that have 2 childrens. In other words, the parent node should have both a left and right subtree branch or leaf nodes.
+TODO: Complete the following BST dual parents problem below. There is only 1 input, which is the root 
+TODO: of the BST and the goal is to find the number of parents that have 2 childrens. In other words, 
+TODO: the parent node should have both a left and right subtree branch or leaf nodes.
 
 function BST() {
     this.root = null;
@@ -19,7 +21,7 @@ function Node(data) {
 }
 */
 
-const dualParent = root => {
+const dualParent = (root) => {
 
 }
 

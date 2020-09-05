@@ -39,7 +39,7 @@ test("Highest node value in tree is 9", () => {
 });
 
 // Test Case 7: //* Sample Input: refer to Images -> BST-structure-7.png
-test("Highest node value in tree is 55", () => {
+test("Highest node value in tree is 55 - Part I", () => {
 	const tree = constructTree(Structures["7"]);
 	expect(findMax(tree.root)).toEqual(55);
 });
@@ -51,13 +51,13 @@ test("Highest node value in tree is 139", () => {
 });
 
 // Test Case 9: //* Sample Input: refer to Images -> BST-structure-9.png
-test("Highest node value in tree is 55", () => {
+test("Highest node value in tree is 55 - Part II", () => {
 	const tree = constructTree(Structures["9"]);
 	expect(findMax(tree.root)).toEqual(55);
 });
 
 // Test Case 10: //* Sample Input: refer to Images -> BST-structure-10.png
-test("Highest node value in tree is 55", () => {
+test("Highest node value in tree is 21", () => {
 	const tree = constructTree(Structures["10"]);
 	expect(findMax(tree.root)).toEqual(21);
 });

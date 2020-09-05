@@ -6,7 +6,9 @@
  */
 
 /*
-TODO: Complete the following BST find min node problem below. There is only 1 input, which is the root of the BST and the goal is to traverse down the tree and find the node with the lowest value. Once found, return the node data. If there is no BST, return null;
+TODO: Complete the following BST find min node problem below. There is only 1 input, which is the 
+TODO: root of the BST and the goal is to traverse down the tree and find the node with the lowest value. 
+TODO: Once found, return the node data. If there is no BST, return null;
 
 function BST() {
     this.root = null;

@@ -6,16 +6,18 @@
  */
 
 /*
-TODO: Complete the following BST find height problem below. There are 2 inputs, the root of the BST and the node that may or may not be located within the tree. The goal is to return the level or height in which the node can be found in.
+TODO: Complete the following BST find height problem below. There are 2 inputs, the root of the BST 
+TODO: and the node that may or may not be located within the tree. The goal is to return the level 
+TODO: or height in which the node can be found in.
 
 function BST() {
-    this.root = null;
+		this.root = null;
 }
 
 function Node(data) {
-    this.data = data;
-    this.left = null; 
-    this.right = null;
+		this.data = data;
+		this.left = null; 
+		this.right = null;
 }
 */
 
@@ -27,11 +29,11 @@ module.exports = findHeight;
 
 /*
 * Sample Tree Root: refer to Images -> BST-structure-12.png
-	      777         -> Height 1
-	     /   \
-     555   888      -> Height 2
-    /  \     \
-  444  666   999    -> Height 3
+		  777         -> Height 1
+		 /   \
+	   555   888      -> Height 2
+	  /  \     \
+	444  666   999    -> Height 3
 
 ! Test Case 1:
 Input: (root, 777)

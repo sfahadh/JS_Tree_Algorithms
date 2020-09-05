@@ -6,7 +6,10 @@
  */
 
 /*
-TODO: Complete the following BST average level problem below. There is only one input, the BST. The goal of this problem is to add up the nodes on each level of the BST, starting with the first level and find the average of those node datas. Traverse to all other levels of the BST, adding up the nodes and calculating the averages for each. Capture the average of each levels into an array and return it.
+TODO: Complete the following BST average level problem below. There is only one input, the BST. 
+TODO: The goal of this problem is to add up the nodes on each level of the BST, starting with the first level and 
+TODO: find the average of those node datas. Traverse to all other levels of the BST, adding up the nodes and 
+TODO: calculating the averages for each. Capture the average of each levels into an array and return it.
 
 function BST() {
     this.root = null;
@@ -21,7 +24,7 @@ function Node(data) {
 
 const avgLevel = root => {
 
-}
+};
 
 module.exports = avgLevel;
 
