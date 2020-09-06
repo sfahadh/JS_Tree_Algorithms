@@ -6,7 +6,9 @@
  */
 
 /*
-TODO: Complete the following BST find insert node problem below. There are 2 inputs, the root of the BST and the node in which to insert into the BST. the goal is to traverse down the tree and find where to best place the node given its value.
+TODO: Complete the following BST find insert node problem below. There are 2 inputs, the root of 
+TODO: the BST and the node in which to insert into the BST. the goal is to traverse down the tree 
+TODO: and find where to best place the node given its value.
 
 function BST() {
     this.root = null;
@@ -28,10 +30,10 @@ module.exports = insertNode;
 /*
 ! Test Case:
 Sample Tree Root:      Sample Output:
-	    25                  	25                     
-	   /  \                    /  \            	   
-     16    26       =>       16    26 
-       \     \              /  \     \   
-       21     35           5    21    35    
+	    25                  	25
+	   /  \                    /  \
+     16    26       =>       16    26
+       \     \              /  \     \
+       21     35           5    21    35
 * Sample Input: (root, Node: { data: 5, left: null, right: null })
 */

@@ -6,7 +6,8 @@
  */
 
 /*
-TODO: Complete the following BST minimum difference problem below. There is only one input, which is the root of the BST. The goal is to find the lowest output from subtracting any 2 nodes.  
+TODO: Complete the following BST minimum difference problem below. There is only one input, which 
+TODO: is the root of the BST. The goal is to find the lowest output from subtracting any 2 nodes.  
 
 function BST() {
     this.root = null;
