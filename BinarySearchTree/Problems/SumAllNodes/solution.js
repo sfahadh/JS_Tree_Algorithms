@@ -1,4 +1,4 @@
-const sum = root => {
+const sumAllNodes = root => {
     let total = 0;
     if (!root) return total;
     const queue = [root];
