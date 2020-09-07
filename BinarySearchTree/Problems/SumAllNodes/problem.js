@@ -23,8 +23,6 @@ function Node(data) {
 
 const sumAllNodes = root => {
 
-
-
 }
 
 module.exports = sumAllNodes;
