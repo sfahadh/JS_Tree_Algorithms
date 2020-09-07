@@ -1,6 +1,7 @@
 const sumLeftLeaves = root => {
     if (!root) return 0;
     const leftLeaves = [];
+
     (function recurse(root) {
         if (root.left) {
             if (!root.left.left && !root.left.right) {
@@ -11,5 +12,6 @@ const sumLeftLeaves = root => {
         }
         if (root.right) recurse(root.right);
     })(root);
+
     return leftLeaves.length ? leftLeaves.reduce((acc, curr) => acc + curr) : 0;
 }
