@@ -6,7 +6,9 @@
  */
 
 /*
-TODO: Complete the following BST range sum problem below. There are 3 inputs, the root of the tree, the lower range value, and the higher range value. The goal is to find the node values that are in between the lower range value and higher range value and then return the sum of those node values. 
+TODO: Complete the following BST range sum problem below. There are 3 inputs, the root of the tree, the 
+TODO: lower range value, and the higher range value. The goal is to find the node values that are in between 
+TODO: the lower range value and higher range value and then return the sum of those node values. 
 
 function BST() {
     this.root = null;

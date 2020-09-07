@@ -6,7 +6,8 @@
  */
 
 /*
-TODO: Complete the following BST remove all leaves problem below. There is only one input, which is the root of the tree. A leaf node is a node with no children. Remove all leaves found in the BST.
+TODO: Complete the following BST remove all leaves problem below. There is only one input, which is 
+TODO: the root of the tree. A leaf node is a node with no children. Remove all leaves found in the BST.
 
 function BST() {
     this.root = null;
@@ -29,9 +30,9 @@ module.exports = removeAllLeaves;
 /*
 ! Test Case:
 * Sample Input:       Sample Output:
-	    25                      
-	   /  \             	 25   
-     16    26      =>    	/  \   
+	    25
+	   /  \             	 25
+     16    26      =>    	/  \
     /  \     \            16    26
-   5   21     35         
+   5   21     35
 */

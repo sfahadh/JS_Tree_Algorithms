@@ -6,7 +6,10 @@
  */
 
 /*
-TODO: Complete the following BST remove node problem below. There are 2 inputs, the root of the tree and the node that needs to be removed from the tree. The node may or may not have any children. If the node is found, return the tree without that node and all it's children if it has any. Otherwise if the node is not found, return original tree.
+TODO: Complete the following BST remove node problem below. There are 2 inputs, the root of the tree 
+TODO: and the node that needs to be removed from the tree. The node may or may not have any children. 
+TODO: If the node is found, return the tree without that node and all it's children if it has any. 
+TODO: Otherwise if the node is not found, return original tree.
 
 function BST() {
     this.root = null;

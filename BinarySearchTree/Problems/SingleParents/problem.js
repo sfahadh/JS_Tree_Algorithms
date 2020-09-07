@@ -6,7 +6,8 @@
  */
 
 /*
-TODO: Complete the following BST single parents problem below. There is only 1 input, which is the root of the BST. The goal of this problem is to return the number of nodes that are a single parent.
+TODO: Complete the following BST single parents problem below. There is only 1 input, which is the root
+TODO: of the BST. The goal of this problem is to return the number of nodes that are a single parent.
 
 function BST() {
     this.root = null;
