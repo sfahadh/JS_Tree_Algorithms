@@ -6,7 +6,8 @@
  */
 
 /*
-TODO: Complete the following BST level problem below. There is only one input, which is the root of the BST and the goal is to find the height of the BST or the number of levels it has. 
+TODO: Complete the following BST level problem below. There is only one input, which is the root of the 
+TODO: BST and the goal is to find the height of the BST or the number of levels it has. 
 
 function BST() {
     this.root = null;
