@@ -6,7 +6,9 @@
  */
 
 /*
-TODO: Complete the following BST same parent problem below. There are 3 inputs, which are the root of the BST, and 2 child nodes. Traverse down the tree and find the two child nodes, determine whether they have the same parent or not. If they do, return true, otherwise return false.
+TODO: Complete the following BST same parent problem below. There are 3 inputs, which are the root of 
+TODO: the BST, and 2 child nodes. Traverse down the tree and find the two child nodes, determine whether 
+TODO: they have the same parent or not. If they do, return true, otherwise return false.
 
 function BST() {
     this.root = null;

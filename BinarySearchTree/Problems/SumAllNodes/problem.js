@@ -6,7 +6,9 @@
  */
 
 /*
-TODO: Complete the following BST sum all nodes problem below. There is only 1 input, which is the root of the BST and the goal is to traverse down the tree to add up the values of all nodes and return the total.
+TODO: Complete the following BST sum all nodes problem below. There is only 1 input, which is the root 
+TODO: of the BST and the goal is to traverse down the tree to add up the values of all nodes and return 
+TODO: the total.
 
 function BST() {
     this.root = null;
@@ -20,6 +22,7 @@ function Node(data) {
 */
 
 const sum = root => {
+
 
 }
 
