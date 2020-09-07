@@ -21,12 +21,12 @@ function Node(data) {
 }
 */
 
-const sum = root => {
+const sumAllNodes = root => {
 
 
 }
 
-module.exports = sum;
+module.exports = sumAllNodes;
 
 /*
 ! Test Case:
