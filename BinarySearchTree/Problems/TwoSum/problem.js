@@ -6,7 +6,10 @@
  */
 
 /*
-TODO: Complete the following BST two sum problem below. There are 2 inputs, the root of the BST, and the sum in which 2 nodes somewhere within the tree should add up to. Traverse down the tree and find any two nodes that can be added to equal to the input sum. If that can be done, return true, otherwise return false.
+TODO: Complete the following BST two sum problem below. There are 2 inputs, the root of the BST, and 
+TODO: the sum in which 2 nodes somewhere within the tree should add up to. Traverse down the tree and 
+TODO: find any two nodes that can be added to equal to the input sum. If that can be done, return true, 
+TODO: otherwise return false.
 
 function BST() {
     this.root = null;
@@ -19,7 +22,7 @@ function Node(data) {
 }
 */
 
-const twoSum = (root, sum) => {
+const twoSum = (root, sum, hashmap = {}) => {
 
 }
 

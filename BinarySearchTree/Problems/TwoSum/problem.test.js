@@ -27,9 +27,9 @@ test("Return true because nodes 62 & 13 adds up to 75", () => {
 });
 
 // Test Case 5: //* Sample Input: refer to Images -> BST-structure-5.png
-test("Return true because nodes 0 & 33 adds up to 33", () => {
+test("Return true because nodes 3 & 65 adds up to 68", () => {
   const tree = constructTree(Strucutres["5"]);
-  expect(twoSum(tree.root, 33)).toEqual(true);
+  expect(twoSum(tree.root, 68)).toEqual(true);
 });
 
 // Test Case 6: //* Sample Input: refer to Images -> BST-structure-6.png
