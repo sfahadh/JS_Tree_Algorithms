@@ -6,7 +6,10 @@
  */
 
 /*
-TODO: Complete the following BST sum right leaves problem below. There is only 1 input, which is the root of the BST and the goal is to traverse down the tree and identify the leaf nodes that are on the right side branch of the tree or subtrees. Once those right leaf nodes are identified, add all of them up and return the total.
+TODO: Complete the following BST sum right leaves problem below. There is only 1 input, which is 
+TODO: the root of the BST and the goal is to traverse down the tree and identify the leaf nodes 
+TODO: that are on the right side branch of the tree or subtrees. Once those right leaf nodes are 
+TODO: identified, add all of them up and return the total.
 
 function BST() {
     this.root = null;

@@ -27,9 +27,9 @@ test("There are no right leaves, should return 0 - Part I", () => {
 });
 
 // Test Case 5: //* Sample Input: refer to Images -> BST-structure-5.png
-test("The sum of all right leaves should return 78", () => {
+test("The sum of all right leaves should return 13", () => {
 	const tree = constructTree(Structures["5"]);
-	expect(sumRightLeaves(tree.root)).toEqual(78);
+	expect(sumRightLeaves(tree.root)).toEqual(13);
 });
 
 // Test Case 6: //* Sample Input: refer to Images -> BST-structure-6.png
@@ -45,9 +45,9 @@ test("The sum of all right leaves should return 93", () => {
 });
 
 // Test Case 8: //* Sample Input: refer to Images -> BST-structure-8.png
-test("The sum of all right leaves should return 437", () => {
+test("The sum of all right leaves should return 85", () => {
 	const tree = constructTree(Structures["8"]);
-	expect(sumRightLeaves(tree.root)).toEqual(437);
+	expect(sumRightLeaves(tree.root)).toEqual(85);
 });
 
 // Test Case 9: //* Sample Input: refer to Images -> BST-structure-9.png
