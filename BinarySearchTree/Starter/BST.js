@@ -6,8 +6,8 @@ function BST() {
 
 BST.prototype.insert = function (data) {
     if (!this.root) return this.root = new Node(data);
-
     let curr = this.root;
+
     while (curr) {
         if (curr.data === data) return;
 
