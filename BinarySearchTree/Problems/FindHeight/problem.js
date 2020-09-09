@@ -3,7 +3,7 @@
 /* // Uncomment the imports below if you plan on using them
  * const BST = require("../../Starter/BST");
  * const Node = require("../../Starter/Node");
- */
+*/
 
 /*
 TODO: Complete the following BST find height problem below. There are 2 inputs, the root of the BST 
@@ -11,13 +11,13 @@ TODO: and the node that may or may not be located within the tree. The goal is t
 TODO: or height in which the node can be found in.
 
 function BST() {
-		this.root = null;
+	this.root = null;
 }
 
 function Node(data) {
-		this.data = data;
-		this.left = null; 
-		this.right = null;
+	this.data = data;
+	this.left = null; 
+	this.right = null;
 }
 */
 

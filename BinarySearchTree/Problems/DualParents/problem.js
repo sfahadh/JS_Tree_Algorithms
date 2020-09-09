@@ -21,7 +21,7 @@ function Node(data) {
 }
 */
 
-const dualParent = (root) => {
+const dualParent = root => {
 
 }
 
