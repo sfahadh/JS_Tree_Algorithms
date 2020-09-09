@@ -4,7 +4,7 @@ function BinaryTree() {
     this.root = null;
 }
 
-BinaryTree.prototype.insert = function (parent, data, insertLeft) {
+BinaryTree.prototype.insert = function (data, parent, insertLeft) {
     const newNode = new Node(data);
     if (!this.root) return this.root = newNode;
     const queue = [this.root];
@@ -21,6 +21,5 @@ BinaryTree.prototype.insert = function (parent, data, insertLeft) {
         }
     }
 }
-
 
 module.exports = BinaryTree;
