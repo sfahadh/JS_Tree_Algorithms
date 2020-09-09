@@ -12,12 +12,12 @@ BinaryTree.prototype.insert = function (data, parent, insertLeft) {
     while (queue.length) {
         const node = queue.shift();
 
-        if (node.data === parent) {
-            insertLeft ? node.left = newNode : node.right = newNode;
-            break;
-        } else {
+        if (node.data !== parent || node.left && node.right) {
             queue.push(node.left);
             queue.push(node.right);
+        } else {
+            insertLeft ? node.left = newNode : node.right = newNode;
+            break;
         }
     }
 }
