@@ -38,3 +38,12 @@ test("Merge two tree to form Binary Structure 4", () => {
     tree2.root = constructTree([3, 6, null, 3, null, null, 6, 3]);
     expect(mergeTrees(tree1.root, tree2.root)).toEqual(constructTree(structures["4"]));
 });
+
+// Test Case 5: //* Sample Output: refer to Images -> BT-structure-5.png
+test("Merge two tree to form Binary Structure 5", () => {
+    const tree1 = new BinaryTree();
+    const tree2 = new BinaryTree();
+    tree1.root = constructTree([20, 12, 11]);
+    tree2.root = constructTree([2, null, 21, null, 11]);
+    expect(mergeTrees(tree1.root, tree2.root)).toEqual(constructTree(structures["5"]));
+});
