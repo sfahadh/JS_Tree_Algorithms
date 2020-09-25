@@ -4,7 +4,7 @@ const constructTree = require("../../Starter/constructTree");
 const mergeTrees = require("./mergeTrees");
 
 // Test Case 1: //* Sample Output: refer to Images -> BT-structure-1.png
-test("Merge two tree to form Binary Structure 4", () => {
+test("Merge two tree to form Binary Structure 1", () => {
     const tree1 = new BinaryTree();
     const tree2 = new BinaryTree();
     tree1.root = constructTree([9, 2]);
@@ -13,7 +13,7 @@ test("Merge two tree to form Binary Structure 4", () => {
 });
 
 // Test Case 2: //* Sample Output: refer to Images -> BT-structure-2.png
-test("Merge two tree to form Binary Structure 4", () => {
+test("Merge two tree to form Binary Structure 2", () => {
     const tree1 = new BinaryTree();
     const tree2 = new BinaryTree();
     tree1.root = constructTree([3]);
@@ -22,10 +22,19 @@ test("Merge two tree to form Binary Structure 4", () => {
 });
 
 // Test Case 3: //* Sample Output: refer to Images -> BT-structure-3.png
-test("Merge two tree to form Binary Structure 4", () => {
+test("Merge two tree to form Binary Structure 3", () => {
     const tree1 = new BinaryTree();
     const tree2 = new BinaryTree();
     tree1.root = constructTree([17, 22, null, null, 11]);
     tree2.root = constructTree([0, 0, null, null, 0]);
     expect(mergeTrees(tree1.root, tree2.root)).toEqual(constructTree(structures["3"]));
+});
+
+// Test Case 4: //* Sample Output: refer to Images -> BT-structure-4.png
+test("Merge two tree to form Binary Structure 4", () => {
+    const tree1 = new BinaryTree();
+    const tree2 = new BinaryTree();
+    tree1.root = constructTree([3, 6, 4, null, null, null, 6, null, 4]);
+    tree2.root = constructTree([3, 6, null, 3, null, null, 6, 3]);
+    expect(mergeTrees(tree1.root, tree2.root)).toEqual(constructTree(structures["4"]));
 });
