@@ -72,17 +72,40 @@ test("Merge two tree to form Binary Structure 8", () => {
     const tree2 = new BinaryTree();
     tree1.root = constructTree([39, 62, 57, 52, null, null, null, 71, 68, 66]);
     tree2.root = constructTree([39, null, 90, 79, null, 83, null, 87, null, null, 93, null, 99]);
-    console.log(tree2.root.right);
     expect(mergeTrees(tree1.root, tree2.root)).toEqual(constructTree(structures["8"]));
 });
 
-// Test Case 8: //* Sample Output: refer to Images -> BT-structure-9.png
+// Test Case 9: //* Sample Output: refer to Images -> BT-structure-9.png
 test("Merge two tree to form Binary Structure 9", () => {
     const tree1 = new BinaryTree();
     const tree2 = new BinaryTree();
     tree1.root = constructTree([30, 60, 2, 1, null, null, null, 77, null, 78, null, null, 50, 26, 30]);
     tree2.root = constructTree([15, 8, 45, 30, null, null, null, null, 40, 65, 37, null, null, null, 93, null, 88]);
-    console.log(tree2.root.right);
     expect(mergeTrees(tree1.root, tree2.root)).toEqual(constructTree(structures["9"]));
+});
+
+// Test Case 10: 
+test("Merge two empty trees", () => {
+    const tree = new BinaryTree();
+    expect(mergeTrees(tree.root, tree.root)).toEqual(tree.root);
+});
+
+// Test Case 11: 
+test("Merge two tree in which each only has 1 node", () => {
+    const tree1 = new BinaryTree();
+    const tree2 = new BinaryTree();
+    const result = new BinaryTree();
+
+    tree1.root = constructTree([1]);
+    tree2.root = constructTree([2]);
+    result.root = constructTree([3])
+    expect(mergeTrees(tree1.root, tree2.root)).toEqual(result.root);
+});
+
+// Test Case 12: 
+test("Merge two trees in which each only one tree has 1 node", () => {
+    const tree1 = new BinaryTree();
+    tree1.root = constructTree([1]);
+    expect(mergeTrees(tree1.root, new BinaryTree().root)).toEqual(tree1.root);
 });
 
