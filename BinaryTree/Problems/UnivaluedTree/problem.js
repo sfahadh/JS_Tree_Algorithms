@@ -23,7 +23,13 @@ function Node(data) {
 */
 
 const isUnivalued = root => {
+    if (!root) return true;
+    const val = root.val;
 
+    return (function recurse(root) {
+        if (!root) return true;
+        return root.val !== val ? false : recurse(root.left) && recurse(root.right);
+    })(root)
 };
 
 module.exports = isUnivalued;

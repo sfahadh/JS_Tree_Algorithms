@@ -1,7 +1,7 @@
 const BinaryTree = require("../../Starter/BinaryTree");
 const structures = require("../../Starter/Structures");
 const constructTree = require("../../Starter/constructTree");
-const mergeTrees = require("./mergeTrees");
+const mergeTrees = require("./problem");
 
 // Test Case 1: //* Sample Output: refer to Images -> BT-structure-1.png
 test("Merge two tree to form Binary Structure 1", () => {
