@@ -6,7 +6,8 @@ const structures = {
     5: [22, 12, 11, null, null, null, 21, null, 11],
     6: [90, null, 80, null, 70, null, 60, null, 50],
     7: [16, 1, null, null, 21, 5, 7, null, null, 16, 18, null, null, 4, null, null, 3, null, 8],
-    8: [78, 62, 57, 52, null, null, null, 71, 68, 66, null, null, null, null, 90, 79, null, 83, null, 87, null, null, 93, null, 99]
+    8: [78, 62, 57, 52, null, null, null, 71, 68, 66, null, null, null, null, 90, 79, null, 83, null, 87, null, null, 93, null, 99],
+    9: [45, 68, 47, 31, null, null, null, 77, null, 78, null, null, 90, 91, 67, null, null, null, 93, null, 88]
 }
 
 module.exports = structures;

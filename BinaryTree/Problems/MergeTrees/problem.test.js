@@ -76,3 +76,13 @@ test("Merge two tree to form Binary Structure 8", () => {
     expect(mergeTrees(tree1.root, tree2.root)).toEqual(constructTree(structures["8"]));
 });
 
+// Test Case 8: //* Sample Output: refer to Images -> BT-structure-9.png
+test("Merge two tree to form Binary Structure 9", () => {
+    const tree1 = new BinaryTree();
+    const tree2 = new BinaryTree();
+    tree1.root = constructTree([30, 60, 2, 1, null, null, null, 77, null, 78, null, null, 50, 26, 30]);
+    tree2.root = constructTree([15, 8, 45, 30, null, null, null, null, 40, 65, 37, null, null, null, 93, null, 88]);
+    console.log(tree2.root.right);
+    expect(mergeTrees(tree1.root, tree2.root)).toEqual(constructTree(structures["9"]));
+});
+
