@@ -24,11 +24,12 @@ function Node(data) {
 
 const isUnivalued = root => {
     if (!root) return true;
-    const val = root.val;
+    const data = root.data;
 
     return (function recurse(root) {
         if (!root) return true;
-        return root.val !== val ? false : recurse(root.left) && recurse(root.right);
+        if (root.data !== data) return false;
+        return recurse(root.left) && recurse(root.right);
     })(root)
 };
 

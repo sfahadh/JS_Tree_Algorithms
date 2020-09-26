@@ -10,7 +10,8 @@ const structures = {
     9: [45, 68, 47, 31, null, null, null, 77, null, 78, null, null, 90, 91, 67, null, null, null, 93, null, 88],
     11: [4, 4, null, 4, null, 4, null, null, 4, null, 4, null, 4],
     12: [12, 12, null, null, 12],
-    13: [9, 9]
+    13: [9, 9],
+    14: [5, 5, 5, 5, null, null, null, 5, 2, null, null, 5, 5, 5, 5, null, null, null, 5, 5, null, null, 3]
 }
 
 module.exports = structures;
