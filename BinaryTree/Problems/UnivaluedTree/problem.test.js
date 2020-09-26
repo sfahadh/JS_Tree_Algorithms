@@ -27,3 +27,8 @@ test("Return false because there are a few node values (2 & 3) that do not equal
 test("Return false because there is a node value (6) that do not equal to the rest", () => {
     expect(isUnivalued(constructTree(structures["15"]))).toEqual(false);
 });
+
+// Test Case 6: //* Sample Output: refer to Images -> BT-structure-16.png
+test("Return true because all node values have the value 8", () => {
+    expect(isUnivalued(constructTree(structures["16"]))).toEqual(true);
+});
