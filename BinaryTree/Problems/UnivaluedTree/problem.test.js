@@ -32,3 +32,13 @@ test("Return false because there is a node value (6) that do not equal to the re
 test("Return true because all node values have the value 8", () => {
     expect(isUnivalued(constructTree(structures["16"]))).toEqual(true);
 });
+
+// Test Case 7: 
+test("Return true because there's no tree", () => {
+    expect(isUnivalued(new BinaryTree().root)).toEqual(true);
+});
+
+// Test Case 8: //* Sample Output: refer to Images -> BT-structure-8.png
+test("Return false because all nodes in the tree are different from one another", () => {
+    expect(isUnivalued(constructTree(structures["8"]))).toEqual(false);
+});
