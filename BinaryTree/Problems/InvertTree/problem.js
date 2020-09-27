@@ -29,7 +29,12 @@ module.exports = invertTree;
 /*
 ! Test Case:
 * Sample Input:
-* Sample Output:
+        1
+      /   \
+     3     2
+    / \   / \
+   7   6 5   4
+* Sample Output: refer to Images -> BT-structure-17.png
 */
 
 // ? If the average ends up being a decimal, floor the value;
