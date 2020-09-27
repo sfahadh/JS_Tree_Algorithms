@@ -36,3 +36,24 @@ test("Nodes 12 and 21 should switch", () => {
     tree.root = constructTree([22, 21, 11, null, null, null, 12, null, 11])
     expect(invertTree(tree.root)).toEqual(constructTree(structures["5"]));
 });
+
+// Test Case 6: //* Sample Output: refer to Images -> BT-structure-6.png
+test("All nodes in the right subtree will switch to the left subtree", () => {
+    const tree = new BinaryTree();
+    tree.root = constructTree([90, 80, 70, 60, 50])
+    expect(invertTree(tree.root)).toEqual(constructTree(structures["6"]));
+});
+
+// Test Case 7: //* Sample Output: refer to Images -> BT-structure-7.png
+test("Nodes 1 and 21 should switch", () => {
+    const tree = new BinaryTree();
+    tree.root = constructTree([16, 21, 3, 8, null, null, null, 5, 16, 4, null, null, 18, null, null, 7, null, null, 1])
+    expect(invertTree(tree.root)).toEqual(constructTree(structures["7"]));
+});
+
+// Test Case 8: //* Sample Output: refer to Images -> BT-structure-8.png
+test("Nodes 62 and 90 should switch", () => {
+    const tree = new BinaryTree();
+    tree.root = constructTree([78, 90, 93, 99, null, null, null, 79, 83, 87, null, null, null, null, 62, 71, null, 68, null, 66, null, null, 57, null, 52])
+    expect(invertTree(tree.root)).toEqual(constructTree(structures["8"]));
+}); 
