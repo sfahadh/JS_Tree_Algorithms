@@ -56,3 +56,21 @@ test("Sub is a subtree of other tree - Part III", () => {
     const sub = constructTree([68, 47, 31, null, null, null, 77, null, 78]);
     expect(sameTree(constructTree(structures["9"]), sub)).toEqual(true);
 });
+
+// Test Case 10: //* Sample Output: refer to Images -> BT-structure-10.png
+test("The subtree under node 66 is swapped", () => {
+    const sub = constructTree([88, 77, -22, null, null, -33, null, null, 66, -55, null, null, -44]);
+    expect(sameTree(constructTree(structures["10"]), sub)).toEqual(false);
+});
+
+// Test Case 11: //* Sample Output: refer to Images -> BT-structure-11.png
+test("The sub is a much bigger and completely different tree than the other tree", () => {
+    const sub = constructTree(["14"]);
+    expect(sameTree(constructTree(structures["11"]), sub)).toEqual(false);
+});
+
+// Test Case 12: //* Sample Output: refer to Images -> BT-structure-12.png
+test("An empty tree is not a subtree of another empty tree", () => {
+    const tree = new BinaryTree().root;
+    expect(sameTree(tree, tree)).toEqual(false);
+});
