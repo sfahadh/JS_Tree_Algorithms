@@ -37,3 +37,8 @@ test("Return true because tree is symmetric - Part II", () => {
 test("Return true because tree is symmetric - Part III", () => {
     expect(symmetric(constructTree(structures["19"]))).toEqual(true);
 });
+
+// Test Case 8: //* Sample Output: refer to Images -> BT-structure-20.png
+test("Return true because tree is symmetric - Part IV", () => {
+    expect(symmetric(constructTree(structures["20"]))).toEqual(true);
+});
