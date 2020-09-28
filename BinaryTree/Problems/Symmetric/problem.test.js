@@ -32,3 +32,8 @@ test("Return false because one of the node has a different value", () => {
 test("Return true because tree is symmetric - Part II", () => {
     expect(symmetric(constructTree(structures["18"]))).toEqual(true);
 });
+
+// Test Case 7: //* Sample Output: refer to Images -> BT-structure-19.png
+test("Return true because tree is symmetric - Part III", () => {
+    expect(symmetric(constructTree(structures["19"]))).toEqual(true);
+});
