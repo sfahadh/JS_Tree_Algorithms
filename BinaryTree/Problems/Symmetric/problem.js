@@ -23,7 +23,6 @@ function Node(data) {
 
 const symmetric = root => {
     if (!root) return true;
-    console.log(root)
     return traverse(root.left, root.right)
 };
 
