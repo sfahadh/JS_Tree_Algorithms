@@ -30,6 +30,29 @@ test("The 1st and 2nd input are the exact same tree therefore the 2nd input is a
 // Test Case 5: //* Sample Output: refer to Images -> BT-structure-5.png
 test("One of the values is different in the sub", () => {
     const sub = constructTree([22, 12, 11, null, null, null, 22, null, 11]);
-    console.log(sub);
     expect(sameTree(constructTree(structures["5"]), sub)).toEqual(false);
+});
+
+// Test Case 6: //* Sample Output: refer to Images -> BT-structure-6.png
+test("All nodes are in wrong side of tree", () => {
+    const sub = constructTree([90, 80, 70, 60, 50, 40]);
+    expect(sameTree(constructTree(structures["6"]), sub)).toEqual(false);
+});
+
+// Test Case 7: //* Sample Output: refer to Images -> BT-structure-7.png
+test("Sub is a subtree of other tree - Part I", () => {
+    const sub = constructTree([16, 18, null, null, 4]);
+    expect(sameTree(constructTree(structures["7"]), sub)).toEqual(true);
+});
+
+// Test Case 8: //* Sample Output: refer to Images -> BT-structure-8.png
+test("Sub is a subtree of other tree - Part II", () => {
+    const sub = constructTree([79, null, 83, null, 87]);
+    expect(sameTree(constructTree(structures["8"]), sub)).toEqual(true);
+});
+
+// Test Case 9: //* Sample Output: refer to Images -> BT-structure-9.png
+test("Sub is a subtree of other tree - Part III", () => {
+    const sub = constructTree([68, 47, 31, null, null, null, 77, null, 78]);
+    expect(sameTree(constructTree(structures["9"]), sub)).toEqual(true);
 });
