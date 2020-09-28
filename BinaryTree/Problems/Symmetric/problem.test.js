@@ -19,11 +19,16 @@ test("Return false because tree is not symmetric - Part I", () => {
 });
 
 // Test Case 4: //* Sample Output: refer to Images -> BT-structure-16.png
-test("Return false because tree is symmetric - Part I", () => {
+test("Return true because tree is symmetric - Part I", () => {
     expect(symmetric(constructTree(structures["16"]))).toEqual(true);
 });
 
 // Test Case 5: //* Sample Output: refer to Images -> BT-structure-5.png
 test("Return false because one of the node has a different value", () => {
     expect(symmetric(constructTree(structures["5"]))).toEqual(false);
+});
+
+// Test Case 6: //* Sample Output: refer to Images -> BT-structure-18.png
+test("Return true because tree is symmetric - Part II", () => {
+    expect(symmetric(constructTree(structures["18"]))).toEqual(true);
 });
