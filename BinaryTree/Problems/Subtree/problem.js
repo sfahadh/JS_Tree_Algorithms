@@ -26,7 +26,7 @@ const subtree = (root, sub) => {
     return compareTree(root, sub) || subtree(root.left, sub) || subtree(root.right, sub);
 };
 
-const compareTree = (root, t) => {
+const compareTree = (root, sub) => {
     if (!root && !sub) return true;
     if ((!root && sub) || (root && !sub) || root.data !== sub.data) return false;
     return compareTree(root.left, sub.left) && compareTree(root.right, sub.right);
