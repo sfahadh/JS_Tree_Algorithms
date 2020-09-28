@@ -22,8 +22,15 @@ function Node(data) {
 */
 
 const subtree = (root, sub) => {
-
+    if (!root || !sub) return false;
+    return compareTree(root, sub) || subtree(root.left, sub) || subtree(root.right, sub);
 };
+
+const compareTree = (root, t) => {
+    if (!root && !sub) return true;
+    if ((!root && sub) || (root && !sub) || root.data !== sub.data) return false;
+    return compareTree(root.left, sub.left) && compareTree(root.right, sub.right);
+}
 
 module.exports = subtree;
 
@@ -37,7 +44,7 @@ module.exports = subtree;
    7   6           8
 * Sample Output: false
 
-! Test Case 2:
+!Test Case 2:
 * Sample Input:
         1
       /   \            3
