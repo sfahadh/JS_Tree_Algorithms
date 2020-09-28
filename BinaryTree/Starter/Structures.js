@@ -8,6 +8,7 @@ const structures = {
     7: [16, 1, null, null, 21, 5, 7, null, null, 16, 18, null, null, 4, null, null, 3, null, 8],
     8: [78, 62, 57, 52, null, null, null, 71, 68, 66, null, null, null, null, 90, 79, null, 83, null, 87, null, null, 93, null, 99],
     9: [45, 68, 47, 31, null, null, null, 77, null, 78, null, null, 90, 91, 67, null, null, null, 93, null, 88],
+    10: [99, 88, 77, -22, null, null, -33, null, null, 66, -44, null, null, -55, null, null, 55, 44, -66, null, null, -77, null, null, 33, -88, null, null, -99],
     11: [4, 4, null, 4, null, 4, null, null, 4, null, 4, null, 4],
     12: [12, 12, null, null, 12],
     13: [9, 9],
