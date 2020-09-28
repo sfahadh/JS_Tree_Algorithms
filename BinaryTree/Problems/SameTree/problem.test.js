@@ -31,3 +31,28 @@ test("Return false because the value of the root node is different", () => {
     expect(sameTree(constructTree(structures["5"]), tree)).toEqual(false);
 });
 
+// Test Case 6: //* Sample Output: refer to Images -> BT-structure-6.png
+test("Return false because last node is missing", () => {
+    const tree = constructTree([90, null, 80, null, 70, null, 60])
+    expect(sameTree(constructTree(structures["6"]), tree)).toEqual(false);
+});
+
+// Test Case 7: //* Sample Output: refer to Images -> BT-structure-7.png
+test("Trees are identical - Part II", () => {
+    const tree = constructTree(structures["7"]);
+    expect(sameTree(tree, tree)).toEqual(true);
+});
+
+// Test Case 8: //* Sample Output: refer to Images -> BT-structure-8.png
+test("Trees are identical - Part III", () => {
+    const tree = constructTree(structures["8"]);
+    expect(sameTree(tree, tree)).toEqual(true);
+});
+
+// Test Case 9: //* Sample Output: refer to Images -> BT-structure-9.png
+test("Return false because only root node exists", () => {
+    const tree = constructTree([90])
+    expect(sameTree(constructTree(structures["9"]), tree)).toEqual(false);
+});
+
+
