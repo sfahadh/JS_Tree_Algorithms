@@ -55,4 +55,21 @@ test("Return false because only root node exists", () => {
     expect(sameTree(constructTree(structures["9"]), tree)).toEqual(false);
 });
 
+// Test Case 10: //* Sample Output: refer to Images -> BT-structure-10.png
+test("Trees are identical - Part IV", () => {
+    const tree = constructTree(structures["10"]);
+    expect(sameTree(tree, tree)).toEqual(true);
+});
+
+// Test Case 11: //* Sample Output: refer to Images -> BT-structure-11.png
+test("Return false because one of the leaf nodes has a different value", () => {
+    const tree = constructTree([4, 4, null, 4, null, 4, null, null, 4, null, 4, null, 3]);
+    expect(sameTree(constructTree(structures["11"]), tree)).toEqual(false);
+});
+
+// Test Case 12:
+test("Return true because both are empty trees", () => {
+    const tree = new BinaryTree().root;
+    expect(sameTree(tree, tree)).toEqual(true);
+});
 
