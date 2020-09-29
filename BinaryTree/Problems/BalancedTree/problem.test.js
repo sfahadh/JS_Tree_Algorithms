@@ -27,3 +27,23 @@ test("Return true because it is a complete binary tree", () => {
 test("Return true because the tree is balanced - Part I", () => {
     expect(balanced(constructTree(structures["5"]))).toEqual(true);
 });
+
+// Test Case 6: //* Sample Output: refer to Images -> BT-structure-6.png
+test("Return false because there is only right subtrees with 5 nodes total", () => {
+    expect(balanced(constructTree(structures["6"]))).toEqual(false);
+});
+
+// Test Case 7: //* Sample Output: refer to Images -> BT-structure-7.png
+test("Return false because there is only 1 node under node 16 in the left subtree and many nodes in the right subtree", () => {
+    expect(balanced(constructTree(structures["7"]))).toEqual(false);
+});
+
+// Test Case 8: //* Sample Output: refer to Images -> BT-structure-8.png
+test("Return true because the tree is not balanced - Part I", () => {
+    expect(balanced(constructTree(structures["8"]))).toEqual(false);
+});
+
+// Test Case 9: //* Sample Output: refer to Images -> BT-structure-9.png
+test("Return true because the tree is balanced - Part II", () => {
+    expect(balanced(constructTree(structures["9"]))).toEqual(true);
+});
