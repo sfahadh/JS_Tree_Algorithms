@@ -8,19 +8,19 @@ MaxHeap.prototype.insert = function (data) {
 }
 
 MaxHeap.prototype.bubbleUp = function () {
-    let index = this.values.length - 1;
+    let nodeIndex = this.values.length - 1;
     const element = this.values[index];
     let parentIndex;
     let parent;
 
-    while (index > 0) {
-        parentIndex = Math.floor((index - 1) / 2);
+    while (nodeIndex > 0) {
+        parentIndex = Math.floor((nodeIndex - 1) / 2);
         parent = this.values[parentIndex];
         if (element <= parent) break;
 
         this.values[parentIndex] = element;
-        this.values[index] = parent;
-        index = parentIndex;
+        this.values[nodeIndex] = parent;
+        nodeIndex = parentIndex;
     }
 }
 
