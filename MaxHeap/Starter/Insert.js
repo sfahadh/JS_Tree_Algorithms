@@ -1,11 +1,11 @@
-const MaxBinaryHeap = require("./MaxBinaryHeap");
+const MaxHeap = require("./MaxHeap");
 
-MaxBinaryHeap.prototype.insert = function (data) {
+MaxHeap.prototype.insert = function (data) {
     this.values.push(data);
     this.bubbleUp();
 }
 
-MaxBinaryHeap.prototype.bubbleUp = function () {
+MaxHeap.prototype.bubbleUp = function () {
     let index = this.values.length - 1;
     const element = this.values[index];
     let parentIndex;
